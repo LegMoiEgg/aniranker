@@ -1,0 +1,42 @@
+PATCH NOTES – VERSION 2.0
+
+NEW CHARACTERS
+
+ - Blake Belladonna (RWBY: Ice Queendom)
+ - Bridget (Guilty Gear)
+ - Fubuki (One Punch Man)
+ - Hideyoshi (Baka to Test)
+ - Iris (Fire Force)
+ - Nefertari Vivi (One Piece)
+ - Revy (Black Lagoon)
+ - Ruby Rose (RWBY: Ice Queendom)
+ - Tatsumaki (One Punch Man)
+ - Kasane Teto (Vocaloid)
+ - Weiss Schnee (RWBY: Ice Queendom)
+ - Yamato (One Piece)
+
+CHARACTER FIXES & IMPROVEMENTS
+
+ - Fixed issues affecting Yotsuba Nakano (The Quintessential Quintuplets)
+ - Fixed issues affecting Yang Xiao Long (RWBY: Ice Queendom)
+
+
+NEW FEATURES
+
+ - Brand-new landing page redesign
+ - Improved mode selection system
+ - Added official game modes: Classic & Kiss-Marry-Kill
+
+
+NEW GAME MODE: KISS-MARRY-KILL
+A new way to play has arrived.
+
+You will be given 3 random characters and must decide who you want to:
+
+ - Kiss
+ - Marry
+ - Kill
+
+Make your choices and see how tough your decisions can get.
+
+More updates and characters coming soon. Stay tuned.
