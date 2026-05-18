@@ -1,0 +1,28 @@
+[
+  {
+    "name": "Power",
+    "anime": "Chainsaw Man",
+    "age": 18,
+    "gender": "Female",
+    "height": 169,
+    "image": "assets/images/Power.png"
+  },
+
+  {
+    "name": "Makima",
+    "anime": "Chainsaw Man",
+    "age": 24,
+    "gender": "Female",
+    "height": 173,
+    "image": "assets/images/Makima.png"
+  },
+
+  {
+    "name": "Gojo",
+    "anime": "Jujutsu Kaisen",
+    "age": 28,
+    "gender": "Male",
+    "height": 190,
+    "image": "assets/images/Gojo.png"
+  }
+]
