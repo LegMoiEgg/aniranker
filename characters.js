@@ -1184,7 +1184,7 @@
         "age":  16,
         "gender":  "Female",
         "height":  160,
-        "image":  "assets/images/umiasanagi.png",
+        "image":  "assets/images/umiasanagi.jpg",
         "haircolor":  "Dark-Blue"
     },
     {
