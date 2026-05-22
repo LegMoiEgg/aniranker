@@ -391,6 +391,12 @@ button {
     color: #ffaaaa;
 }
 
+.guess-cell.partial {
+    background: #7a3e00;
+    border-color: #cc6600;
+    color: #ffcc88;
+}
+
 .header-cell {
     background: #2a2a2a;
     border-color: #ff00ff;
@@ -413,6 +419,71 @@ button {
 
 #guess-list .guess-row {
     animation: anidle-slide-in 0.25s ease;
+}
+
+#hints-area {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    margin: 14px 0 18px;
+    flex-wrap: wrap;
+}
+
+.hint-box {
+    min-width: 170px;
+    padding: 10px 16px;
+    border-radius: 8px;
+    border: 2px solid;
+    text-align: center;
+    font-size: 14px;
+    transition: background 0.3s, border-color 0.3s;
+}
+
+.hint-box.locked {
+    background: #1e1e1e;
+    border-color: #555;
+    color: #777;
+}
+
+.hint-box.unlocked {
+    background: #2a002a;
+    border-color: #ff00ff;
+    color: #ff88ff;
+}
+
+.hint-box.revealed {
+    background: #1a5c1a;
+    border-color: #22bb22;
+    color: #aaffaa;
+}
+
+.hint-lock-text {
+    font-size: 13px;
+}
+
+.hint-btn {
+    background: none;
+    border: none;
+    color: #ff88ff;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: inherit;
+    padding: 0;
+}
+
+.hint-btn:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.hint-reveal-label {
+    color: #aaffaa;
+    font-weight: bold;
+    margin-right: 4px;
+}
+
+.hint-reveal-value {
+    color: #ffffff;
 }
 
 #win-screen {
