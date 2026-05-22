@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Anidle</title>
+    <link rel="icon" type="image/png" href="assets/icon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Anidle</h1>
+
+<div id="anidle-input-area">
+    <div id="autocomplete-wrapper">
+        <input type="text" id="guess-input" placeholder="Type a character name..." autocomplete="off">
+        <div id="autocomplete-list"></div>
+    </div>
+    <button id="guess-btn">Guess</button>
+</div>
+
+<div id="attribute-headers" class="guess-row">
+    <div class="guess-cell header-cell">Image</div>
+    <div class="guess-cell header-cell">Name</div>
+    <div class="guess-cell header-cell">Anime</div>
+    <div class="guess-cell header-cell">Gender</div>
+    <div class="guess-cell header-cell">Age</div>
+    <div class="guess-cell header-cell">Height</div>
+    <div class="guess-cell header-cell">Haircolor</div>
+</div>
+
+<div id="guess-list"></div>
+
+<div id="win-screen" style="display:none;">
+    <p id="win-message"></p>
+    <button id="restart-btn">New Game</button>
+</div>
+
+<a href="index.html"><button class="back-btn">Back</button></a>
+
+<script src="characters.js"></script>
+<script src="anidle.js"></script>
+</body>
+</html>

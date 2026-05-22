@@ -251,7 +251,7 @@ button {
     bottom: 15px;
     left: 20px;
     color: #ff00ff;
-    font-size: 7px;
+    font-size: 12px;
 }
 
 .footer-links a {
@@ -283,4 +283,148 @@ button {
     gap: 10px;
 
     font-size: 20px;
+}
+
+
+/* ===== Anidle ===== */
+
+#anidle-input-area {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 8px;
+    margin: 20px 0 10px;
+}
+
+#guess-btn {
+    height: 41px;
+    white-space: nowrap;
+}
+
+#autocomplete-wrapper {
+    position: relative;
+    width: 300px;
+}
+
+#guess-input {
+    width: 100%;
+    padding: 10px 14px;
+    background: #1e1e1e;
+    border: 2px solid #ff00ff;
+    color: white;
+    font-size: 16px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+#guess-input:focus {
+    box-shadow: 0 0 8px #ff00ff;
+}
+
+#autocomplete-list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #1e1e1e;
+    border: 2px solid #ff00ff;
+    border-top: none;
+    z-index: 100;
+    max-height: 200px;
+    overflow-y: auto;
+    border-radius: 0 0 8px 8px;
+}
+
+#autocomplete-list:empty {
+    display: none;
+}
+
+.autocomplete-item {
+    padding: 8px 14px;
+    cursor: pointer;
+    color: white;
+    text-align: left;
+    font-size: 14px;
+}
+
+.autocomplete-item:hover {
+    background: #ff00ff;
+    color: black;
+}
+
+.guess-row {
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+    margin: 4px 0;
+}
+
+.guess-cell {
+    width: 100px;
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #555;
+    background: #1e1e1e;
+    font-size: 13px;
+    text-align: center;
+    border-radius: 6px;
+    padding: 6px;
+    box-sizing: border-box;
+    word-break: break-word;
+}
+
+.guess-cell img {
+    max-width: 100%;
+    max-height: 60px;
+    object-fit: contain;
+}
+
+.guess-cell.correct {
+    background: #1a5c1a;
+    border-color: #22bb22;
+    color: #aaffaa;
+}
+
+.guess-cell.wrong {
+    background: #5c1a1a;
+    border-color: #bb2222;
+    color: #ffaaaa;
+}
+
+.header-cell {
+    background: #2a2a2a;
+    border-color: #ff00ff;
+    color: #ff00ff;
+    font-weight: bold;
+    min-height: 40px;
+    font-size: 12px;
+}
+
+@keyframes anidle-slide-in {
+    from {
+        opacity: 0;
+        transform: translateY(-16px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#guess-list .guess-row {
+    animation: anidle-slide-in 0.25s ease;
+}
+
+#win-screen {
+    margin: 20px 0 60px;
+}
+
+#win-message {
+    color: #22bb22;
+    font-size: 22px;
+    text-shadow: 0 0 10px #22bb22;
+    margin-bottom: 12px;
 }

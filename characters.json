@@ -1,4 +1,764 @@
-[
+﻿[
+  {
+    "name": "Aki Adagaki",
+    "anime": "Masamune-kun's Revenge",
+    "age": 16,
+    "gender": "Female",
+    "height": 161,
+    "image": "assets/images/akiadagaki.png"
+  },
+  {
+    "name": "Albedo",
+    "anime": "Overlord",
+    "age": 25,
+    "gender": "Female",
+    "height": 165,
+    "image": "assets/images/albedo.png"
+  },
+  {
+    "name": "Alpha",
+    "anime": "The Eminence in Shadow",
+    "age": 21,
+    "gender": "Female",
+    "height": 165,
+    "image": "assets/images/alpha.png"
+  },
+  {
+    "name": "Alya Kujou",
+    "anime": "Alya Sometimes Hides Her Feelings in Russian",
+    "age": 16,
+    "gender": "Female",
+    "height": 163,
+    "image": "assets/images/alyakujou.png"
+  },
+  {
+    "name": "Astolfo",
+    "anime": "Fate/Apocrypha",
+    "age": 17,
+    "gender": "Male",
+    "height": 164,
+    "image": "assets/images/astolfo.png"
+  },
+  {
+    "name": "Asuka Langley Soryu",
+    "anime": "Neon Genesis Evangelion",
+    "age": 14,
+    "gender": "Female",
+    "height": 157,
+    "image": "assets/images/Asuka_Langley_Soryu.PNG"
+  },
+  {
+    "name": "Asuna Yuuki",
+    "anime": "Sword Art Online",
+    "age": 17,
+    "gender": "Female",
+    "height": 168,
+    "image": "assets/images/asunayuuki.png"
+  },
+  {
+    "name": "Ayame Moriya",
+    "anime": "Blue Box",
+    "age": 17,
+    "gender": "Female",
+    "height": 160,
+    "image": "assets/images/Ayame.png"
+  },
+  {
+    "name": "Ayano Kimishima",
+    "anime": "Alya Sometimes Hides Her Feelings in Russian",
+    "age": 15,
+    "gender": "Female",
+    "height": 155,
+    "image": "assets/images/ayano.png"
+  },
+  {
+    "name": "Ryuji Ayukawa",
+    "anime": "Blue Period",
+    "age": 16,
+    "gender": "Male",
+    "height": 175,
+    "image": "assets/images/ayukawa.png"
+  },
+  {
+    "name": "Beatrice",
+    "anime": "Re:Zero",
+    "age": 400,
+    "gender": "Female",
+    "height": 140,
+    "image": "assets/images/beatrice.png"
+  },
+  {
+    "name": "Beatrix Amerhauser",
+    "anime": "Zom100",
+    "age": 21,
+    "gender": "Female",
+    "height": 172,
+    "image": "assets/images/beatrix.jpg"
+  },
+  {
+    "name": "Biggie Cheese",
+    "anime": "Barnyard",
+    "age": 3,
+    "gender": "Male",
+    "height": 45,
+    "image": "assets/images/biggiecheese.png"
+  },
+  {
+    "name": "Big Mom",
+    "anime": "One Piece",
+    "age": 68,
+    "gender": "Female",
+    "height": 880,
+    "image": "assets/images/bigmom.png"
+  },
+  {
+    "name": "Blake Belladonna",
+    "anime": "RWBY",
+    "age": 17,
+    "gender": "Female",
+    "height": 169,
+    "image": "assets/images/blakeBelladonna.jpg"
+  },
+  {
+    "name": "Bridget",
+    "anime": "Guilty Gear",
+    "age": 17,
+    "gender": "Female",
+    "height": 157,
+    "image": "assets/images/bridget.png"
+  },
+  {
+    "name": "Burnice",
+    "anime": "Zenless Zone Zero",
+    "age": 26,
+    "gender": "Female",
+    "height": 163,
+    "image": "assets/images/burnice.png"
+  },
+  {
+    "name": "Canari",
+    "anime": "Pokemon",
+    "age": 19,
+    "gender": "Female",
+    "height": 168,
+    "image": "assets/images/canari.png"
+  },
+  {
+    "name": "Chelsea",
+    "anime": "Akame ga Kill",
+    "age": 17,
+    "gender": "Female",
+    "height": 165,
+    "image": "assets/images/chelsea.png"
+  },
+  {
+    "name": "Chika Fujiwara",
+    "anime": "Kaguya-sama: Love is War",
+    "age": 16,
+    "gender": "Female",
+    "height": 154,
+    "image": "assets/images/chika.png"
+  },
+  {
+    "name": "Chinatsu Kano",
+    "anime": "Blue Box",
+    "age": 18,
+    "gender": "Female",
+    "height": 162,
+    "image": "assets/images/chinatsu.png"
+  },
+  {
+    "name": "Cynthia",
+    "anime": "Pokemon",
+    "age": 33,
+    "gender": "Female",
+    "height": 168,
+    "image": "assets/images/cynthia.png"
+  },
+  {
+    "name": "Nico Robin",
+    "anime": "One Piece",
+    "age": 30,
+    "gender": "Female",
+    "height": 188,
+    "image": "assets/images/nicorobin.png"
+  },
+  {
+    "name": "Darkness",
+    "anime": "KonoSuba",
+    "age": 18,
+    "gender": "Female",
+    "height": 165,
+    "image": "assets/images/darkness.png"
+  },
+  {
+    "name": "Delta",
+    "anime": "The Eminence in Shadow",
+    "age": 15,
+    "gender": "Female",
+    "height": 170,
+    "image": "assets/images/delta.png"
+  },
+  {
+    "name": "Emilia",
+    "anime": "Re:Zero",
+    "age": 115,
+    "gender": "Female",
+    "height": 164,
+    "image": "assets/images/emilia.png"
+  },
+  {
+    "name": "Enigmara",
+    "anime": "Pokemon",
+    "age": 20,
+    "gender": "Female",
+    "height": 150,
+    "image": "assets/images/enigmara.png"
+  },
+  {
+    "name": "Epsilon",
+    "anime": "The Eminence in Shadow",
+    "age": 17,
+    "gender": "Female",
+    "height": 163,
+    "image": "assets/images/epsilon.png"
+  },
+  {
+    "name": "Erza Scarlet",
+    "anime": "Fairy Tail",
+    "age": 19,
+    "gender": "Female",
+    "height": 171,
+    "image": "assets/images/erzascarlet.png"
+  },
+  {
+    "name": "Felix Argyle",
+    "anime": "Re:Zero",
+    "age": 19,
+    "gender": "Male",
+    "height": 164,
+    "image": "assets/images/felix.png"
+  },
+  {
+    "name": "Fern",
+    "anime": "Frieren: Beyond Journey's End",
+    "age": 16,
+    "gender": "Female",
+    "height": 159,
+    "image": "assets/images/fern.png"
+  },
+  {
+    "name": "Flamme",
+    "anime": "Frieren: Beyond Journey's End",
+    "age": 30,
+    "gender": "Female",
+    "height": 170,
+    "image": "assets/images/flamme.png"
+  },
+  {
+    "name": "Frieren",
+    "anime": "Frieren: Beyond Journey's End",
+    "age": 1000,
+    "gender": "Female",
+    "height": 158,
+    "image": "assets/images/frieren.png"
+  },
+  {
+    "name": "Fubuki",
+    "anime": "One Punch Man",
+    "age": 23,
+    "gender": "Female",
+    "height": 167,
+    "image": "assets/images/fubuki.png"
+  },
+  {
+    "name": "Gardevoir",
+    "anime": "Pokemon",
+    "age": 0,
+    "gender": "Female",
+    "height": 160,
+    "image": "assets/images/guardevoir.png"
+  },
+  {
+    "name": "Haku",
+    "anime": "Naruto",
+    "age": 16,
+    "gender": "Male",
+    "height": 165,
+    "image": "assets/images/haku.png"
+  },
+  {
+    "name": "Haru Aomi",
+    "anime": "Chitose in the Ramune Bottle",
+    "age": 17,
+    "gender": "Female",
+    "height": 142,
+    "image": "assets/images/haru.png"
+  },
+  {
+    "name": "Hatsune Miku",
+    "anime": "Vocaloid",
+    "age": 16,
+    "gender": "Female",
+    "height": 158,
+    "image": "assets/images/hatsunemiku.png"
+  },
+  {
+    "name": "Hideyoshi Kinoshita",
+    "anime": "Baka and Test",
+    "age": 16,
+    "gender": "Male",
+    "height": 171,
+    "image": "assets/images/hideyoshi.png"
+  },
+  {
+    "name": "Himari",
+    "anime": "Can a Boy-Girl-Friendship survive?",
+    "age": 16,
+    "gender": "Female",
+    "height": 160,
+    "image": "assets/images/himari.png"
+  },
+  {
+    "name": "Hinata Hyuga",
+    "anime": "Naruto",
+    "age": 16,
+    "gender": "Female",
+    "height": 163,
+    "image": "assets/images/hinatahyuga.png"
+  },
+  {
+    "name": "Historia Reiss",
+    "anime": "Attack on Titan",
+    "age": 15,
+    "gender": "Female",
+    "height": 154,
+    "image": "assets/images/historia.png"
+  },
+  {
+    "name": "Holo",
+    "anime": "Spice and Wolf",
+    "age": 600,
+    "gender": "Female",
+    "height": 165,
+    "image": "assets/images/holo.png"
+  },
+  {
+    "name": "Hori",
+    "anime": "Horimiya",
+    "age": 16,
+    "gender": "Female",
+    "height": 158,
+    "image": "assets/images/hori.png"
+  },
+  {
+    "name": "Ichika Nakano",
+    "anime": "The Quintessential Quintuplets",
+    "age": 17,
+    "gender": "Female",
+    "height": 164,
+    "image": "assets/images/ichika.jpg"
+  },
+  {
+    "name": "Ino Yamanaka",
+    "anime": "Naruto",
+    "age": 16,
+    "gender": "Female",
+    "height": 163,
+    "image": "assets/images/ino.png"
+  },
+  {
+    "name": "Iris",
+    "anime": "Fire Force",
+    "age": 16,
+    "gender": "Female",
+    "height": 158,
+    "image": "assets/images/iris.jpg"
+  },
+  {
+    "name": "Itsuki Nakano",
+    "anime": "The Quintessential Quintuplets",
+    "age": 17,
+    "gender": "Female",
+    "height": 164,
+    "image": "assets/images/itsuki.jpg"
+  },
+  {
+    "name": "Kaguya Shinomiya",
+    "anime": "Kaguya-sama: Love is War",
+    "age": 17,
+    "gender": "Female",
+    "height": 158,
+    "image": "assets/images/Kaguya.png"
+  },
+  {
+    "name": "Kana Arima",
+    "anime": "Oshi no Ko",
+    "age": 15,
+    "gender": "Female",
+    "height": 151,
+    "image": "assets/images/Kana.png"
+  },
+  {
+    "name": "Karane Inda",
+    "anime": "100 Girlfriends Who Really, Really, Really, Really, Really Love You",
+    "age": 17,
+    "gender": "Female",
+    "height": 160,
+    "image": "assets/images/karaneinda.png"
+  },
+  {
+    "name": "Kasane Teto",
+    "anime": "UTAU",
+    "age": 31,
+    "gender": "Female",
+    "height": 155,
+    "image": "assets/images/kasaneTeto.png"
+  },
+  {
+    "name": "Kasumi Miwa",
+    "anime": "Jujutsu Kaisen",
+    "age": 16,
+    "gender": "Female",
+    "height": 160,
+    "image": "assets/images/kasumi.png"
+  },
+  {
+    "name": "Kei Karuizawa",
+    "anime": "Classroom of the Elite",
+    "age": 16,
+    "gender": "Female",
+    "height": 156,
+    "image": "assets/images/keikaruizawa.png"
+  },
+  {
+    "name": "Kirara Hoshi",
+    "anime": "Jujutsu Kaisen",
+    "age": 18,
+    "gender": "Female",
+    "height": 158,
+    "image": "assets/images/kirara.png"
+  },
+  {
+    "name": "Kohaku",
+    "anime": "Dr. Stone",
+    "age": 16,
+    "gender": "Female",
+    "height": 167,
+    "image": "assets/images/kohakuStone.png"
+  },
+  {
+    "name": "Kuina Sazanami",
+    "anime": "Tougen Anki",
+    "age": 16,
+    "gender": "Female",
+    "height": 160,
+    "image": "assets/images/kuina.png"
+  },
+  {
+    "name": "Kurisu Makise",
+    "anime": "Steins;Gate",
+    "age": 18,
+    "gender": "Female",
+    "height": 160,
+    "image": "assets/images/kurisu.png"
+  },
+  {
+    "name": "Leafa",
+    "anime": "Sword Art Online",
+    "age": 16,
+    "gender": "Female",
+    "height": 167,
+    "image": "assets/images/leafa.png"
+  },
+  {
+    "name": "Leone",
+    "anime": "Akame ga Kill",
+    "age": 23,
+    "gender": "Female",
+    "height": 170,
+    "image": "assets/images/leone.png"
+  },
+  {
+    "name": "Kanne Lawine",
+    "anime": "Frieren: Beyond Journey's End",
+    "age": 16,
+    "gender": "Female",
+    "height": 165,
+    "image": "assets/images/les.png"
+  },
+  {
+    "name": "Lucky Cyan",
+    "anime": "To Be Hero X",
+    "age": 17,
+    "gender": "Female",
+    "height": 160,
+    "image": "assets/images/luckycyan.png"
+  },
+  {
+    "name": "Lucoa",
+    "anime": "Miss Kobayashi's Dragon Maid",
+    "age": 26,
+    "gender": "Female",
+    "height": 180,
+    "image": "assets/images/lucoa.png"
+  },
+  {
+    "name": "Lucy",
+    "anime": "Cyber Punk: Edgerunners",
+    "age": 20,
+    "gender": "Female",
+    "height": 173,
+    "image": "assets/images/lucy.png"
+  },
+  {
+    "name": "Lucy Heartfilia",
+    "anime": "Fairy Tail",
+    "age": 17,
+    "gender": "Female",
+    "height": 165,
+    "image": "assets/images/lucyft.png"
+  },
+  {
+    "name": "Mai Sakurajima",
+    "anime": "Rascal Does Not Dream of Bunny Girl Senpai",
+    "age": 17,
+    "gender": "Female",
+    "height": 164,
+    "image": "assets/images/maisakurajima.png"
+  },
+  {
+    "name": "Makima",
+    "anime": "Chainsaw Man",
+    "age": 24,
+    "gender": "Female",
+    "height": 173,
+    "image": "assets/images/makima.png"
+  },
+  {
+    "name": "Maomao",
+    "anime": "The Apothecary Diaries",
+    "age": 17,
+    "gender": "Female",
+    "height": 152,
+    "image": "assets/images/maomao.png"
+  },
+  {
+    "name": "Marin Kitagawa",
+    "anime": "My Dress-Up Darling",
+    "age": 15,
+    "gender": "Female",
+    "height": 165,
+    "image": "assets/images/marinkitagawa.png"
+  },
+  {
+    "name": "Maruzensky",
+    "anime": "Uma Musume",
+    "age": 52,
+    "gender": "Female",
+    "height": 164,
+    "image": "assets/images/maruzensky.png"
+  },
+  {
+    "name": "Masha Kujo",
+    "anime": "Alya Sometimes Hides Her Feelings in Russian",
+    "age": 17,
+    "gender": "Female",
+    "height": 160,
+    "image": "assets/images/masha.png"
+  },
+  {
+    "name": "Matiere",
+    "anime": "Pokemon",
+    "age": 30,
+    "gender": "Female",
+    "height": 173,
+    "image": "assets/images/matiere.jpg"
+  },
+  {
+    "name": "Mavuika",
+    "anime": "Genshin Impact",
+    "age": 26,
+    "gender": "Female",
+    "height": 173,
+    "image": "assets/images/mavuika.png"
+  },
+  {
+    "name": "Merlin",
+    "anime": "The Seven Deadly Sins",
+    "age": 30,
+    "gender": "Female",
+    "height": 177,
+    "image": "assets/images/merlin.png"
+  },
+  {
+    "name": "Mikasa Ackerman",
+    "anime": "Attack on Titan",
+    "age": 15,
+    "gender": "Female",
+    "height": 170,
+    "image": "assets/images/mikasa.png"
+  },
+  {
+    "name": "Miko Yotsuya",
+    "anime": "Mieruko-chan",
+    "age": 16,
+    "gender": "Female",
+    "height": 160,
+    "image": "assets/images/miko.png"
+  },
+  {
+    "name": "Miku Nakano",
+    "anime": "The Quintessential Quintuplets",
+    "age": 17,
+    "gender": "Female",
+    "height": 164,
+    "image": "assets/images/mikunakano.png"
+  },
+  {
+    "name": "Mirko",
+    "anime": "My Hero Academia",
+    "age": 27,
+    "gender": "Female",
+    "height": 159,
+    "image": "assets/images/mirko.png"
+  },
+  {
+    "name": "Misa Amane",
+    "anime": "Death Note",
+    "age": 19,
+    "gender": "Female",
+    "height": 152,
+    "image": "assets/images/misa.jpg"
+  },
+  {
+    "name": "Misato Katsuragi",
+    "anime": "Neon Genesis Evangelion",
+    "age": 29,
+    "gender": "Female",
+    "height": 163,
+    "image": "assets/images/mistao.png"
+  },
+  {
+    "name": "Momo Ayase",
+    "anime": "Dandadan",
+    "age": 17,
+    "gender": "Female",
+    "height": 162,
+    "image": "assets/images/momo.png"
+  },
+  {
+    "name": "Mona",
+    "anime": "Genshin Impact",
+    "age": 19,
+    "gender": "Female",
+    "height": 160,
+    "image": "assets/images/mona.png"
+  },
+  {
+    "name": "Mt. Lady",
+    "anime": "My Hero Academia",
+    "age": 23,
+    "gender": "Female",
+    "height": 162,
+    "image": "assets/images/mtlady.png"
+  },
+  {
+    "name": "Nagisa",
+    "anime": "Classroom of the Elite",
+    "age": 15,
+    "gender": "Male",
+    "height": 169,
+    "image": "assets/images/nagisa.png"
+  },
+  {
+    "name": "Najimi Osana",
+    "anime": "Komi Can't Communicate",
+    "age": 16,
+    "gender": "Male",
+    "height": 168,
+    "image": "assets/images/najimi.jpg"
+  },
+  {
+    "name": "Nami",
+    "anime": "One Piece",
+    "age": 20,
+    "gender": "Female",
+    "height": 170,
+    "image": "assets/images/nami.png"
+  },
+  {
+    "name": "Nanase",
+    "anime": "Chitose in the Ramune Bottle",
+    "age": 16,
+    "gender": "Female",
+    "height": 158,
+    "image": "assets/images/nanase.png"
+  },
+  {
+    "name": "Nazuna Nanakusa",
+    "anime": "Call of the Night",
+    "age": 39,
+    "gender": "Female",
+    "height": 158,
+    "image": "assets/images/nazuna.png"
+  },
+  {
+    "name": "Nino Nakano",
+    "anime": "The Quintessential Quintuplets",
+    "age": 17,
+    "gender": "Female",
+    "height": 164,
+    "image": "assets/images/ninonakano.png"
+  },
+  {
+    "name": "Nobara Kugisaki",
+    "anime": "Jujutsu Kaisen",
+    "age": 16,
+    "gender": "Female",
+    "height": 160,
+    "image": "assets/images/nobara.png"
+  },
+  {
+    "name": "Noreason",
+    "anime": "Uma Musume",
+    "age": 18,
+    "gender": "Female",
+    "height": 160,
+    "image": "assets/images/noreason.png"
+  },
+  {
+    "name": "Nowa Sugaya",
+    "anime": "My Dress-Up Darling",
+    "age": 17,
+    "gender": "Female",
+    "height": 158,
+    "image": "assets/images/nowa.png"
+  },
+  {
+    "name": "Osaragi",
+    "anime": "Sakamoto Days",
+    "age": 21,
+    "gender": "Female",
+    "height": 175,
+    "image": "assets/images/osaragi.png"
+  },
+  {
+    "name": "Ouka Shiunji",
+    "anime": "Children of the Shiunji Family",
+    "age": 16,
+    "gender": "Female",
+    "height": 162,
+    "image": "assets/images/ouka.png"
+  },
+  {
+    "name": "Pencilgon",
+    "anime": "Shangri-La Frontier",
+    "age": 24,
+    "gender": "Female",
+    "height": 165,
+    "image": "assets/images/pencilgon.png"
+  },
   {
     "name": "Power",
     "anime": "Chainsaw Man",
@@ -7,22 +767,24 @@
     "height": 169,
     "image": "assets/images/Power.png"
   },
-
   {
-    "name": "Makima",
-    "anime": "Chainsaw Man",
-    "age": 24,
+    "name": "Queen",
+    "anime": "To Be Hero X",
+    "age": 27,
     "gender": "Female",
-    "height": 173,
-    "image": "assets/images/Makima.png"
+    "height": 180,
+    "image": "assets/images/queen.png"
   },
 
-  {
-    "name": "Gojo",
-    "anime": "Jujutsu Kaisen",
-    "age": 28,
-    "gender": "Male",
-    "height": 190,
-    "image": "assets/images/Gojo.png"
-  }
+  { "name": "Yuki Yukinoshita",    "anime": "My Teen Romantic Comedy SNAFU",                                       "age": 16,    "gender": "Female", "height": 162,    "haircolor": "Black",  "image": "assets/images/yukiyukinoshita.png" },
+  { "name": "Iroha Isshiki",        "anime": "My Teen Romantic Comedy SNAFU",                                       "age": 15,    "gender": "Female", "height": 159,    "haircolor": "Brown",  "image": "assets/images/irohaisshiki.png" },
+  { "name": "Megumin",              "anime": "KonoSuba",                                                            "age": 14,    "gender": "Female", "height": 155,    "haircolor": "Brown",  "image": "assets/images/megumin.png" },
+  { "name": "Kobeni Higashiyama",   "anime": "Chainsaw Man",                                                        "age": 16,    "gender": "Female", "height": 157,    "haircolor": "Brown",  "image": "assets/images/kobeni.png" },
+  { "name": "Hina Chono",           "anime": "Blue Box",                                                            "age": 17,    "gender": "Female", "height": 170,    "haircolor": "Brown",  "image": "assets/images/hinachono.png" },
+  { "name": "Chitose Amane",        "anime": "My Dress-Up Darling",                                                 "age": "TODO","gender": "Female", "height": "TODO", "haircolor": "TODO",   "image": "assets/images/chitoseamane.png" },
+  { "name": "Shion",                "anime": "That Time I Got Reincarnated as a Slime",                             "age": "TODO","gender": "Female", "height": 175,    "haircolor": "Purple", "image": "assets/images/shion.png" },
+  { "name": "C.C.",                 "anime": "Code Geass",                                                          "age": "TODO","gender": "Female", "height": 162,    "haircolor": "Green",  "image": "assets/images/cc.png" },
+  { "name": "Miko Iino",            "anime": "Kaguya-sama: Love is War",                                            "age": 15,    "gender": "Female", "height": 154,    "haircolor": "Brown",  "image": "assets/images/mikoiino.png" },
+  { "name": "Umi Asanagi",          "anime": "I Made Friends with the Second-Prettiest Girl in Class",              "age": 16,    "gender": "Female", "height": "TODO", "haircolor": "TODO",   "image": "assets/images/umiasanagi.jpg" },
+  { "name": "Yuu Amami",            "anime": "I Made Friends with the Second-Prettiest Girl in Class",              "age": 16,    "gender": "Female", "height": "TODO", "haircolor": "TODO",   "image": "assets/images/yuuamami.png" }
 ]
