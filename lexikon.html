@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Lexikon – Ani Ranker</title>
+    <link rel="icon" type="image/png" href="assets/icon.png">
+    <link rel="stylesheet" href="style.css">
+    <style>html { zoom: 1.25; }</style>
+</head>
+<body>
+
+<h1>Character Lexikon</h1>
+<p id="lexikon-count" style="color:#888; text-align:center; margin-top:-10px; margin-bottom:20px;"></p>
+
+<div id="lexikon-grid"></div>
+
+<div id="lexikon-modal" class="modal-overlay" style="display:none;">
+    <div class="modal-box">
+        <button class="modal-close" onclick="closeModal()">&#10005;</button>
+        <img id="modal-img" src="" alt="">
+        <h2 id="modal-name"></h2>
+        <table id="modal-table"></table>
+    </div>
+</div>
+
+<a href="index.html"><button class="back-btn">Back</button></a>
+
+<script src="characters.js"></script>
+<script src="lexikon.js"></script>
+</body>
+</html>

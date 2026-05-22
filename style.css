@@ -241,6 +241,138 @@ button {
     padding: 10px;
 }
 
+/* ========== LEXIKON ========== */
+
+#lexikon-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+    padding: 10px 20px 80px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.lexikon-card {
+    background: #1e1e1e;
+    border: 2px solid #333;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 110px;
+    text-align: center;
+    padding: 8px;
+    transition: border-color 0.2s, transform 0.15s;
+    overflow: hidden;
+}
+
+.lexikon-card:hover {
+    border-color: #ff00ff;
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #ff00ff55;
+}
+
+.lexikon-card img {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 6px;
+    display: block;
+    margin: 0 auto;
+}
+
+.lexikon-name {
+    display: block;
+    font-size: 11px;
+    color: #ccc;
+    margin-top: 6px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Modal */
+.modal-overlay {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.modal-box {
+    background: #1e1e1e;
+    border: 2px solid #ff00ff;
+    border-radius: 12px;
+    padding: 28px 24px 24px;
+    max-width: 360px;
+    width: 90%;
+    position: relative;
+    text-align: center;
+    box-shadow: 0 0 30px #ff00ff44;
+}
+
+.modal-close {
+    position: absolute;
+    top: 10px; right: 14px;
+    background: none;
+    border: none;
+    color: #888;
+    font-size: 20px;
+    cursor: pointer;
+    line-height: 1;
+    padding: 0;
+}
+
+.modal-close:hover {
+    color: #ff00ff;
+}
+
+.modal-box img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid #555;
+    margin-bottom: 12px;
+}
+
+.modal-box h2 {
+    color: #ff00ff;
+    margin: 0 0 14px;
+    font-size: 20px;
+}
+
+#modal-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+#modal-table tr {
+    border-bottom: 1px solid #2a2a2a;
+}
+
+#modal-table tr:last-child {
+    border-bottom: none;
+}
+
+.modal-key {
+    color: #888;
+    padding: 6px 10px 6px 0;
+    font-size: 13px;
+    white-space: nowrap;
+    vertical-align: top;
+}
+
+.modal-val {
+    color: #fff;
+    padding: 6px 0;
+    font-size: 13px;
+}
+
 
 /* Footer Links */
 .footer-links {

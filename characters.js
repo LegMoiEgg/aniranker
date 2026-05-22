@@ -1175,7 +1175,7 @@
         "age":  30,
         "gender":  "Female",
         "height":  188,
-        "image":  "assets/images/Screenshot 2026-02-23 080719.png",
+        "image":  "assets/images/nicorobin.png",
         "haircolor":  "Black",
         "animegenre":  "Action / Adventure / Comedy"
     },
