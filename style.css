@@ -113,9 +113,6 @@ button:disabled {
     box-shadow: 0 0 15px #ff00ff;
 }
 
-html {
-    zoom: 1.5; /* 150% */
-}
 
 
 .screen {
