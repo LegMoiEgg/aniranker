@@ -150,12 +150,31 @@ const images = [
     "assets/images/mikoiino.png",
     "assets/images/shion.png",
     "assets/images/umiasanagi.jpg",
+    "assets/images/aihoshino.png",
+    "assets/images/akaneousaki.png",
+    "assets/images/cpkIroha.png",
+    "assets/images/cpkKaguya.png",
+    "assets/images/cpkNoi.png",
+    "assets/images/cpkYachiyo.png",
+    "assets/images/elfariaalbisserfort.png",
+    "assets/images/erinanakiri.png",
+    "assets/images/hikarihoshimiya.png",
+    "assets/images/horikitasuzune.png",
+    "assets/images/koyukihikawa.png",
+    "assets/images/mikiazumi.png",
+    "assets/images/miorimotomiya.png",
+    "assets/images/mikusakura.png",
+    "assets/images/poemukohinata.png",
+    "assets/images/rubyhoshino.png",
+    "assets/images/yamatonadeshiko.png",
+    "assets/images/yuroichishihouin.png",
 ];
 
 let pool = [];
 let currentIndex = 0;
 let currentImage = null;
 let gameRunning = false;
+let slotImageSrcs = [null, null, null, null, null];
 
 const slotsDiv = document.getElementById("slots");
 const imageContainer = document.getElementById("image-container");
@@ -184,6 +203,23 @@ for (let i = 0; i < 5; i++) {
     slots.push({ box, btn });
 }
 
+// State management
+function saveClassicState() {
+    try {
+        localStorage.setItem('classic_state', JSON.stringify({
+            pool: pool,
+            currentIndex: currentIndex,
+            slotImageSrcs: slotImageSrcs,
+            slotDisabled: slots.map(s => s.btn.disabled),
+            gameRunning: gameRunning,
+        }));
+    } catch (e) {}
+}
+
+function clearClassicState() {
+    try { localStorage.removeItem('classic_state'); } catch (e) {}
+}
+
 // Start Button
 startBtn.addEventListener("click", () => {
     if (!gameRunning) {
@@ -196,6 +232,7 @@ startBtn.addEventListener("click", () => {
 function startGame() {
     pool = [...images].sort(() => Math.random() - 0.5);
     currentIndex = 0;
+    slotImageSrcs = [null, null, null, null, null];
     gameRunning = true;
 
     slots.forEach(s => {
@@ -207,6 +244,7 @@ function startGame() {
     startBtn.disabled = true;
 
     spawn();
+    saveClassicState();
 }
 
 function spawn() {
@@ -224,6 +262,7 @@ function spawn() {
 function placeImage(index) {
     const slot = slots[index];
 
+    slotImageSrcs[index] = pool[currentIndex - 1];
     slot.box.innerHTML = "";
     slot.box.appendChild(currentImage);
     slot.btn.disabled = true;
@@ -235,12 +274,12 @@ function placeImage(index) {
     } else {
         spawn();
     }
+    saveClassicState();
 }
 
 function endGame() {
     imageContainer.innerHTML = "";
     gameRunning = false;
-
     startBtn.disabled = false;
 }
 
@@ -252,6 +291,44 @@ function resetGame() {
         s.btn.disabled = true;
     });
 
+    slotImageSrcs = [null, null, null, null, null];
     startBtn.textContent = "Start";
     gameRunning = false;
+    clearClassicState();
 }
+
+// Restore state on page load
+(function () {
+    try {
+        const raw = localStorage.getItem('classic_state');
+        if (!raw) return;
+        const state = JSON.parse(raw);
+        if (!state.pool || !state.pool.length) return;
+
+        pool = state.pool;
+        currentIndex = state.currentIndex;
+        slotImageSrcs = state.slotImageSrcs || [null, null, null, null, null];
+        gameRunning = state.gameRunning;
+
+        slots.forEach((s, i) => {
+            s.btn.disabled = state.slotDisabled[i];
+            if (slotImageSrcs[i]) {
+                const img = document.createElement('img');
+                img.src = slotImageSrcs[i];
+                s.box.innerHTML = '';
+                s.box.appendChild(img);
+            }
+        });
+
+        if (gameRunning && currentIndex > 0) {
+            const img = document.createElement('img');
+            img.src = pool[currentIndex - 1];
+            currentImage = img;
+            imageContainer.innerHTML = '';
+            imageContainer.appendChild(img);
+        }
+
+        startBtn.textContent = 'Restart';
+        startBtn.disabled = gameRunning;
+    } catch (e) {}
+})();

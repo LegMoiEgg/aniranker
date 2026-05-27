@@ -1,9 +1,11 @@
-ANIDLE – Charakterliste (151 Charaktere)
+ANIDLE – Charakterliste (169 Charaktere)
 =========================================
 Stand: Mai 2026
 
 Name                              | Anime
 ----------------------------------|--------------------------------------------------
+Ai Hoshino                        | Oshi no Ko
+Akane Ousaki                      | Akane Banashi
 Aki Adagaki                       | Masamune-kun's Revenge
 Albedo                            | Overlord
 Alpha                             | The Eminence in Shadow
@@ -13,11 +15,10 @@ Asuka Langley Soryu               | Neon Genesis Evangelion
 Asuna Yuuki                       | Sword Art Online
 Ayame Moriya                      | Blue Box
 Ayano Kimishima                   | Alya Sometimes Hides Her Feelings in Russian
-Ryuji Ayukawa                     | Blue Period
 Beatrice                          | Re:Zero
 Beatrix Amerhauser                | Zom100
-Biggie Cheese                     | Barnyard
 Big Mom                           | One Piece
+Biggie Cheese                     | Barnyard
 Blake Belladonna                  | RWBY
 Bridget                           | Guilty Gear
 Burnice                           | Zenless Zone Zero
@@ -31,9 +32,11 @@ Chitose Amane                     | My Dress-Up Darling
 Cynthia                           | Pokemon
 Darkness                          | KonoSuba
 Delta                             | The Eminence in Shadow
+Elfaria Albis Serfort             | Wistoria: Wand and Sword
 Emilia                            | Re:Zero
 Enigmara                          | Pokemon
 Epsilon                           | The Eminence in Shadow
+Erina Nakiri                      | Food Wars!: Shokugeki no Soma
 Erza Scarlet                      | Fairy Tail
 Felix Argyle                      | Re:Zero
 Fern                              | Frieren: Beyond Journey's End
@@ -45,17 +48,21 @@ Haku                              | Naruto
 Haru Aomi                         | Chitose in the Ramune Bottle
 Hatsune Miku                      | Vocaloid
 Hideyoshi Kinoshita               | Baka and Test
+Hikari Hoshimiya                  | Haibaras Teenage New Game+
 Himari                            | Can a Boy-Girl-Friendship survive?
 Hina Chono                        | Blue Box
 Hinata Hyuga                      | Naruto
 Historia Reiss                    | Attack on Titan
 Holo                              | Spice and Wolf
+Horikita Suzune                   | Classroom of the Elite
 Ichika Nakano                     | The Quintessential Quintuplets
 Ino Yamanaka                      | Naruto
-Iroha Isshiki                     | My Teen Romantic Comedy SNAFU
 Iris                              | Fire Force
+Iroha Isshiki                     | My Teen Romantic Comedy SNAFU
+Iroha Sakayori                    | Cosmic Princess Kaguya
 Itsuki Nakano                     | The Quintessential Quintuplets
 Kaguya Shinomiya                  | Kaguya-sama: Love is War
+Kaguya-Hime                       | Cosmic Princess Kaguya
 Kana Arima                        | Oshi no Ko
 Kanne Lawine                      | Frieren: Beyond Journey's End
 Kaoruko Waguri                    | The Fragrant Flower Blooms Within You
@@ -67,6 +74,7 @@ Kirara Hoshi                      | Jujutsu Kaisen
 Kobeni Higashiyama                | Chainsaw Man
 Kohaku                            | Dr. Stone
 Kojuro Shuri                      | Masamune-kun's Revenge
+Koyuki Hikawa                     | The Ramparts of Ice
 Kuina Sazanami                    | Tougen Anki
 Kurisu Makise                     | Steins;Gate
 Kyoko Hori                        | Horimiya
@@ -87,9 +95,12 @@ Mavuika                           | Genshin Impact
 Megumin                           | KonoSuba
 Merlin                            | The Seven Deadly Sins
 Mikasa Ackerman                   | Attack on Titan
+Miki Azumi                        | The Ramparts of Ice
 Miko Iino                         | Kaguya-sama: Love is War
 Miko Yotsuya                      | Mieruko-chan
 Miku Nakano                       | The Quintessential Quintuplets
+Miku Sakura                       | I want to end this Love-Game
+Miori Motomiya                    | Haibaras Teenage New Game+
 Mirko                             | My Hero Academia
 Misa Amane                        | Death Note
 Misato Katsuragi                  | Neon Genesis Evangelion
@@ -98,7 +109,7 @@ Miyu Suzuki                       | You and I are Polar Opposites
 Momo Ayase                        | Dandadan
 Mona                              | Genshin Impact
 Mt. Lady                          | My Hero Academia
-Nagisa                            | Classroom of the Elite
+Nagisa Shiota                     | Assassination Classroom
 Najimi Osana                      | Komi Can't Communicate
 Nami                              | One Piece
 Nanase                            | Chitose in the Ramune Bottle
@@ -107,25 +118,29 @@ Nefertari Vivi                    | One Piece
 Nico Robin                        | One Piece
 Nino Nakano                       | The Quintessential Quintuplets
 Nobara Kugisaki                   | Jujutsu Kaisen
+Noi Komazawa                      | Cosmic Princess Kaguya
 Noreason                          | Uma Musume
 Nowa Sugaya                       | My Dress-Up Darling
 Osaragi                           | Sakamoto Days
 Ouka Shiunji                      | Children of the Shiunji Family
 Pencilgon                         | Shangri-La Frontier
+Poemu Kohinata                    | The Klutzy Class Monitor and the Girl with the Short Skirt
 Power                             | Chainsaw Man
 Queen                             | To Be Hero X
 Raiha Uesugi                      | The Quintessential Quintuplets
 Rebecca                           | Cyber Punk: Edgerunners
 Rem                               | Re:Zero
-Reze                              | Chainsaw Man
 Revy                              | Black Lagoon
+Reze                              | Chainsaw Man
 Rias Gremory                      | High School DxD
 Rin Tohsaka                       | Fate/stay night
 Ritsuko Akagi                     | Neon Genesis Evangelion
 Riyo Reaper                       | Gachiakuta
 Rory Mercury                      | Gate
+Ruby Hoshino                      | Oshi no Ko
 Ruby Rose                         | RWBY
 Rukia Kuchiki                     | Bleach
+Ryuji Ayukawa                     | Blue Period
 Saber                             | Fate/stay night
 Serie                             | Frieren: Beyond Journey's End
 Shion                             | That Time I Got Reincarnated as a Slime
@@ -142,9 +157,12 @@ Umi Asanagi                       | I made friends with the second-prettiest Gir
 Uzaki Hana                        | Uzaki-chan Wants to Hang Out!
 Vladilena Milize                  | 86 Eighty-Six
 Weiss Schnee                      | RWBY
+Yachiyo Runami                    | Cosmic Princess Kaguya
 Yamato                            | One Piece
+Yamato Nadeshiko                  | The Klutzy Class Monitor and the Girl with the Short Skirt
 Yang Xiao Long                    | RWBY
 Yor Forger                        | Spy x Family
+Yoruichi Shihōin                  | Bleach
 Yotsuba Nakano                    | The Quintessential Quintuplets
 Yui Yuigahama                     | My Teen Romantic Comedy SNAFU
 Yuki Suou                         | Alya Sometimes Hides Her Feelings in Russian

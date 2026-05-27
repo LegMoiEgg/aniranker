@@ -150,18 +150,54 @@ const images = [
     "assets/images/mikoiino.png",
     "assets/images/shion.png",
     "assets/images/umiasanagi.jpg",
+    "assets/images/aihoshino.png",
+    "assets/images/akaneousaki.png",
+    "assets/images/cpkIroha.png",
+    "assets/images/cpkKaguya.png",
+    "assets/images/cpkNoi.png",
+    "assets/images/cpkYachiyo.png",
+    "assets/images/elfariaalbisserfort.png",
+    "assets/images/erinanakiri.png",
+    "assets/images/hikarihoshimiya.png",
+    "assets/images/horikitasuzune.png",
+    "assets/images/koyukihikawa.png",
+    "assets/images/mikiazumi.png",
+    "assets/images/miorimotomiya.png",
+    "assets/images/mikusakura.png",
+    "assets/images/poemukohinata.png",
+    "assets/images/rubyhoshino.png",
+    "assets/images/yamatonadeshiko.png",
+    "assets/images/yuroichishihouin.png",
 ];
 
 let choices = ["kiss","marry","kill"];
 let used = [];
+let cardImages = [];
+let cardChoices = [null, null, null];
 let gameRunning = false;
+
+// State management
+function saveKMKState() {
+    try {
+        localStorage.setItem('kmk_state', JSON.stringify({
+            cardImages: cardImages,
+            cardChoices: cardChoices,
+            used: used,
+            gameRunning: gameRunning,
+        }));
+    } catch (e) {}
+}
+
+function clearKMKState() {
+    try { localStorage.removeItem('kmk_state'); } catch (e) {}
+}
 
 const container = document.getElementById("kmk-container");
 const startBtn = document.getElementById("kmkStartBtn");
 
 const cards = document.querySelectorAll(".kmk-card");
 
-// 👉 ALLE Buttons deaktivieren beim Laden
+// Alle Buttons beim Laden deaktivieren
 document.querySelectorAll(".kmk-buttons button").forEach(b => b.disabled = true);
 
 // Button Event
@@ -173,59 +209,62 @@ startBtn.addEventListener("click", () => {
     }
 });
 
-// START
-function startKMK() {
-    used = [];
-    gameRunning = true;
-
-    const shuffled = [...images].sort(() => Math.random() - 0.5).slice(0,3);
-
+function setupCards(imgSrcs, existingChoices) {
     cards.forEach((card, index) => {
         const box = card.querySelector(".kmk-box");
         const btns = card.querySelectorAll("button");
 
-        // Bild einsetzen
         box.innerHTML = "";
         box.classList.remove("kiss", "marry", "kill");
+
         const img = document.createElement("img");
-        img.src = shuffled[index];
+        img.src = imgSrcs[index];
         box.appendChild(img);
 
-        // Buttons aktivieren
-        btns.forEach(btn => {
-            btn.disabled = false;
-
-            btn.onclick = () => {
-                const choice = btn.textContent;
-
-                if (used.includes(choice)) return;
-
-                used.push(choice);
-
-                box.classList.remove("kiss", "marry", "kill");
-                box.classList.add(choice);
-
-                // Buttons dieser Karte deaktivieren
-                btns.forEach(b => b.disabled = true);
-
-                // gleiche Buttons global deaktivieren
-                document.querySelectorAll(".kmk-buttons button").forEach(b => {
-                    if (b.textContent === choice) b.disabled = true;
-                });
-
-                if (used.length === 3) endKMK();
-            };
-        });
+        const choice = existingChoices[index];
+        if (choice) {
+            box.classList.add(choice);
+            btns.forEach(b => b.disabled = true);
+        } else {
+            btns.forEach(btn => {
+                btn.disabled = used.includes(btn.textContent);
+                btn.onclick = () => {
+                    const c = btn.textContent;
+                    if (used.includes(c)) return;
+                    used.push(c);
+                    box.classList.add(c);
+                    btns.forEach(b => b.disabled = true);
+                    document.querySelectorAll(".kmk-buttons button").forEach(b => {
+                        if (b.textContent === c) b.disabled = true;
+                    });
+                    cardChoices[index] = c;
+                    saveKMKState();
+                    if (used.length === 3) endKMK();
+                };
+            });
+        }
     });
+}
+
+// START
+function startKMK() {
+    used = [];
+    cardChoices = [null, null, null];
+    gameRunning = true;
+
+    cardImages = [...images].sort(() => Math.random() - 0.5).slice(0, 3);
+    setupCards(cardImages, cardChoices);
 
     startBtn.textContent = "Restart";
     startBtn.disabled = true;
+    saveKMKState();
 }
 
 // ENDE
 function endKMK() {
     gameRunning = false;
     startBtn.disabled = false;
+    saveKMKState();
 }
 
 // RESET
@@ -240,6 +279,30 @@ function resetKMK() {
         btns.forEach(b => b.disabled = true);
     });
 
+    cardImages = [];
+    cardChoices = [null, null, null];
+    used = [];
     startBtn.textContent = "Start";
     gameRunning = false;
+    clearKMKState();
 }
+
+// Restore state on page load
+(function () {
+    try {
+        const raw = localStorage.getItem('kmk_state');
+        if (!raw) return;
+        const state = JSON.parse(raw);
+        if (!state.cardImages || state.cardImages.length !== 3) return;
+
+        cardImages = state.cardImages;
+        cardChoices = state.cardChoices || [null, null, null];
+        used = state.used || [];
+        gameRunning = state.gameRunning;
+
+        setupCards(cardImages, cardChoices);
+
+        startBtn.textContent = 'Restart';
+        startBtn.disabled = gameRunning;
+    } catch (e) {}
+})();

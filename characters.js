@@ -1,7 +1,27 @@
-﻿const CHARACTERS_DATA = [
+const CHARACTERS_DATA = [
+    {
+        "name":  "Ai Hoshino",
+        "anime":  "Oshi no Ko",
+        "age":  16,
+        "gender":  "Female",
+        "height":  151,
+        "image":  "assets/images/aihoshino.png",
+        "haircolor":  "Purple",
+        "animegenre":  "Drama / Mystery"
+    },
+    {
+        "name":  "Akane Ousaki",
+        "anime":  "Akane Banashi",
+        "age":  18,
+        "gender":  "Female",
+        "height":  158,
+        "image":  "assets/images/akaneousaki.png",
+        "haircolor":  "Black / Pink",
+        "animegenre":  "Comedy / Shonen / Drama"
+    },
     {
         "name":  "Aki Adagaki",
-        "anime":  "Masamune-kun\u0027s Revenge",
+        "anime":  "Masamune-kun's Revenge",
         "age":  16,
         "gender":  "Female",
         "height":  161,
@@ -90,16 +110,6 @@
         "animegenre":  "Romance / Comedy / School"
     },
     {
-        "name":  "Ryuji Ayukawa",
-        "anime":  "Blue Period",
-        "age":  16,
-        "gender":  "Male",
-        "height":  175,
-        "image":  "assets/images/ayukawa.png",
-        "haircolor":  "Dark-Blonde",
-        "animegenre":  "Drama / School / Slice of Life"
-    },
-    {
         "name":  "Beatrice",
         "anime":  "Re:Zero",
         "age":  400,
@@ -120,16 +130,6 @@
         "animegenre":  "Action / Comedy / Horror"
     },
     {
-        "name":  "Biggie Cheese",
-        "anime":  "Barnyard",
-        "age":  3,
-        "gender":  "Male",
-        "height":  45,
-        "image":  "assets/images/biggiecheese.png",
-        "haircolor":  "Grey",
-        "animegenre":  "Comedy"
-    },
-    {
         "name":  "Big Mom",
         "anime":  "One Piece",
         "age":  68,
@@ -138,6 +138,16 @@
         "image":  "assets/images/bigmom.png",
         "haircolor":  "Pink",
         "animegenre":  "Action / Adventure / Comedy"
+    },
+    {
+        "name":  "Biggie Cheese",
+        "anime":  "Barnyard",
+        "age":  3,
+        "gender":  "Male",
+        "height":  45,
+        "image":  "assets/images/biggiecheese.png",
+        "haircolor":  "Grey",
+        "animegenre":  "Comedy"
     },
     {
         "name":  "Blake Belladonna",
@@ -190,6 +200,16 @@
         "animegenre":  "Adventure / Fantasy / Comedy"
     },
     {
+        "name":  "Ceasar King",
+        "anime":  "Zenless Zone Zero",
+        "age":  25,
+        "gender":  "Female",
+        "height":  176,
+        "image":  "assets/images/ceasarzzz.png",
+        "haircolor":  "Red",
+        "animegenre":  "Action / Sci-Fi"
+    },
+    {
         "name":  "Chelsea",
         "anime":  "Akame ga Kill",
         "age":  17,
@@ -240,16 +260,6 @@
         "animegenre":  "Adventure / Fantasy / Comedy"
     },
     {
-        "name":  "Ceasar King",
-        "anime":  "Zenless Zone Zero",
-        "age":  25,
-        "gender":  "Female",
-        "height":  176,
-        "image":  "assets/images/ceasarzzz.png",
-        "haircolor":  "Red",
-        "animegenre":  "Action / Sci-Fi"
-    },
-    {
         "name":  "Darkness",
         "anime":  "KonoSuba",
         "age":  18,
@@ -268,6 +278,16 @@
         "image":  "assets/images/delta.png",
         "haircolor":  "Black",
         "animegenre":  "Action / Fantasy / Isekai"
+    },
+    {
+        "name":  "Elfaria Albis Serfort",
+        "anime":  "Wistoria: Wand and Sword",
+        "age":  16,
+        "gender":  "Female",
+        "height":  163,
+        "image":  "assets/images/elfariaalbisserfort.png",
+        "haircolor":  "Blue",
+        "animegenre":  " Action / Fantasy"
     },
     {
         "name":  "Emilia",
@@ -300,6 +320,16 @@
         "animegenre":  "Action / Fantasy / Isekai"
     },
     {
+        "name":  "Erina Nakiri",
+        "anime":  "Food Wars!: Shokugeki no Soma",
+        "age":  18,
+        "gender":  "Female",
+        "height":  162,
+        "image":  "assets/images/erinanakiri.png",
+        "haircolor":  "Orange",
+        "animegenre":  "Gourmet / Ecchi"
+    },
+    {
         "name":  "Erza Scarlet",
         "anime":  "Fairy Tail",
         "age":  19,
@@ -321,7 +351,7 @@
     },
     {
         "name":  "Fern",
-        "anime":  "Frieren: Beyond Journey\u0027s End",
+        "anime":  "Frieren: Beyond Journey's End",
         "age":  16,
         "gender":  "Female",
         "height":  159,
@@ -331,7 +361,7 @@
     },
     {
         "name":  "Flamme",
-        "anime":  "Frieren: Beyond Journey\u0027s End",
+        "anime":  "Frieren: Beyond Journey's End",
         "age":  30,
         "gender":  "Female",
         "height":  170,
@@ -341,7 +371,7 @@
     },
     {
         "name":  "Frieren",
-        "anime":  "Frieren: Beyond Journey\u0027s End",
+        "anime":  "Frieren: Beyond Journey's End",
         "age":  1000,
         "gender":  "Female",
         "height":  158,
@@ -410,6 +440,16 @@
         "animegenre":  "Comedy / School"
     },
     {
+        "name":  "Hikari Hoshimiya",
+        "anime":  "Haibaras Teenage New Game+",
+        "age":  16,
+        "gender":  "Female",
+        "height":  157,
+        "image":  "assets/images/hikarihoshimiya.png",
+        "haircolor":  "Blonde",
+        "animegenre":  "Comedy / Romance"
+    },
+    {
         "name":  "Himari",
         "anime":  "Can a Boy-Girl-Friendship survive?",
         "age":  16,
@@ -460,24 +500,14 @@
         "animegenre":  "Adventure / Fantasy / Romance"
     },
     {
-        "name":  "Iroha Isshiki",
-        "anime":  "My Teen Romantic Comedy SNAFU",
+        "name":  "Horikita Suzune",
+        "anime":  "Classroom of the Elite",
         "age":  16,
         "gender":  "Female",
-        "height":  158,
-        "image":  "assets/images/irohaisshiki.png",
-        "haircolor":  "Blonde",
-        "animegenre":  "Romance / Comedy / Drama / School"
-    },
-    {
-        "name":  "Kyoko Hori",
-        "anime":  "Horimiya",
-        "age":  16,
-        "gender":  "Female",
-        "height":  158,
-        "image":  "assets/images/hori.png",
-        "haircolor":  "Brown",
-        "animegenre":  "Romance / Comedy / School / Slice of Life"
+        "height":  163,
+        "image":  "assets/images/horikitasuzune.png",
+        "haircolor":  "Black",
+        "animegenre":  "Drama / School / Mystery"
     },
     {
         "name":  "Ichika Nakano",
@@ -510,6 +540,26 @@
         "animegenre":  "Action / Fantasy / Supernatural"
     },
     {
+        "name":  "Iroha Isshiki",
+        "anime":  "My Teen Romantic Comedy SNAFU",
+        "age":  16,
+        "gender":  "Female",
+        "height":  158,
+        "image":  "assets/images/irohaisshiki.png",
+        "haircolor":  "Blonde",
+        "animegenre":  "Romance / Comedy / Drama / School"
+    },
+    {
+        "name":  "Iroha Sakayori",
+        "anime":  "Cosmic Princess Kaguya",
+        "age":  16,
+        "gender":  "Female",
+        "height":  156,
+        "image":  "assets/images/cpkIroha.png",
+        "haircolor":  "Purple",
+        "animegenre":  "Action / Sci-Fi / Supernatural"
+    },
+    {
         "name":  "Itsuki Nakano",
         "anime":  "The Quintessential Quintuplets",
         "age":  17,
@@ -530,6 +580,16 @@
         "animegenre":  "Romance / Comedy / School"
     },
     {
+        "name":  "Kaguya-Hime",
+        "anime":  "Cosmic Princess Kaguya",
+        "age":  2000,
+        "gender":  "Female",
+        "height":  156,
+        "image":  "assets/images/cpkKaguya.png",
+        "haircolor":  "Blonde",
+        "animegenre":  "Action / Sci-Fi / Supernatural"
+    },
+    {
         "name":  "Kana Arima",
         "anime":  "Oshi no Ko",
         "age":  15,
@@ -538,6 +598,26 @@
         "image":  "assets/images/Kana.png",
         "haircolor":  "Red",
         "animegenre":  "Drama / Mystery"
+    },
+    {
+        "name":  "Kanne Lawine",
+        "anime":  "Frieren: Beyond Journey's End",
+        "age":  16,
+        "gender":  "Female",
+        "height":  165,
+        "image":  "assets/images/les.png",
+        "haircolor":  "Orange / Silver",
+        "animegenre":  "Adventure / Fantasy / Drama"
+    },
+    {
+        "name":  "Kaoruko Waguri",
+        "anime":  "The Fragrant Flower Blooms Within You",
+        "age":  16,
+        "gender":  "Female",
+        "height":  144,
+        "image":  "assets/images/waguri.png",
+        "haircolor":  "Black",
+        "animegenre":  "Romance / School / Slice of Life"
     },
     {
         "name":  "Karane Inda",
@@ -590,6 +670,16 @@
         "animegenre":  "Action / Supernatural / School"
     },
     {
+        "name":  "Kobeni Higashiyama",
+        "anime":  "Chainsaw Man",
+        "age":  20,
+        "gender":  "Female",
+        "height":  166,
+        "image":  "assets/images/kobeni.png",
+        "haircolor":  "Blonde",
+        "animegenre":  "Action / Horror / Supernatural"
+    },
+    {
         "name":  "Kohaku",
         "anime":  "Dr. Stone",
         "age":  16,
@@ -600,14 +690,24 @@
         "animegenre":  "Action / Adventure / Sci-Fi"
     },
     {
-        "name":  "Kobeni Higashiyama",
-        "anime":  "Chainsaw Man",
-        "age":  20,
+        "name":  "Kojuro Shuri",
+        "anime":  "Masamune-kun's Revenge",
+        "age":  16,
+        "gender":  "Male",
+        "height":  168,
+        "image":  "assets/images/shuri.png",
+        "haircolor":  "Dark-Blonde",
+        "animegenre":  "Romance / Comedy / School"
+    },
+    {
+        "name":  "Koyuki Hikawa",
+        "anime":  "The Ramparts of Ice",
+        "age":  16,
         "gender":  "Female",
-        "height":  166,
-        "image":  "assets/images/kobeni.png",
+        "height":  152,
+        "image":  "assets/images/koyukihikawa.png",
         "haircolor":  "Blonde",
-        "animegenre":  "Action / Horror / Supernatural"
+        "animegenre":  "Drama / Romance"
     },
     {
         "name":  "Kuina Sazanami",
@@ -630,6 +730,16 @@
         "animegenre":  "Sci-Fi / Mystery / Thriller / Drama"
     },
     {
+        "name":  "Kyoko Hori",
+        "anime":  "Horimiya",
+        "age":  16,
+        "gender":  "Female",
+        "height":  158,
+        "image":  "assets/images/hori.png",
+        "haircolor":  "Brown",
+        "animegenre":  "Romance / Comedy / School / Slice of Life"
+    },
+    {
         "name":  "Leafa",
         "anime":  "Sword Art Online",
         "age":  16,
@@ -650,16 +760,6 @@
         "animegenre":  "Action / Fantasy / Drama"
     },
     {
-        "name":  "Kanne Lawine",
-        "anime":  "Frieren: Beyond Journey\u0027s End",
-        "age":  16,
-        "gender":  "Female",
-        "height":  165,
-        "image":  "assets/images/les.png",
-        "haircolor":  "Orange / Silver",
-        "animegenre":  "Adventure / Fantasy / Drama"
-    },
-    {
         "name":  "Lucky Cyan",
         "anime":  "To Be Hero X",
         "age":  17,
@@ -671,7 +771,7 @@
     },
     {
         "name":  "Lucoa",
-        "anime":  "Miss Kobayashi\u0027s Dragon Maid",
+        "anime":  "Miss Kobayashi's Dragon Maid",
         "age":  26,
         "gender":  "Female",
         "height":  180,
@@ -810,6 +910,16 @@
         "animegenre":  "Action / Drama / Thriller / Fantasy"
     },
     {
+        "name":  "Miki Azumi",
+        "anime":  "The Ramparts of Ice",
+        "age":  16,
+        "gender":  "Female",
+        "height":  152,
+        "image":  "assets/images/mikiazumi.png",
+        "haircolor":  "Blonde",
+        "animegenre":  "Drama / Romance"
+    },
+    {
         "name":  "Miko Iino",
         "anime":  "Kaguya-sama: Love is War",
         "age":  16,
@@ -838,6 +948,26 @@
         "image":  "assets/images/mikunakano.png",
         "haircolor":  "Pink",
         "animegenre":  "Romance / Comedy / School"
+    },
+    {
+        "name":  "Miku Sakura",
+        "anime":  "I want to end this Love-Game",
+        "age":  15,
+        "gender":  "Female",
+        "height":  154,
+        "image":  "assets/images/mikusakura.png",
+        "haircolor":  "Black",
+        "animegenre":  "Romance / Comedy / School"
+    },
+    {
+        "name":  "Miori Motomiya",
+        "anime":  "Haibaras Teenage New Game+",
+        "age":  16,
+        "gender":  "Female",
+        "height":  156,
+        "image":  "assets/images/miorimotomiya.png",
+        "haircolor":  "Blonde",
+        "animegenre":  "Comedy / Romance"
     },
     {
         "name":  "Mirko",
@@ -870,6 +1000,26 @@
         "animegenre":  "Action / Mecha / Sci-Fi / Psychological"
     },
     {
+        "name":  "Mitsuri Kanroji",
+        "anime":  "Demon Slayer",
+        "age":  19,
+        "gender":  "Female",
+        "height":  167,
+        "image":  "assets/images/mitsuri.png",
+        "haircolor":  "Pink / Green",
+        "animegenre":  "Action / Fantasy / Supernatural"
+    },
+    {
+        "name":  "Miyu Suzuki",
+        "anime":  "You and I are Polar Opposites",
+        "age":  16,
+        "gender":  "Female",
+        "height":  160,
+        "image":  "assets/images/suzuki.png",
+        "haircolor":  "Pink",
+        "animegenre":  "Romance / Comedy / School"
+    },
+    {
         "name":  "Momo Ayase",
         "anime":  "Dandadan",
         "age":  17,
@@ -900,18 +1050,18 @@
         "animegenre":  "Action / School / Supernatural"
     },
     {
-        "name":  "Nagisa",
-        "anime":  "Classroom of the Elite",
+        "name":  "Nagisa Shiota",
+        "anime":  "Assassination Classroom",
         "age":  15,
         "gender":  "Male",
         "height":  169,
         "image":  "assets/images/nagisa.png",
         "haircolor":  "Blue",
-        "animegenre":  "Drama / School / Mystery"
+        "animegenre":  "Action / Comedy"
     },
     {
         "name":  "Najimi Osana",
-        "anime":  "Komi Can\u0027t Communicate",
+        "anime":  "Komi Can't Communicate",
         "age":  16,
         "gender":  "Male",
         "height":  168,
@@ -950,6 +1100,26 @@
         "animegenre":  "Romance / Supernatural"
     },
     {
+        "name":  "Nefertari Vivi",
+        "anime":  "One Piece",
+        "age":  16,
+        "gender":  "Female",
+        "height":  169,
+        "image":  "assets/images/vivi.jpg",
+        "haircolor":  "Blue",
+        "animegenre":  "Action / Adventure / Comedy"
+    },
+    {
+        "name":  "Nico Robin",
+        "anime":  "One Piece",
+        "age":  30,
+        "gender":  "Female",
+        "height":  188,
+        "image":  "assets/images/nicorobin.png",
+        "haircolor":  "Black",
+        "animegenre":  "Action / Adventure / Comedy"
+    },
+    {
         "name":  "Nino Nakano",
         "anime":  "The Quintessential Quintuplets",
         "age":  17,
@@ -968,6 +1138,16 @@
         "image":  "assets/images/nobara.png",
         "haircolor":  "Brown",
         "animegenre":  "Action / Supernatural / School"
+    },
+    {
+        "name":  "Noi Komazawa",
+        "anime":  "Cosmic Princess Kaguya",
+        "age":  20,
+        "gender":  "Male",
+        "height":  171,
+        "image":  "assets/images/cpkNoi.png",
+        "haircolor":  "Black",
+        "animegenre":  "Action / Sci-Fi / Supernatural"
     },
     {
         "name":  "Noreason",
@@ -1020,6 +1200,16 @@
         "animegenre":  "Action / Fantasy / Isekai"
     },
     {
+        "name":  "Poemu Kohinata",
+        "anime":  "The Klutzy Class Monitor and the Girl with the Short Skirt",
+        "age":  16,
+        "gender":  "Female",
+        "height":  163,
+        "image":  "assets/images/poemukohinata.png",
+        "haircolor":  "Blonde",
+        "animegenre":  "Comedy / Romance"
+    },
+    {
         "name":  "Power",
         "anime":  "Chainsaw Man",
         "age":  18,
@@ -1070,16 +1260,6 @@
         "animegenre":  "Action / Fantasy / Isekai / Drama"
     },
     {
-        "name":  "Reze",
-        "anime":  "Chainsaw Man",
-        "age":  19,
-        "gender":  "Female",
-        "height":  164,
-        "image":  "assets/images/Reze.png",
-        "haircolor":  "Purple",
-        "animegenre":  "Action / Horror / Supernatural"
-    },
-    {
         "name":  "Revy",
         "anime":  "Black Lagoon",
         "age":  24,
@@ -1088,6 +1268,16 @@
         "image":  "assets/images/revy.jpg",
         "haircolor":  "Brown",
         "animegenre":  "Action / Thriller"
+    },
+    {
+        "name":  "Reze",
+        "anime":  "Chainsaw Man",
+        "age":  19,
+        "gender":  "Female",
+        "height":  164,
+        "image":  "assets/images/Reze.png",
+        "haircolor":  "Purple",
+        "animegenre":  "Action / Horror / Supernatural"
     },
     {
         "name":  "Rias Gremory",
@@ -1140,6 +1330,16 @@
         "animegenre":  "Action / Fantasy / Isekai"
     },
     {
+        "name":  "Ruby Hoshino",
+        "anime":  "Oshi no Ko",
+        "age":  16,
+        "gender":  "Female",
+        "height":  158,
+        "image":  "assets/images/rubyhoshino.png",
+        "haircolor":  "Blonde",
+        "animegenre":  "Drama / Mystery"
+    },
+    {
         "name":  "Ruby Rose",
         "anime":  "RWBY",
         "age":  15,
@@ -1160,6 +1360,16 @@
         "animegenre":  "Action / Adventure / Supernatural"
     },
     {
+        "name":  "Ryuji Ayukawa",
+        "anime":  "Blue Period",
+        "age":  16,
+        "gender":  "Male",
+        "height":  175,
+        "image":  "assets/images/ayukawa.png",
+        "haircolor":  "Dark-Blonde",
+        "animegenre":  "Drama / School / Slice of Life"
+    },
+    {
         "name":  "Saber",
         "anime":  "Fate/stay night",
         "age":  15,
@@ -1170,34 +1380,14 @@
         "animegenre":  "Action / Fantasy / Romance"
     },
     {
-        "name":  "Nico Robin",
-        "anime":  "One Piece",
-        "age":  30,
-        "gender":  "Female",
-        "height":  188,
-        "image":  "assets/images/nicorobin.png",
-        "haircolor":  "Black",
-        "animegenre":  "Action / Adventure / Comedy"
-    },
-    {
         "name":  "Serie",
-        "anime":  "Frieren: Beyond Journey\u0027s End",
+        "anime":  "Frieren: Beyond Journey's End",
         "age":  2000,
         "gender":  "Female",
         "height":  156,
         "image":  "assets/images/serie.png",
         "haircolor":  "Orange",
         "animegenre":  "Adventure / Fantasy / Drama"
-    },
-    {
-        "name":  "Shuna",
-        "anime":  "That Time I Got Reincarnated as a Slime",
-        "age":  22,
-        "gender":  "Female",
-        "height":  160,
-        "image":  "assets/images/shuna.png",
-        "haircolor":  "Pink",
-        "animegenre":  "Action / Fantasy / Isekai / Comedy"
     },
     {
         "name":  "Shion",
@@ -1210,14 +1400,14 @@
         "animegenre":  "Action / Fantasy / Isekai / Comedy"
     },
     {
-        "name":  "Kojuro Shuri",
-        "anime":  "Masamune-kun\u0027s Revenge",
-        "age":  16,
-        "gender":  "Male",
-        "height":  168,
-        "image":  "assets/images/shuri.png",
-        "haircolor":  "Dark-Blonde",
-        "animegenre":  "Romance / Comedy / School"
+        "name":  "Shuna",
+        "anime":  "That Time I Got Reincarnated as a Slime",
+        "age":  22,
+        "gender":  "Female",
+        "height":  160,
+        "image":  "assets/images/shuna.png",
+        "haircolor":  "Pink",
+        "animegenre":  "Action / Fantasy / Isekai / Comedy"
     },
     {
         "name":  "Super Sonico",
@@ -1228,16 +1418,6 @@
         "image":  "assets/images/sonico.png",
         "haircolor":  "Pink",
         "animegenre":  "Slice of Life / Comedy"
-    },
-    {
-        "name":  "Miyu Suzuki",
-        "anime":  "You and I are Polar Opposites",
-        "age":  16,
-        "gender":  "Female",
-        "height":  160,
-        "image":  "assets/images/suzuki.png",
-        "haircolor":  "Pink",
-        "animegenre":  "Romance / Comedy / School"
     },
     {
         "name":  "Sylpha Langlis",
@@ -1301,7 +1481,7 @@
     },
     {
         "name":  "Ubel",
-        "anime":  "Frieren: Beyond Journey\u0027s End",
+        "anime":  "Frieren: Beyond Journey's End",
         "age":  22,
         "gender":  "Female",
         "height":  166,
@@ -1340,36 +1520,6 @@
         "animegenre":  "Action / Sci-Fi / Drama / Mecha"
     },
     {
-        "name":  "Nefertari Vivi",
-        "anime":  "One Piece",
-        "age":  16,
-        "gender":  "Female",
-        "height":  169,
-        "image":  "assets/images/vivi.jpg",
-        "haircolor":  "Blue",
-        "animegenre":  "Action / Adventure / Comedy"
-    },
-    {
-        "name":  "Kaoruko Waguri",
-        "anime":  "The Fragrant Flower Blooms Within You",
-        "age":  16,
-        "gender":  "Female",
-        "height":  144,
-        "image":  "assets/images/waguri.png",
-        "haircolor":  "Black",
-        "animegenre":  "Romance / School / Slice of Life"
-    },
-    {
-        "name":  "Mitsuri Kanroji",
-        "anime":  "Demon Slayer",
-        "age":  19,
-        "gender":  "Female",
-        "height":  167,
-        "image":  "assets/images/mitsuri.png",
-        "haircolor":  "Pink / Green",
-        "animegenre":  "Action / Fantasy / Supernatural"
-    },
-    {
         "name":  "Weiss Schnee",
         "anime":  "RWBY",
         "age":  17,
@@ -1380,6 +1530,16 @@
         "animegenre":  "Action / Adventure / Fantasy"
     },
     {
+        "name":  "Yachiyo Runami",
+        "anime":  "Cosmic Princess Kaguya",
+        "age":  8000,
+        "gender":  "Female",
+        "height":  155,
+        "image":  "assets/images/cpkYachiyo.png",
+        "haircolor":  "White",
+        "animegenre":  "Action / Sci-Fi / Supernatural"
+    },
+    {
         "name":  "Yamato",
         "anime":  "One Piece",
         "age":  28,
@@ -1388,6 +1548,16 @@
         "image":  "assets/images/yamato.jpg",
         "haircolor":  "White / Green",
         "animegenre":  "Action / Adventure / Comedy"
+    },
+    {
+        "name":  "Yamato Nadeshiko",
+        "anime":  "The Klutzy Class Monitor and the Girl with the Short Skirt",
+        "age":  16,
+        "gender":  "Female",
+        "height":  166,
+        "image":  "assets/images/yamatonadeshiko.png",
+        "haircolor":  "Brown",
+        "animegenre":  "Comedy / Romance"
     },
     {
         "name":  "Yang Xiao Long",
@@ -1408,6 +1578,16 @@
         "image":  "assets/images/YorForger.png",
         "haircolor":  "Black",
         "animegenre":  "Action / Comedy / Slice of Life"
+    },
+    {
+        "name":  "Yoruichi Shihōin",
+        "anime":  "Bleach",
+        "age":  350,
+        "gender":  "Female",
+        "height":  156,
+        "image":  "assets/images/yuroichishihouin.png",
+        "haircolor":  "Purple",
+        "animegenre":  "Action / Adventure / Supernatural"
     },
     {
         "name":  "Yotsuba Nakano",
@@ -1481,7 +1661,7 @@
     },
     {
         "name":  "Yuzuriha",
-        "anime":  "Hell\u0027s Paradise",
+        "anime":  "Hell's Paradise",
         "age":  27,
         "gender":  "Female",
         "height":  160,

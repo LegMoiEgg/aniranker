@@ -10,7 +10,16 @@
 <body>
 
 <h1>Character Lexikon</h1>
-<p id="lexikon-count" style="color:#888; text-align:center; margin-top:-10px; margin-bottom:20px;"></p>
+<p id="lexikon-count" style="color:#888; text-align:center; margin-top:-10px; margin-bottom:10px;"></p>
+
+<div id="lexikon-sort-bar">
+    <label for="lexikon-sort">Sortieren nach:</label>
+    <select id="lexikon-sort">
+        <option value="alphabet">Alphabet</option>
+        <option value="anime">Anime</option>
+    </select>
+    <button class="sort-dir-btn" id="sort-dir" title="Sortierreihenfolge umkehren">&#9650;</button>
+</div>
 
 <div id="lexikon-grid"></div>
 

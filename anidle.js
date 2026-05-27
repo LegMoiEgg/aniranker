@@ -1,6 +1,7 @@
 let characters = [];
 let targetCharacter = null;
 let guessedNames = new Set();
+let guessesOrdered = [];
 let won = false;
 let guessCount = 0;
 let hintRevealed = [false, false, false];
@@ -11,15 +12,122 @@ const HINTS = [
     { id: 'hint-3', label: 'Hint 3: Anime',     key: 'anime',      unlockAt: 15 },
 ];
 
-function init() {
-    characters = CHARACTERS_DATA;
-    pickNewTarget();
+const urlParams = new URLSearchParams(window.location.search);
+const MODE = urlParams.get('mode') === 'daily' ? 'daily' : 'infinity';
+
+function getTodayKey() {
+    const d = new Date();
+    return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
 }
 
-function pickNewTarget() {
-    const idx = Math.floor(Math.random() * characters.length);
-    targetCharacter = characters[idx];
+function getDailyIndex(length) {
+    const dateStr = getTodayKey();
+    let hash = 0;
+    for (let i = 0; i < dateStr.length; i++) {
+        hash = Math.imul(31, hash) + dateStr.charCodeAt(i) | 0;
+    }
+    return Math.abs(hash) % length;
+}
+
+function getStorageKey() {
+    return MODE === 'daily' ? 'anidle_daily_' + getTodayKey() : 'anidle_infinity';
+}
+
+function saveState() {
+    try {
+        const state = {
+            targetName: targetCharacter.name,
+            guesses: guessesOrdered,
+            hintRevealed: [...hintRevealed],
+            won: won,
+            guessCount: guessCount,
+        };
+        localStorage.setItem(getStorageKey(), JSON.stringify(state));
+    } catch (e) {}
+}
+
+function loadState() {
+    try {
+        const raw = localStorage.getItem(getStorageKey());
+        return raw ? JSON.parse(raw) : null;
+    } catch (e) {
+        return null;
+    }
+}
+
+function clearState() {
+    try {
+        localStorage.removeItem(getStorageKey());
+    } catch (e) {}
+}
+
+function init() {
+    characters = CHARACTERS_DATA;
+
+    document.querySelector('h1').textContent = MODE === 'daily' ? 'Anidle Daily' : 'Anidle Infinity';
+
+    const restartBtn = document.getElementById('restart-btn');
+    if (MODE === 'daily') {
+        restartBtn.style.display = 'none';
+    }
+
+    const saved = loadState();
+    if (saved) {
+        const target = characters.find(c => c.name === saved.targetName);
+        if (!target) {
+            clearState();
+            startFresh();
+            return;
+        }
+        targetCharacter = target;
+        won = saved.won || false;
+        guessCount = saved.guessCount || 0;
+        hintRevealed = saved.hintRevealed || [false, false, false];
+        guessesOrdered = saved.guesses || [];
+        guessedNames = new Set(guessesOrdered);
+
+        const guessList = document.getElementById('guess-list');
+        guessList.innerHTML = '';
+        for (const name of guessesOrdered) {
+            const char = characters.find(c => c.name === name);
+            if (char) {
+                guessList.insertBefore(buildGuessRow(char), guessList.firstChild);
+            }
+        }
+
+        HINTS.forEach((hint, i) => {
+            if (hintRevealed[i]) {
+                const box = document.getElementById(hint.id);
+                box.className = 'hint-box revealed';
+                box.innerHTML = `<span class="hint-reveal-label">${hint.label}:</span> <span class="hint-reveal-value">${targetCharacter[hint.key]}</span>`;
+            }
+        });
+        updateHints();
+
+        if (won) {
+            document.getElementById('win-screen').style.display = 'block';
+            document.getElementById('win-message').textContent =
+                `Correct! The character was ${targetCharacter.name}! You guessed it in ${guessCount} ${guessCount === 1 ? 'try' : 'tries'}!`;
+            document.getElementById('guess-input').disabled = true;
+            if (MODE === 'daily') {
+                const dailyNote = document.createElement('p');
+                dailyNote.textContent = 'Come back tomorrow for the next Daily challenge!';
+                document.getElementById('win-screen').appendChild(dailyNote);
+            }
+        }
+    } else {
+        startFresh();
+    }
+}
+
+function startFresh() {
+    if (MODE === 'daily') {
+        targetCharacter = characters[getDailyIndex(characters.length)];
+    } else {
+        targetCharacter = characters[Math.floor(Math.random() * characters.length)];
+    }
     guessedNames.clear();
+    guessesOrdered = [];
     won = false;
     guessCount = 0;
     hintRevealed = [false, false, false];
@@ -29,6 +137,12 @@ function pickNewTarget() {
     document.getElementById('win-screen').style.display = 'none';
     document.getElementById('autocomplete-list').innerHTML = '';
     updateHints();
+    saveState();
+}
+
+function pickNewTarget() {
+    clearState();
+    startFresh();
 }
 
 function updateHints() {
@@ -42,7 +156,7 @@ function updateHints() {
         } else {
             const rem = hint.unlockAt - guessCount;
             box.className = 'hint-box locked';
-            box.innerHTML = `<span class=\"hint-lock-text\">&#128274; Hint ${i + 1} &mdash; unlocks in ${rem} ${rem === 1 ? 'try' : 'tries'}</span>`;
+            box.innerHTML = `<span class="hint-lock-text">&#128274; Hint ${i + 1} &mdash; unlocks in ${rem} ${rem === 1 ? 'try' : 'tries'}</span>`;
         }
     });
 }
@@ -53,6 +167,7 @@ function revealHint(i) {
     const box = document.getElementById(hint.id);
     box.className = 'hint-box revealed';
     box.innerHTML = `<span class="hint-reveal-label">${hint.label}:</span> <span class="hint-reveal-value">${targetCharacter[hint.key]}</span>`;
+    saveState();
 }
 
 function getArrow(guessedVal, targetVal) {
@@ -68,18 +183,7 @@ function isPartialMatch(guessedVal, targetVal) {
     return gParts.some(p => tParts.includes(p));
 }
 
-function makeGuess(name) {
-    if (won) return;
-    const trimmed = name.trim();
-    if (!trimmed) return;
-
-    const char = characters.find(c => c.name.toLowerCase() === trimmed.toLowerCase());
-    if (!char) return;
-    if (guessedNames.has(char.name)) return;
-    guessedNames.add(char.name);
-    guessCount++;
-    updateHints();
-
+function buildGuessRow(char) {
     const attrs = [
         { key: 'image', isImage: true },
         { key: 'name' },
@@ -124,8 +228,24 @@ function makeGuess(name) {
         row.appendChild(cell);
     }
 
+    return row;
+}
+
+function makeGuess(name) {
+    if (won) return;
+    const trimmed = name.trim();
+    if (!trimmed) return;
+
+    const char = characters.find(c => c.name.toLowerCase() === trimmed.toLowerCase());
+    if (!char) return;
+    if (guessedNames.has(char.name)) return;
+    guessedNames.add(char.name);
+    guessesOrdered.push(char.name);
+    guessCount++;
+    updateHints();
+
     const guessList = document.getElementById('guess-list');
-    guessList.insertBefore(row, guessList.firstChild);
+    guessList.insertBefore(buildGuessRow(char), guessList.firstChild);
 
     document.getElementById('guess-input').value = '';
     document.getElementById('autocomplete-list').innerHTML = '';
@@ -136,7 +256,14 @@ function makeGuess(name) {
         document.getElementById('win-message').textContent =
             `Correct! The character was ${targetCharacter.name}! You guessed it in ${guessCount} ${guessCount === 1 ? 'try' : 'tries'}!`;
         document.getElementById('guess-input').disabled = true;
+        if (MODE === 'daily') {
+            const dailyNote = document.createElement('p');
+            dailyNote.textContent = 'Come back tomorrow for the next Daily challenge!';
+            document.getElementById('win-screen').appendChild(dailyNote);
+        }
     }
+
+    saveState();
 }
 
 document.getElementById('guess-input').addEventListener('input', function () {
