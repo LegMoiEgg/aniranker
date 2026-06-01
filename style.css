@@ -463,6 +463,16 @@ button {
     text-decoration: underline;
 }
 
+@keyframes patch-glow {
+    0%, 100% { color: #ff00ff; text-shadow: 0 0 4px #ff00ff; }
+    50%       { color: #ff88ff; text-shadow: 0 0 12px #ff00ff, 0 0 24px #ff00ff; }
+}
+
+.patch-new {
+    animation: patch-glow 1.6s ease-in-out infinite;
+    font-weight: bold;
+}
+
 
 /* Allgemeine Seiten Inhalte */
 .page-content {

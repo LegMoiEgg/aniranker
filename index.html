@@ -20,7 +20,7 @@
 </div>
 
 <div class="footer-links">
-    <a href="patchnotes.html">Patch Notes</a>
+    <a href="patchnotes.html" id="patch-link">Patch Notes</a>
     |
     <a href="impressum.html">Imprint</a>
     |
@@ -29,5 +29,11 @@
 
 
 
+<script>
+const LATEST_PATCH = 'v5.1';
+if (localStorage.getItem('lastSeenPatch') !== LATEST_PATCH) {
+    document.getElementById('patch-link').classList.add('patch-new');
+}
+</script>
 </body>
 </html>

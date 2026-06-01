@@ -592,7 +592,7 @@
     {
         "name":  "Kana Arima",
         "anime":  "Oshi no Ko",
-        "age":  15,
+        "age":  18,
         "gender":  "Female",
         "height":  151,
         "image":  "assets/images/Kana.png",
