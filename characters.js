@@ -1564,7 +1564,7 @@
         "anime":  "RWBY",
         "age":  17,
         "gender":  "Female",
-        "height":  168,
+        "height":  173,
         "image":  "assets/images/yang.png",
         "haircolor":  "Blonde",
         "animegenre":  "Action / Adventure / Fantasy"
