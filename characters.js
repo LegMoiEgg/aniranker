@@ -236,7 +236,7 @@
         "gender":  "Female",
         "height":  162,
         "image":  "assets/images/chinatsu.png",
-        "haircolor":  "Dark-Blonde",
+        "haircolor":  "Blonde",
         "animegenre":  "Romance / Sports / School"
     },
     {
@@ -296,7 +296,7 @@
         "gender":  "Female",
         "height":  164,
         "image":  "assets/images/emilia.png",
-        "haircolor":  "Silver / White",
+        "haircolor":  "Silver",
         "animegenre":  "Action / Fantasy / Isekai / Drama"
     },
     {
@@ -346,7 +346,7 @@
         "gender":  "Male",
         "height":  164,
         "image":  "assets/images/felix.png",
-        "haircolor":  "Dark-Blonde",
+        "haircolor":  "Blonde",
         "animegenre":  "Action / Fantasy / Isekai / Drama"
     },
     {
@@ -386,7 +386,7 @@
         "gender":  "Female",
         "height":  167,
         "image":  "assets/images/fubuki.png",
-        "haircolor":  "Black",
+        "haircolor":  "Black / Green",
         "animegenre":  "Action / Comedy / Supernatural"
     },
     {
@@ -416,7 +416,7 @@
         "gender":  "Female",
         "height":  142,
         "image":  "assets/images/haru.png",
-        "haircolor":  "Dark-Blonde",
+        "haircolor":  "Blonde",
         "animegenre":  "Romance / Drama / School"
     },
     {
@@ -676,7 +676,7 @@
         "gender":  "Female",
         "height":  166,
         "image":  "assets/images/kobeni.png",
-        "haircolor":  "Blonde",
+        "haircolor":  "Brown",
         "animegenre":  "Action / Horror / Supernatural"
     },
     {
@@ -696,7 +696,7 @@
         "gender":  "Male",
         "height":  168,
         "image":  "assets/images/shuri.png",
-        "haircolor":  "Dark-Blonde",
+        "haircolor":  "Blonde",
         "animegenre":  "Romance / Comedy / School"
     },
     {
@@ -786,7 +786,7 @@
         "gender":  "Female",
         "height":  173,
         "image":  "assets/images/lucy.png",
-        "haircolor":  "White",
+        "haircolor":  "White / Pink / Blue",
         "animegenre":  "Action / Sci-Fi / Drama"
     },
     {
@@ -966,7 +966,7 @@
         "gender":  "Female",
         "height":  156,
         "image":  "assets/images/miorimotomiya.png",
-        "haircolor":  "Blonde",
+        "haircolor":  "Black",
         "animegenre":  "Comedy / Romance"
     },
     {
@@ -1166,7 +1166,7 @@
         "gender":  "Female",
         "height":  158,
         "image":  "assets/images/nowa.png",
-        "haircolor":  "Black/Red",
+        "haircolor":  "Black / Red",
         "animegenre":  "Romance / Comedy / School / Slice of Life"
     },
     {
@@ -1236,7 +1236,7 @@
         "gender":  "Female",
         "height":  147,
         "image":  "assets/images/raihauesugi.png",
-        "haircolor":  "Dark-Blue",
+        "haircolor":  "Black",
         "animegenre":  "Romance / Comedy / School"
     },
     {
@@ -1346,7 +1346,7 @@
         "gender":  "Female",
         "height":  158,
         "image":  "assets/images/rubyRose.jpg",
-        "haircolor":  "Black",
+        "haircolor":  "Black / Red",
         "animegenre":  "Action / Adventure / Fantasy"
     },
     {
@@ -1366,7 +1366,7 @@
         "gender":  "Male",
         "height":  175,
         "image":  "assets/images/ayukawa.png",
-        "haircolor":  "Dark-Blonde",
+        "haircolor":  "Blonde",
         "animegenre":  "Drama / School / Slice of Life"
     },
     {
@@ -1386,7 +1386,7 @@
         "gender":  "Female",
         "height":  156,
         "image":  "assets/images/serie.png",
-        "haircolor":  "Orange",
+        "haircolor":  "Blonde",
         "animegenre":  "Adventure / Fantasy / Drama"
     },
     {
@@ -1496,7 +1496,7 @@
         "gender":  "Female",
         "height":  160,
         "image":  "assets/images/umiasanagi.jpg",
-        "haircolor":  "Dark-Blue",
+        "haircolor":  "Black / Blue",
         "animegenre":  "Romance / Comedy / School"
     },
     {
@@ -1546,7 +1546,7 @@
         "gender":  "Female",
         "height":  263,
         "image":  "assets/images/yamato.jpg",
-        "haircolor":  "White / Green",
+        "haircolor":  "White / Cyan",
         "animegenre":  "Action / Adventure / Comedy"
     },
     {
@@ -1606,7 +1606,7 @@
         "gender":  "Female",
         "height":  160,
         "image":  "assets/images/yuiyuigahama.png",
-        "haircolor":  "Orange",
+        "haircolor":  "Orange / Pink",
         "animegenre":  "Romance / Comedy / Drama / School"
     },
     {
