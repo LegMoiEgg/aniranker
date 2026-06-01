@@ -1,4 +1,4 @@
-const CHARACTERS_DATA = [
+﻿const CHARACTERS_DATA = [
     {
         "name":  "Ai Hoshino",
         "anime":  "Oshi no Ko",
@@ -206,7 +206,7 @@ const CHARACTERS_DATA = [
         "gender":  "Female",
         "height":  176,
         "image":  "assets/images/ceasarzzz.png",
-        "haircolor":  "Red",
+        "haircolor":  "Silber",
         "animegenre":  "Action / Sci-Fi"
     },
     {
@@ -296,7 +296,7 @@ const CHARACTERS_DATA = [
         "gender":  "Female",
         "height":  164,
         "image":  "assets/images/emilia.png",
-        "haircolor":  "Silver",
+        "haircolor":  "Silver / White",
         "animegenre":  "Action / Fantasy / Isekai / Drama"
     },
     {
@@ -316,7 +316,7 @@ const CHARACTERS_DATA = [
         "gender":  "Female",
         "height":  163,
         "image":  "assets/images/epsilon.png",
-        "haircolor":  "Light-Blue",
+        "haircolor":  "Blue",
         "animegenre":  "Action / Fantasy / Isekai"
     },
     {
@@ -393,7 +393,7 @@ const CHARACTERS_DATA = [
         "name":  "Gardevoir",
         "anime":  "Pokemon",
         "age":  0,
-        "gender":  "Female",
+        "gender":  "Anders",
         "height":  160,
         "image":  "assets/images/guardevoir.png",
         "haircolor":  "Green",
@@ -426,7 +426,7 @@ const CHARACTERS_DATA = [
         "gender":  "Female",
         "height":  158,
         "image":  "assets/images/hatsunemiku.png",
-        "haircolor":  "Light-Blue",
+        "haircolor":  "Blue",
         "animegenre":  "Music"
     },
     {
@@ -456,7 +456,7 @@ const CHARACTERS_DATA = [
         "gender":  "Female",
         "height":  160,
         "image":  "assets/images/himari.png",
-        "haircolor":  "Light-Blue",
+        "haircolor":  "Blue",
         "animegenre":  "Romance / Comedy / School"
     },
     {
@@ -646,7 +646,7 @@ const CHARACTERS_DATA = [
         "gender":  "Female",
         "height":  160,
         "image":  "assets/images/kasumi.png",
-        "haircolor":  "Light-Blue",
+        "haircolor":  "Blue",
         "animegenre":  "Action / Supernatural / School"
     },
     {
@@ -663,7 +663,7 @@ const CHARACTERS_DATA = [
         "name":  "Kirara Hoshi",
         "anime":  "Jujutsu Kaisen",
         "age":  18,
-        "gender":  "Female",
+        "gender":  "Male",
         "height":  158,
         "image":  "assets/images/kirara.png",
         "haircolor":  "Black",
@@ -1096,7 +1096,7 @@ const CHARACTERS_DATA = [
         "gender":  "Female",
         "height":  158,
         "image":  "assets/images/nazuna.png",
-        "haircolor":  "Silver",
+        "haircolor":  "Silver / Pink",
         "animegenre":  "Romance / Supernatural"
     },
     {
@@ -1306,7 +1306,7 @@ const CHARACTERS_DATA = [
         "gender":  "Female",
         "height":  167,
         "image":  "assets/images/ritsuko.png",
-        "haircolor":  "Black",
+        "haircolor":  "Blonde",
         "animegenre":  "Action / Mecha / Sci-Fi / Psychological"
     },
     {

@@ -58,11 +58,29 @@ function render(mode) {
             section.appendChild(cards);
             grid.appendChild(section);
         }
-    } else {
+    } else if (mode === 'alphabet'){
         grid.classList.remove('lexikon-grid-grouped');
 
         const sorted = [...CHARACTERS_DATA].sort((a, b) =>
             sortDir === 'asc' ? a.name.localeCompare(b.name) : b.name.localeCompare(a.name)
+        );
+        for (const char of sorted) {
+            grid.appendChild(buildCard(char));
+        }
+    } else if (mode === 'height') {
+        grid.classList.remove('lexikon-grid-grouped');
+
+        const sorted = [...CHARACTERS_DATA].sort((a, b) =>
+            sortDir === 'asc' ? a.height - b.height : b.height - a.height
+        );
+        for (const char of sorted) {
+            grid.appendChild(buildCard(char));
+        }
+    } else if (mode === 'age') {
+        grid.classList.remove('lexikon-grid-grouped');
+
+        const sorted = [...CHARACTERS_DATA].sort((a, b) =>
+            sortDir === 'asc' ? a.age - b.age : b.age - a.age
         );
         for (const char of sorted) {
             grid.appendChild(buildCard(char));
