@@ -842,7 +842,7 @@
     {
         "name":  "Maruzensky",
         "anime":  "Uma Musume",
-        "age":  52,
+        "age":  23,
         "gender":  "Female",
         "height":  164,
         "image":  "assets/images/maruzensky.png",
@@ -1472,7 +1472,7 @@
     {
         "name":  "Tuka Luna Marceau",
         "anime":  "Gate",
-        "age":  165,
+        "age":  16,
         "gender":  "Female",
         "height":  165,
         "image":  "assets/images/TukaLuna.png",
