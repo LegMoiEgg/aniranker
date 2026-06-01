@@ -473,6 +473,13 @@ button {
     font-weight: bold;
 }
 
+.win-modal-buttons {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    margin-top: 16px;
+}
+
 
 /* Allgemeine Seiten Inhalte */
 .page-content {

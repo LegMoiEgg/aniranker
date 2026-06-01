@@ -66,11 +66,6 @@ function init() {
 
     document.querySelector('h1').textContent = MODE === 'daily' ? 'Anidle Daily' : 'Anidle Infinity';
 
-    const restartBtn = document.getElementById('restart-btn');
-    if (MODE === 'daily') {
-        restartBtn.style.display = 'none';
-    }
-
     const saved = loadState();
     if (saved) {
         const target = characters.find(c => c.name === saved.targetName);
@@ -105,15 +100,8 @@ function init() {
         updateHints();
 
         if (won) {
-            document.getElementById('win-screen').style.display = 'block';
-            document.getElementById('win-message').textContent =
-                `Correct! The character was ${targetCharacter.name}! You guessed it in ${guessCount} ${guessCount === 1 ? 'try' : 'tries'}!`;
             document.getElementById('guess-input').disabled = true;
-            if (MODE === 'daily') {
-                const dailyNote = document.createElement('p');
-                dailyNote.textContent = 'Come back tomorrow for the next Daily challenge!';
-                document.getElementById('win-screen').appendChild(dailyNote);
-            }
+            openWinModal();
         }
     } else {
         startFresh();
@@ -134,15 +122,30 @@ function startFresh() {
     document.getElementById('guess-list').innerHTML = '';
     document.getElementById('guess-input').value = '';
     document.getElementById('guess-input').disabled = false;
-    document.getElementById('win-screen').style.display = 'none';
     document.getElementById('autocomplete-list').innerHTML = '';
     updateHints();
     saveState();
 }
 
 function pickNewTarget() {
+    document.getElementById('win-modal').style.display = 'none';
     clearState();
     startFresh();
+}
+
+function openWinModal() {
+    document.getElementById('win-modal-img').src = targetCharacter.image;
+    document.getElementById('win-modal-img').alt = targetCharacter.name;
+    document.getElementById('win-modal-message').textContent =
+        `Correct! The character was ${targetCharacter.name}! You guessed it in ${guessCount} ${guessCount === 1 ? 'try' : 'tries'}!`;
+    if (MODE === 'daily') {
+        document.getElementById('win-modal-daily-note').style.display = '';
+        document.getElementById('win-modal-restart').style.display = 'none';
+    } else {
+        document.getElementById('win-modal-daily-note').style.display = 'none';
+        document.getElementById('win-modal-restart').style.display = '';
+    }
+    document.getElementById('win-modal').style.display = 'flex';
 }
 
 function updateHints() {
@@ -252,15 +255,8 @@ function makeGuess(name) {
 
     if (char.name === targetCharacter.name) {
         won = true;
-        document.getElementById('win-screen').style.display = 'block';
-        document.getElementById('win-message').textContent =
-            `Correct! The character was ${targetCharacter.name}! You guessed it in ${guessCount} ${guessCount === 1 ? 'try' : 'tries'}!`;
         document.getElementById('guess-input').disabled = true;
-        if (MODE === 'daily') {
-            const dailyNote = document.createElement('p');
-            dailyNote.textContent = 'Come back tomorrow for the next Daily challenge!';
-            document.getElementById('win-screen').appendChild(dailyNote);
-        }
+        openWinModal();
     }
 
     saveState();
@@ -306,6 +302,6 @@ document.getElementById('guess-btn').addEventListener('click', function () {
     makeGuess(document.getElementById('guess-input').value);
 });
 
-document.getElementById('restart-btn').addEventListener('click', pickNewTarget);
+document.getElementById('win-modal-restart').addEventListener('click', pickNewTarget);
 
 init();

@@ -38,9 +38,16 @@
 
 <div id="guess-list"></div>
 
-<div id="win-screen" style="display:none;">
-    <p id="win-message"></p>
-    <button id="restart-btn">New Game</button>
+<div id="win-modal" class="modal-overlay" style="display:none;">
+    <div class="modal-box">
+        <img id="win-modal-img" src="" alt="">
+        <p id="win-modal-message" style="color:#ff00ff; font-weight:bold; margin:12px 0 6px;"></p>
+        <p id="win-modal-daily-note" style="display:none; color:#888; font-size:13px; margin-bottom:16px;">Come back tomorrow for the next Daily challenge!</p>
+        <div class="win-modal-buttons">
+            <a href="index.html"><button>Main Menu</button></a>
+            <button id="win-modal-restart" style="display:none;">New Game</button>
+        </div>
+    </div>
 </div>
 
 <a href="index.html"><button class="back-btn">Back</button></a>
