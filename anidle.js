@@ -140,9 +140,11 @@ function openWinModal() {
         `Correct! The character was ${targetCharacter.name}! You guessed it in ${guessCount} ${guessCount === 1 ? 'try' : 'tries'}!`;
     if (MODE === 'daily') {
         document.getElementById('win-modal-daily-note').style.display = '';
+        document.getElementById('win-modal-copy').style.display = '';
         document.getElementById('win-modal-restart').style.display = 'none';
     } else {
         document.getElementById('win-modal-daily-note').style.display = 'none';
+        document.getElementById('win-modal-copy').style.display = 'none';
         document.getElementById('win-modal-restart').style.display = '';
     }
     document.getElementById('win-modal').style.display = 'flex';
@@ -303,5 +305,22 @@ document.getElementById('guess-btn').addEventListener('click', function () {
 });
 
 document.getElementById('win-modal-restart').addEventListener('click', pickNewTarget);
+
+function copyResult() {
+    const tries = guessCount;
+    const text = `Anidle Daily: ${tries} ${tries === 1 ? 'Try' : 'Tries'} 🎯\nhttps://anirankergg.vercel.app/anidle.html?mode=daily`;
+    navigator.clipboard.writeText(text).then(() => {
+        const btn = document.getElementById('win-modal-copy');
+        const original = btn.innerHTML;
+        btn.textContent = 'Copied!';
+        btn.style.color = '#00ff88';
+        btn.style.borderColor = '#00ff88';
+        setTimeout(() => {
+            btn.innerHTML = original;
+            btn.style.color = '';
+            btn.style.borderColor = '';
+        }, 2000);
+    });
+}
 
 init();
