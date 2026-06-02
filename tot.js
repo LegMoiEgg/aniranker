@@ -61,6 +61,7 @@ function startGame() {
     rightChar = pool[1];
 
     document.getElementById('tot-start-btn').style.display = 'none';
+    document.getElementById('tot-restart-btn').style.display = 'none';
     document.getElementById('tot-arena').style.display  = 'flex';
     document.getElementById('tot-result').style.display = 'none';
 
@@ -97,6 +98,7 @@ function init() {
         leftChar  = charByName(saved.leftName);
         rightChar = charByName(saved.rightName);
         document.getElementById('tot-start-btn').style.display = 'none';
+        document.getElementById('tot-restart-btn').style.display = 'none';
         document.getElementById('tot-arena').style.display  = 'flex';
         document.getElementById('tot-result').style.display = 'none';
         updateDisplay();
@@ -143,6 +145,7 @@ function pick(side) {
 
 function showResult() {
     document.getElementById('tot-start-btn').style.display = 'none';
+    document.getElementById('tot-restart-btn').style.display = '';
     document.getElementById('tot-arena').style.display  = 'none';
     document.getElementById('tot-progress').textContent = '';
     document.getElementById('tot-result').style.display = 'block';

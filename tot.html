@@ -147,7 +147,10 @@
         }
 
         #tot-restart-btn {
-            margin-top: 8px;
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
         }
     </style>
 </head>
@@ -179,9 +182,9 @@
     <div id="tot-champion" style="margin-bottom: 20px;"></div>
     <p style="color:#888; font-size:13px; margin-bottom: 20px;">Places #1 &ndash; #10 &mdash; ranked by when they were eliminated</p>
     <div id="tot-result-grid"></div>
-    <button id="tot-restart-btn" onclick="startGame()">Play Again</button>
 </div>
 
+<button id="tot-restart-btn" onclick="startGame()" style="display:none;">Play Again</button>
 <button id="tot-start-btn" onclick="startGame()" style="position:fixed; bottom:20px; left:50%; transform:translateX(-50%);">Start</button>
 <a href="index.html"><button class="back-btn">Back</button></a>
 <a href="lexikon.html?from=tot.html" class="lexikon-shortcut-link"><button class="lexikon-shortcut-btn" title="Lexikon">
