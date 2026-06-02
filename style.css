@@ -179,8 +179,16 @@ button:disabled {
     display: flex;
     flex-direction: column; /* 🔥 DAS ist der Key */
     align-items: center;
-    gap: 20px;
+    gap: 10px;
     margin-top: 40px;
+}
+
+.menu a {
+    width: 220px;
+}
+
+.menu a button {
+    width: 100%;
 }
 
 /* KMK */
@@ -224,6 +232,23 @@ button:hover:not(:disabled) {
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
+}
+
+.lexikon-shortcut-link {
+    position: fixed;
+    bottom: 20px;
+    left: 70px;
+    text-decoration: none;
+}
+
+.lexikon-shortcut-btn {
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
 }
 
 /* BACK Button unten rechts */

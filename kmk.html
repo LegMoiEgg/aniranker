@@ -5,7 +5,20 @@
     <title>KMK</title>
     <link rel="icon" type="image/png" href="assets/icon.png">
     <link rel="stylesheet" href="style.css">
-    <style>html { zoom: 1.25; }</style>
+    <style>html { zoom: 1.25; }
+    .kmk-char-name {
+        color: #ff00ff;
+        font-size: 12px;
+        margin-top: 6px;
+        min-height: 16px;
+        text-align: center;
+        max-width: 150px;
+        word-break: break-word;
+    }
+    .kmk-btn-kiss   { background: #1a1aff !important; color: #fff !important; border-color: #1a1aff !important; }
+    .kmk-btn-marry  { background: gold    !important; color: #000 !important; border-color: gold    !important; }
+    .kmk-btn-kill   { background: #cc0000 !important; color: #fff !important; border-color: #cc0000 !important; }
+    </style>
 </head>
 <body>
 
@@ -14,6 +27,7 @@
 <div id="kmk-container">
 
     <div class="kmk-card">
+        <div class="kmk-char-name"></div>
         <div class="kmk-box"></div>
         <div class="kmk-buttons">
             <button>kiss</button>
@@ -23,6 +37,7 @@
     </div>
 
     <div class="kmk-card">
+        <div class="kmk-char-name"></div>
         <div class="kmk-box"></div>
         <div class="kmk-buttons">
             <button>kiss</button>
@@ -32,6 +47,7 @@
     </div>
 
     <div class="kmk-card">
+        <div class="kmk-char-name"></div>
         <div class="kmk-box"></div>
         <div class="kmk-buttons">
             <button>kiss</button>
@@ -44,7 +60,11 @@
 
 <button id="kmkStartBtn">Start</button>
 <a href="index.html"><button class="back-btn">Back</button></a>
+<a href="lexikon.html?from=kmk.html" class="lexikon-shortcut-link"><button class="lexikon-shortcut-btn" title="Lexikon">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+</button></a>
 
+<script src="characters.js"></script>
 <script src="kmk.js"></script>
 </body>
 </html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>This or That – Ani Ranker</title>
+    <link rel="icon" type="image/png" href="assets/icon.png">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        html { zoom: 1.25; }
+
+        #tot-progress {
+            color: #888;
+            font-size: 14px;
+            margin-top: -8px;
+            margin-bottom: 20px;
+        }
+
+        #tot-arena {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 20px;
+        }
+
+        .tot-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 12px;
+            cursor: pointer;
+        }
+
+        .tot-img-wrap {
+            width: 180px;
+            height: 220px;
+            border: 3px solid #ff00ff;
+            border-radius: 10px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #1e1e1e;
+            box-shadow: 0 0 12px #ff00ff44;
+            transition: box-shadow 0.15s, border-color 0.15s;
+        }
+
+        .tot-img-wrap img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .tot-card:hover .tot-img-wrap {
+            box-shadow: 0 0 28px #ff00ffaa;
+            border-color: #ff88ff;
+        }
+
+        .tot-card-name {
+            color: #ff00ff;
+            font-size: 14px;
+            max-width: 180px;
+            text-align: center;
+            line-height: 1.3;
+        }
+
+        #tot-vs {
+            color: #ff00ff;
+            font-size: 28px;
+            font-weight: bold;
+            text-shadow: 0 0 10px #ff00ff;
+            user-select: none;
+        }
+
+        /* Result screen */
+        #tot-result {
+            display: none;
+        }
+
+        #tot-result h2 {
+            color: #ff00ff;
+            margin-bottom: 6px;
+        }
+
+        #tot-result p {
+            color: #888;
+            font-size: 13px;
+            margin-bottom: 24px;
+        }
+
+        #tot-result-grid {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 28px;
+        }
+
+        .tot-result-row {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+        }
+
+        .tot-result-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .tot-result-num {
+            color: #ff00ff;
+            font-size: 13px;
+            font-weight: bold;
+        }
+
+        .tot-champion-label {
+            color: gold;
+            font-size: 15px;
+            font-weight: bold;
+            margin-bottom: 4px;
+        }
+
+        .tot-champion-img {
+            width: 130px;
+            height: 160px;
+            border-color: gold !important;
+            box-shadow: 0 0 18px rgba(255, 215, 0, 0.5);
+        }
+
+        .tot-result-img {
+            width: 100px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 8px;
+            border: 2px solid #ff00ff;
+            box-shadow: 0 0 8px #ff00ff44;
+        }
+
+        .tot-result-name {
+            color: #ccc;
+            font-size: 11px;
+            max-width: 100px;
+            text-align: center;
+            line-height: 1.3;
+        }
+
+        #tot-restart-btn {
+            margin-top: 8px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>This or That</h1>
+<p id="tot-progress"></p>
+
+<div id="tot-arena" style="display:none;">
+    <div class="tot-card" id="tot-left" onclick="pick('left')">
+        <span class="tot-card-name" id="tot-left-name"></span>
+        <div class="tot-img-wrap">
+            <img id="tot-left-img" src="" alt="">
+        </div>
+    </div>
+
+    <div id="tot-vs">VS</div>
+
+    <div class="tot-card" id="tot-right" onclick="pick('right')">
+        <span class="tot-card-name" id="tot-right-name"></span>
+        <div class="tot-img-wrap">
+            <img id="tot-right-img" src="" alt="">
+        </div>
+    </div>
+</div>
+
+<div id="tot-result">
+    <h2>Ranking</h2>
+    <div id="tot-champion" style="margin-bottom: 20px;"></div>
+    <p style="color:#888; font-size:13px; margin-bottom: 20px;">Places #1 &ndash; #10 &mdash; ranked by when they were eliminated</p>
+    <div id="tot-result-grid"></div>
+    <button id="tot-restart-btn" onclick="startGame()">Play Again</button>
+</div>
+
+<button id="tot-start-btn" onclick="startGame()" style="position:fixed; bottom:20px; left:50%; transform:translateX(-50%);">Start</button>
+<a href="index.html"><button class="back-btn">Back</button></a>
+<a href="lexikon.html?from=tot.html" class="lexikon-shortcut-link"><button class="lexikon-shortcut-btn" title="Lexikon">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+</button></a>
+<script src="characters.js"></script>
+<script src="tot.js"></script>
+</body>
+</html>
