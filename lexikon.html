@@ -42,7 +42,7 @@
 <a id="back-link" href="index.html"><button class="back-btn">Back</button></a>
 <script>
     const fromPage = new URLSearchParams(window.location.search).get('from');
-    if (fromPage) document.getElementById('back-link').href = fromPage;
+    if (fromPage) document.getElementById('back-link').href = decodeURIComponent(fromPage);
 </script>
 
 <script src="characters.js"></script>
