@@ -4,7 +4,6 @@ const STORAGE_KEY = 'tot_state';
 let pool = [];        // shuffled chars to draw from
 let leftChar = null;
 let rightChar = null;
-let losers = [];      // eliminated chars in order (losers[0] = first out = #10)
 let champion = null;  // the character who won all 10 rounds
 let round = 0;        // how many picks made so far
 
@@ -24,7 +23,6 @@ function saveState() {
             poolNext:     pool._next,
             leftName:     leftChar ? leftChar.name : null,
             rightName:    rightChar ? rightChar.name : null,
-            loserNames:   losers.map(c => c.name),
             championName: champion ? champion.name : null,
             round,
             done:         champion !== null,
@@ -50,7 +48,6 @@ function charByName(name) {
 
 function startGame() {
     clearState();
-    losers = [];
     champion = null;
     round = 0;
 
@@ -83,7 +80,6 @@ function init() {
     pool = saved.poolNames.map(charByName).filter(Boolean);
     pool._next = saved.poolNext;
 
-    losers   = saved.loserNames.map(charByName).filter(Boolean);
     round    = saved.round;
 
     if (saved.done) {
@@ -120,9 +116,6 @@ function updateDisplay() {
 
 function pick(side) {
     const winner = side === 'left' ? leftChar : rightChar;
-    const loser  = side === 'left' ? rightChar : leftChar;
-
-    losers.push(loser);  // loser gets ranked (losers[0] → #10, losers[9] → #1)
     round++;
 
     if (round >= ROUNDS) {
@@ -150,54 +143,13 @@ function showResult() {
     document.getElementById('tot-progress').textContent = '';
     document.getElementById('tot-result').style.display = 'block';
 
-    // Champion
-    const champEl = document.getElementById('tot-champion');
-    champEl.innerHTML = `
+    document.getElementById('tot-champion').innerHTML = `
         <div class="tot-result-card">
             <span class="tot-champion-label">&#x1F451; Champion</span>
-            <img class="tot-result-img tot-champion-img" src="${champion.image}" alt="${champion.name}">
+            <img class="tot-champion-img" src="${champion.image}" alt="${champion.name}">
             <span class="tot-result-name">${champion.name}</span>
         </div>
     `;
-
-    // ranked[0] = #1 (lost last, 2nd best), ranked[9] = #10 (lost first, least preferred)
-    const ranked = [...losers].reverse();
-
-    const grid = document.getElementById('tot-result-grid');
-    grid.innerHTML = '';
-
-    for (let row = 0; row < 2; row++) {
-        const rowEl = document.createElement('div');
-        rowEl.className = 'tot-result-row';
-
-        for (let col = 0; col < 5; col++) {
-            const idx = row * 5 + col;
-            const char = ranked[idx];
-
-            const card = document.createElement('div');
-            card.className = 'tot-result-card';
-
-            const num = document.createElement('span');
-            num.className = 'tot-result-num';
-            num.textContent = `#${idx + 1}`;
-
-            const img = document.createElement('img');
-            img.className = 'tot-result-img';
-            img.src = char.image;
-            img.alt = char.name;
-
-            const name = document.createElement('span');
-            name.className = 'tot-result-name';
-            name.textContent = char.name;
-
-            card.appendChild(num);
-            card.appendChild(img);
-            card.appendChild(name);
-            rowEl.appendChild(card);
-        }
-
-        grid.appendChild(rowEl);
-    }
 }
 
 init();

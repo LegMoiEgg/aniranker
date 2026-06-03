@@ -123,10 +123,12 @@
         }
 
         .tot-champion-img {
-            width: 130px;
-            height: 160px;
-            border-color: gold !important;
-            box-shadow: 0 0 18px rgba(255, 215, 0, 0.5);
+            width: 220px;
+            height: 270px;
+            object-fit: cover;
+            border-radius: 10px;
+            border: 3px solid gold;
+            box-shadow: 0 0 28px rgba(255, 215, 0, 0.7);
         }
 
         .tot-result-img {
@@ -178,10 +180,7 @@
 </div>
 
 <div id="tot-result">
-    <h2>Ranking</h2>
-    <div id="tot-champion" style="margin-bottom: 20px;"></div>
-    <p style="color:#888; font-size:13px; margin-bottom: 20px;">Places #1 &ndash; #10 &mdash; ranked by when they were eliminated</p>
-    <div id="tot-result-grid"></div>
+    <div id="tot-champion"></div>
 </div>
 
 <button id="tot-restart-btn" onclick="startGame()" style="display:none;">Play Again</button>

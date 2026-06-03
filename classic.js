@@ -73,6 +73,8 @@ function startGame() {
         s.nameLabel.textContent = "";
     });
 
+    document.getElementById('classic-copy-btn').style.display = 'none';
+    startBtn.classList.remove('with-copy');
     startBtn.textContent = "Restart";
     startBtn.disabled = true;
 
@@ -114,12 +116,26 @@ function placeImage(index) {
 }
 
 function endGame() {
-    imageContainer.innerHTML = "";
+    imageContainer.innerHTML = '';
     gameRunning = false;
     startBtn.disabled = false;
+    document.getElementById('classic-copy-btn').style.display = 'flex';
+    startBtn.classList.add('with-copy');
     // show names above slots
     slots.forEach((s, i) => {
         if (slotChars[i]) s.nameLabel.textContent = slotChars[i].name;
+    });
+}
+
+function classicCopyResult() {
+    const lines = ['Classic Ranking:'];
+    slotChars.forEach((char, i) => lines.push(`${i + 1}. ${char ? char.name : '—'}`));
+    lines.push('\nhttps://anirankergg.vercel.app/classic.html');
+    navigator.clipboard.writeText(lines.join('\n')).then(() => {
+        const btn = document.getElementById('classic-copy-btn');
+        const orig = btn.innerHTML;
+        btn.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#00ff88" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>';
+        setTimeout(() => { btn.innerHTML = orig; }, 2000);
     });
 }
 
@@ -133,8 +149,10 @@ function resetGame() {
     });
 
     slotChars = [null, null, null, null, null];
-    startBtn.textContent = "Start";
+    startBtn.textContent = 'Start';
     gameRunning = false;
+    document.getElementById('classic-copy-btn').style.display = 'none';
+    startBtn.classList.remove('with-copy');
     clearClassicState();
 }
 
@@ -162,10 +180,12 @@ function resetGame() {
         });
 
         if (!gameRunning) {
-            // game ended â€“ show names
+            // game ended — show names and copy button
             slots.forEach((s, i) => {
                 if (slotChars[i]) s.nameLabel.textContent = slotChars[i].name;
             });
+            document.getElementById('classic-copy-btn').style.display = 'flex';
+            startBtn.classList.add('with-copy');
         }
 
         if (gameRunning && currentIndex > 0) {

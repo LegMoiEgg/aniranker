@@ -5,19 +5,118 @@
     <title>Ani Ranker</title>
     <link rel="icon" type="image/png" href="assets/icon.png">
     <link rel="stylesheet" href="style.css">
-    <style>html { zoom: 1.25; }</style>
+    <style>
+        html { zoom: 1.25; overflow: hidden; }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .mode-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 200px);
+            gap: 16px;
+            margin-top: 32px;
+        }
+
+        .mode-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+            padding: 20px 16px;
+            background: #1a1a1a;
+            border: 2px solid #333;
+            border-radius: 12px;
+            text-decoration: none;
+            color: #ccc;
+            transition: border-color 0.2s, box-shadow 0.2s, transform 0.15s;
+            cursor: pointer;
+        }
+
+        .mode-card:hover {
+            border-color: #ff00ff;
+            box-shadow: 0 0 16px #ff00ff44;
+            transform: translateY(-2px);
+            color: #fff;
+        }
+
+        .mode-card .mode-icon {
+            font-size: 28px;
+            line-height: 1;
+        }
+
+        .mode-card .mode-title {
+            font-size: 15px;
+            font-weight: bold;
+            color: #ff00ff;
+            text-align: center;
+        }
+
+        .mode-card .mode-desc {
+            font-size: 11px;
+            color: #888;
+            text-align: center;
+            line-height: 1.4;
+        }
+
+        .mode-card-lexikon {
+            grid-column: 1 / -1;
+            flex-direction: row;
+            gap: 12px;
+            padding: 14px 20px;
+            justify-content: center;
+        }
+
+        .mode-card-lexikon .mode-desc {
+            text-align: left;
+        }
+    </style>
 </head>
 <body>
 
 <h1>Ani Ranker</h1>
 
-<div class="menu">
-    <a href="classic.html"><button>Classic</button></a>
-    <a href="kmk.html"><button>Kiss - Marry - Kill</button></a>
-    <a href="tot.html"><button>This or That</button></a>
-    <a href="anidle.html?mode=daily"><button>Anidle Daily</button></a>
-    <a href="anidle.html?mode=infinity"><button>Anidle Infinity</button></a>
-    <a href="lexikon.html"><button>Lexikon</button></a>
+<div class="mode-grid">
+    <a href="classic.html" class="mode-card">
+        <span class="mode-icon">🏆</span>
+        <span class="mode-title">Classic</span>
+        <span class="mode-desc">Rank 5 characters from your favourite to least favourite</span>
+    </a>
+    <a href="kmk.html" class="mode-card">
+        <span class="mode-icon">💋</span>
+        <span class="mode-title">Kiss · Marry · Kill</span>
+        <span class="mode-desc">Assign each character one of three fates</span>
+    </a>
+    <a href="tot.html" class="mode-card">
+        <span class="mode-icon">⚡</span>
+        <span class="mode-title">This or That</span>
+        <span class="mode-desc">Pick your favourite in 10 quick duels — crown a champion</span>
+    </a>
+    <a href="top10.html" class="mode-card">
+        <span class="mode-icon">📋</span>
+        <span class="mode-title">Top 10</span>
+        <span class="mode-desc">Build your personal top 10 ranking through head-to-head matchups</span>
+    </a>
+    <a href="anidle.html?mode=daily" class="mode-card">
+        <span class="mode-icon">📅</span>
+        <span class="mode-title">Anidle Daily</span>
+        <span class="mode-desc">One character per day — guess it from attributes</span>
+    </a>
+    <a href="anidle.html?mode=infinity" class="mode-card">
+        <span class="mode-icon">♾️</span>
+        <span class="mode-title">Anidle Infinity</span>
+        <span class="mode-desc">Endless guessing — new random character each round</span>
+    </a>
+    <a href="lexikon.html" class="mode-card mode-card-lexikon">
+        <span class="mode-icon">📖</span>
+        <div>
+            <div class="mode-title">Lexikon</div>
+            <div class="mode-desc">Browse all characters — sort, search, and view full profiles</div>
+        </div>
+    </a>
 </div>
 
 <div class="footer-links">
@@ -28,10 +127,8 @@
     <a href="suggest.html">Suggest a Character</a>
 </div>
 
-
-
 <script>
-const LATEST_PATCH = 'v6.1';
+const LATEST_PATCH = 'v7.0';
 if (localStorage.getItem('lastSeenPatch') !== LATEST_PATCH) {
     document.getElementById('patch-link').classList.add('patch-new');
 }
