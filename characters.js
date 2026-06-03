@@ -1688,5 +1688,115 @@
         "image":  "assets/images/zorro.png",
         "haircolor":  "Green",
         "animegenre":  "Action / Adventure / Comedy"
+    },
+    {
+        "name":  "Mejiro McQueen",
+        "anime":  "Uma Musume",
+        "age":  19,
+        "gender":  "Female",
+        "height":  159,
+        "image":  "assets/images/mejiromcqueen.png",
+        "haircolor":  "Silver",
+        "animegenre":  "Sports / Comedy / School"
+    },
+    {
+        "name":  "Oguri Cap",
+        "anime":  "Uma Musume",
+        "age":  25,
+        "gender":  "Female",
+        "height":  167,
+        "image":  "assets/images/oguricap.png",
+        "haircolor":  "Silver",
+        "animegenre":  "Sports / Comedy / School"
+    },
+    {
+        "name":  "Matikanetannhauser",
+        "anime":  "Uma Musume",
+        "age":  24,
+        "gender":  "Female",
+        "height":  155,
+        "image":  "assets/images/matikanetannhauser.png",
+        "haircolor":  "Silver",
+        "animegenre":  "Sports / Comedy / School"
+    },
+    {
+        "name":  "Akeno Himejima",
+        "anime":  "High School DxD",
+        "age":  19,
+        "gender":  "Female",
+        "height":  168,
+        "image":  "assets/images/akenohimejima.png",
+        "haircolor":  "Black",
+        "animegenre":  "Action / Romance / School / Supernatural"
+    },
+    {
+        "name":  "Fenrys",
+        "anime":  "Chillin' in Another World with Level 2 Cheats",
+        "age":  100,
+        "gender":  "Female",
+        "height":  165,
+        "image":  "assets/images/fenrys.png",
+        "haircolor":  "White",
+        "animegenre":  "Action / Romance / School / Supernatural"
+    },
+    {
+        "name":  "Schlappohr",
+        "anime":  "Pokemon",
+        "age":  0,
+        "gender":  "Anders",
+        "height":  160,
+        "image":  "assets/images/schlappohr.png",
+        "haircolor":  "Brown",
+        "animegenre":  "Adventure / Fantasy / Comedy"
+    },
+    {
+        "name":  "Midnight",
+        "anime":  "My Hero Academia",
+        "age":  32,
+        "gender":  "Female",
+        "height":  175,
+        "image":  "assets/images/midnight.png",
+        "haircolor":  "Black",
+        "animegenre":  "Action / School / Supernatural"
+    },
+    {
+        "name":  "Momo Yaoyorozu",
+        "anime":  "My Hero Academia",
+        "age":  16,
+        "gender":  "Female",
+        "height":  173,
+        "image":  "assets/images/momoyaoyorozu.png",
+        "haircolor":  "Black",
+        "animegenre":  "Action / School / Supernatural"
+    },
+    {
+        "name":  "Aqua",
+        "anime":  "KonoSuba",
+        "age":  1000000,
+        "gender":  "Female",
+        "height":  162,
+        "image":  "assets/images/aqua.png",
+        "haircolor":  "Blue",
+        "animegenre":  "Comedy / Fantasy / Isekai"
+    },
+    {
+        "name":  "Jane Doe",
+        "anime":  "Zenless Zone Zero",
+        "age":  25,
+        "gender":  "Female",
+        "height":  170,
+        "image":  "assets/images/janedoe.png",
+        "haircolor":  "Black",
+        "animegenre":  "Action / Sci-Fi"
+    },
+    {
+        "name":  "Ellen Joe",
+        "anime":  "Zenless Zone Zero",
+        "age":  18,
+        "gender":  "Female",
+        "height":  161,
+        "image":  "assets/images/ellenjoe.png",
+        "haircolor":  "Black",
+        "animegenre":  "Action / Sci-Fi"
     }
 ];
