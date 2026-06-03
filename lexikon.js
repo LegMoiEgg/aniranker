@@ -1,15 +1,35 @@
 const grid = document.getElementById('lexikon-grid');
 const sortSelect = document.getElementById('lexikon-sort');
 const btnDir = document.getElementById('sort-dir');
-let sortDir = 'asc';
+let sortDir = localStorage.getItem('lexikon_sort_dir') || 'asc';
+let searchTerm = '';
+
+// restore saved sort mode
+const savedMode = localStorage.getItem('lexikon_sort_mode') || 'alphabet';
+sortSelect.value = savedMode;
+btnDir.innerHTML = sortDir === 'asc' ? '&#9650;' : '&#9660;';
 
 document.getElementById('lexikon-count').textContent = `${CHARACTERS_DATA.length} characters`;
 
 btnDir.addEventListener('click', () => {
     sortDir = sortDir === 'asc' ? 'desc' : 'asc';
     btnDir.innerHTML = sortDir === 'asc' ? '&#9650;' : '&#9660;';
+    localStorage.setItem('lexikon_sort_dir', sortDir);
     render(sortSelect.value);
 });
+
+document.getElementById('lexikon-search').addEventListener('input', function () {
+    searchTerm = this.value.trim().toLowerCase();
+    render(sortSelect.value);
+});
+
+function getFiltered() {
+    if (!searchTerm) return CHARACTERS_DATA;
+    return CHARACTERS_DATA.filter(c =>
+        c.name.toLowerCase().includes(searchTerm) ||
+        (c.anime && c.anime.toLowerCase().includes(searchTerm))
+    );
+}
 
 function buildCard(char) {
     const card = document.createElement('div');
@@ -24,33 +44,45 @@ function buildCard(char) {
 
 function render(mode) {
     grid.innerHTML = '';
+    const chars = getFiltered();
+    document.getElementById('lexikon-count').textContent =
+        chars.length === CHARACTERS_DATA.length
+            ? `${CHARACTERS_DATA.length} characters`
+            : `${chars.length} / ${CHARACTERS_DATA.length} characters`;
 
-    if (mode === 'anime') {
+    const cmpStr = (a, b) => sortDir === 'asc' ? a.localeCompare(b) : b.localeCompare(a);
+
+    if (mode === 'anime' || mode === 'haircolor') {
         grid.classList.add('lexikon-grid-grouped');
+        const groupKey = mode === 'anime' ? 'anime' : 'haircolor';
 
         const groups = {};
-        for (const char of CHARACTERS_DATA) {
-            const key = char.anime || 'Unbekannt';
-            if (!groups[key]) groups[key] = [];
-            groups[key].push(char);
+        for (const char of chars) {
+            const raw = char[groupKey] || 'Unbekannt';
+            const keys = mode === 'haircolor'
+                ? raw.split('/').map(s => s.trim()).filter(Boolean)
+                : [raw];
+            for (const key of keys) {
+                if (!groups[key]) groups[key] = [];
+                groups[key].push(char);
+            }
         }
 
-        const cmp = (a, b) => sortDir === 'asc' ? a.localeCompare(b) : b.localeCompare(a);
-        const sortedAnimes = Object.keys(groups).sort((a, b) => cmp(a, b));
+        const sortedKeys = Object.keys(groups).sort((a, b) => cmpStr(a, b));
 
-        for (const animeName of sortedAnimes) {
+        for (const keyName of sortedKeys) {
             const section = document.createElement('div');
             section.className = 'lexikon-group';
 
             const heading = document.createElement('h2');
             heading.className = 'lexikon-group-heading';
-            heading.textContent = animeName;
+            heading.textContent = keyName;
             section.appendChild(heading);
 
             const cards = document.createElement('div');
             cards.className = 'lexikon-group-cards';
 
-            const sortedChars = groups[animeName].sort((a, b) => cmp(a.name, b.name));
+            const sortedChars = groups[keyName].sort((a, b) => cmpStr(a.name, b.name));
             for (const char of sortedChars) {
                 cards.appendChild(buildCard(char));
             }
@@ -58,39 +90,31 @@ function render(mode) {
             section.appendChild(cards);
             grid.appendChild(section);
         }
-    } else if (mode === 'alphabet'){
+    } else if (mode === 'alphabet') {
         grid.classList.remove('lexikon-grid-grouped');
-
-        const sorted = [...CHARACTERS_DATA].sort((a, b) =>
-            sortDir === 'asc' ? a.name.localeCompare(b.name) : b.name.localeCompare(a.name)
-        );
-        for (const char of sorted) {
-            grid.appendChild(buildCard(char));
-        }
+        const sorted = [...chars].sort((a, b) => cmpStr(a.name, b.name));
+        for (const char of sorted) grid.appendChild(buildCard(char));
     } else if (mode === 'height') {
         grid.classList.remove('lexikon-grid-grouped');
-
-        const sorted = [...CHARACTERS_DATA].sort((a, b) =>
+        const sorted = [...chars].sort((a, b) =>
             sortDir === 'asc' ? a.height - b.height : b.height - a.height
         );
-        for (const char of sorted) {
-            grid.appendChild(buildCard(char));
-        }
+        for (const char of sorted) grid.appendChild(buildCard(char));
     } else if (mode === 'age') {
         grid.classList.remove('lexikon-grid-grouped');
-
-        const sorted = [...CHARACTERS_DATA].sort((a, b) =>
+        const sorted = [...chars].sort((a, b) =>
             sortDir === 'asc' ? a.age - b.age : b.age - a.age
         );
-        for (const char of sorted) {
-            grid.appendChild(buildCard(char));
-        }
+        for (const char of sorted) grid.appendChild(buildCard(char));
     }
 }
 
-sortSelect.addEventListener('change', () => render(sortSelect.value));
+sortSelect.addEventListener('change', () => {
+    localStorage.setItem('lexikon_sort_mode', sortSelect.value);
+    render(sortSelect.value);
+});
 
-render('alphabet');
+render(savedMode);
 
 document.getElementById('lexikon-modal').addEventListener('click', function (e) {
     if (e.target === this) closeModal();
