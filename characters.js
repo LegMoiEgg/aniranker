@@ -200,13 +200,13 @@
         "animegenre":  "Adventure / Fantasy / Comedy"
     },
     {
-        "name":  "Ceasar King",
+        "name":  "Caesar King",
         "anime":  "Zenless Zone Zero",
         "age":  25,
         "gender":  "Female",
         "height":  176,
         "image":  "assets/images/ceasarzzz.png",
-        "haircolor":  "Silber",
+        "haircolor":  "Silver",
         "animegenre":  "Action / Sci-Fi"
     },
     {
@@ -876,7 +876,7 @@
         "gender":  "Female",
         "height":  173,
         "image":  "assets/images/mavuika.png",
-        "haircolor":  "Rot",
+        "haircolor":  "Red",
         "animegenre":  "Action / Adventure / Fantasy"
     },
     {
@@ -1737,10 +1737,10 @@
         "height":  165,
         "image":  "assets/images/fenrys.png",
         "haircolor":  "White",
-        "animegenre":  "Action / Romance / School / Supernatural"
+        "animegenre":  "Isekai / Romance / Fantasy"
     },
     {
-        "name":  "Schlappohr",
+        "name":  "Schlapohr",
         "anime":  "Pokemon",
         "age":  0,
         "gender":  "Anders",
@@ -1798,5 +1798,95 @@
         "image":  "assets/images/ellenjoe.png",
         "haircolor":  "Black",
         "animegenre":  "Action / Sci-Fi"
+    },
+    {
+        "name":  "Vanilla",
+        "anime":  "Nekopara",
+        "age":  19,
+        "gender":  "Female",
+        "height":  149,
+        "image":  "assets/images/vanilla.jpg",
+        "haircolor":  "White",
+        "animegenre":  "Slice of Life / Comedy"
+    },
+    {
+        "name":  "Chocola",
+        "anime":  "Nekopara",
+        "age":  19,
+        "gender":  "Female",
+        "height":  152,
+        "image":  "assets/images/chocola.jpg",
+        "haircolor":  "Brown",
+        "animegenre":  "Slice of Life / Comedy"
+    },
+    {
+        "name":  "Coconut",
+        "anime":  "Nekopara",
+        "age":  19,
+        "gender":  "Female",
+        "height":  168,
+        "image":  "assets/images/coconut.jpg",
+        "haircolor":  "Blonde",
+        "animegenre":  "Slice of Life / Comedy"
+    },
+    {
+        "name":  "Tet",
+        "anime":  "No Game No Life",
+        "age":  6000,
+        "gender":  "Male",
+        "height":  170,
+        "image":  "assets/images/tet.jpg",
+        "haircolor":  "Blonde",
+        "animegenre":  "Comedy / Fantasy / Isekai / Ecchi"
+    },
+    {
+        "name":  "Kurumi Harage",
+        "anime":  "100 Girlfriends Who Really, Really, Really, Really, Really Love You",
+        "age":  15,
+        "gender":  "Female",
+        "height":  160,
+        "image":  "assets/images/kurumiharage.png",
+        "haircolor":  "Purple",
+        "animegenre":  "Romance / Comedy / School"
+    },
+    {
+        "name":  "Chisa Kotegawa",
+        "anime":  "Grand Blue",
+        "age":  20,
+        "gender":  "Female",
+        "height":  152,
+        "image":  "assets/images/chisakotegawa.jpg",
+        "haircolor":  "Brown",
+        "animegenre":  "Comedy"
+    },
+    {
+        "name":  "Nanaka Kotegawa",
+        "anime":  "Grand Blue",
+        "age":  24,
+        "gender":  "Female",
+        "height":  160,
+        "image":  "assets/images/nanakakotegawa.png",
+        "haircolor":  "Brown",
+        "animegenre":  "Comedy"
+    },
+    {
+        "name":  "Yoshiwara Aina",
+        "anime":  "Grand Blue",
+        "age":  20,
+        "gender":  "Female",
+        "height":  158,
+        "image":  "assets/images/yoshiwaraaina.png",
+        "haircolor":  "Blue",
+        "animegenre":  "Comedy"
+    },
+    {
+        "name":  "Hamaoka Azusa",
+        "anime":  "Grand Blue",
+        "age":  21,
+        "gender":  "Female",
+        "height":  165,
+        "image":  "assets/images/hamaokaazusa.jpg",
+        "haircolor":  "Purple",
+        "animegenre":  "Comedy"
     }
 ];
