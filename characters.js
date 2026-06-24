@@ -70,9 +70,9 @@
         "animegenre":  "Action / Fantasy"
     },
     {
-        "name":  "Asuka Langley Soryu",
+        "name":  "Asuka Shikinami Langley",
         "anime":  "Neon Genesis Evangelion",
-        "age":  14,
+        "age":  28,
         "gender":  "Female",
         "height":  157,
         "image":  "assets/images/Asuka_Langley_Soryu.PNG",
