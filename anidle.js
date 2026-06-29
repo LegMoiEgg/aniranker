@@ -306,6 +306,19 @@ document.getElementById('guess-btn').addEventListener('click', function () {
 
 document.getElementById('win-modal-restart').addEventListener('click', pickNewTarget);
 
+(function initColorblindToggle() {
+    const CB_KEY = 'anidle_colorblind';
+    const toggle = document.getElementById('colorblind-toggle');
+    const saved = localStorage.getItem(CB_KEY) === '1';
+    toggle.checked = saved;
+    document.body.classList.toggle('colorblind-mode', saved);
+    toggle.addEventListener('change', function () {
+        const enabled = this.checked;
+        localStorage.setItem(CB_KEY, enabled ? '1' : '0');
+        document.body.classList.toggle('colorblind-mode', enabled);
+    });
+})();
+
 function copyResult() {
     const tries = guessCount;
     const text = `Anidle Daily: ${tries} ${tries === 1 ? 'Try' : 'Tries'} 🎯\nhttps://anirankergg.vercel.app/anidle.html?mode=daily`;
