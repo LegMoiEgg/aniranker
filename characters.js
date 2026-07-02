@@ -322,7 +322,7 @@
     {
         "name":  "Erina Nakiri",
         "anime":  "Food Wars!: Shokugeki no Soma",
-        "age":  18,
+        "age":  25,
         "gender":  "Female",
         "height":  162,
         "image":  "assets/images/erinanakiri.png",
@@ -1888,5 +1888,115 @@
         "image":  "assets/images/hamaokaazusa.jpg",
         "haircolor":  "Purple",
         "animegenre":  "Comedy"
+    },
+    {
+        "name":  "Wiz",
+        "anime":  "KonoSuba",
+        "age":  20,
+        "gender":  "Female",
+        "height":  180,
+        "image":  "assets/images/wiz.jpg",
+        "haircolor":  "Brown",
+        "animegenre":  "Comedy / Fantasy / Isekai"
+    },
+    {
+        "name":  "Jibril",
+        "anime":  "No Game No Life",
+        "age":  6407,
+        "gender":  "Female",
+        "height":  167,
+        "image":  "assets/images/jibril.png",
+        "haircolor":  "Pink",
+        "animegenre":  "Comedy / Fantasy / Isekai / Ecchi"
+    },
+    {
+        "name":  "Lady Nagant",
+        "anime":  "My Hero Academia",
+        "age":  39,
+        "gender":  "Female",
+        "height":  171,
+        "image":  "assets/images/ladynagant.png",
+        "haircolor":  "Purple",
+        "animegenre":  "Action / School / Supernatural"
+    },
+    {
+        "name":  "Sena Kashiwazaki",
+        "anime":  "Haganai: I Don't Have Many Friends",
+        "age":  17,
+        "gender":  "Female",
+        "height":  164,
+        "image":  "assets/images/senakashiwazaki.png",
+        "haircolor":  "Blonde",
+        "animegenre":  "Romance / Comedy / School"
+    },
+    {
+        "name":  "Naomi Otoya",
+        "anime":  "Grand Blue",
+        "age":  16,
+        "gender":  "Male",
+        "height":  171,
+        "image":  "assets/images/naomiotoya.jpg",
+        "haircolor":  "Blonde",
+        "animegenre":  "Comedy"
+    }, 
+    {
+        "name":  "Lobster",
+        "anime":  "Lobster",
+        "age":  3,
+        "gender":  "Male",
+        "height":  30,
+        "image":  "assets/images/lobster.png",
+        "haircolor":  "Blue",
+        "animegenre":  "Lobster"
+    }, 
+    {
+        "name":  "Takane Takamine",
+        "anime":  "Please Put Them On, Takamine-san",
+        "age":  16,
+        "gender":  "Female",
+        "height":  170,
+        "image":  "assets/images/takanetakamine.png",
+        "haircolor":  "Purple",
+        "animegenre":  "Romance / Comedy / Ecchi"
+    }, 
+    {
+        "name":  "Takane Takamine",
+        "anime":  "Please Put Them On, Takamine-san",
+        "age":  16,
+        "gender":  "Female",
+        "height":  170,
+        "image":  "assets/images/takanetakamine.png",
+        "haircolor":  "Purple",
+        "animegenre":  "Romance / Comedy / Ecchi"
+    },
+    {
+        "name":  "Alice Nakiri",
+        "anime":  "Food Wars!: Shokugeki no Soma",
+        "age":  25,
+        "gender":  "Female",
+        "height":  165,
+        "image":  "assets/images/alicenakiri.png",
+        "haircolor":  "White",
+        "animegenre":  "Gourmet / Ecchi"
+    },
+    {
+        "name":  "Rindo Kobayashi",
+        "anime":  "Food Wars!: Shokugeki no Soma",
+        "age":  27,
+        "gender":  "Female",
+        "height":  171,
+        "image":  "assets/images/rindokobayashi.jpg",
+        "haircolor":  "Red",
+        "animegenre":  "Gourmet / Ecchi"
+    },
+    {
+        "name":  "Ikumi Mito",
+        "anime":  "Food Wars!: Shokugeki no Soma",
+        "age":  25,
+        "gender":  "Female",
+        "height":  163,
+        "image":  "assets/images/ikumimito.jpg",
+        "haircolor":  "Blonde",
+        "animegenre":  "Gourmet / Ecchi"
     }
 ];
