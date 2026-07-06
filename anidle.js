@@ -288,6 +288,7 @@ function makeGuess(name) {
         if (guessCount === 1) unlockAchievement('anidle_first_try');
         if (guessCount < 5)   unlockAchievement('anidle_no_hints');
         if (guessCount >= 16) unlockAchievement('anidle_all_hints');
+        if (guessCount === characters.length) unlockAchievement('anidle_last_man');
         if (MODE === 'daily') {
             const today      = getTodayKey();
             const yesterday  = new Date(Date.now() - 86400000).toISOString().split('T')[0];

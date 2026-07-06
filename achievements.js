@@ -167,10 +167,10 @@ const ACHIEVEMENTS = [
     desc: 'Complete Anidle Daily correctly 3 days in a row'
   },
   {
-    id: 'completionist',
-    icon: '🎮',
-    title: 'Completionist',
-    desc: 'Complete every game mode at least once'
+    id: 'anidle_last_man',
+    icon: '🧩',
+    title: 'Last Man Standing',
+    desc: 'Guess the Anidle character when it was the very last one remaining'
   },
   {
     id: 'ach_hunter',
@@ -218,12 +218,6 @@ function unlockAchievement(id) {
   localStorage.setItem(ACH_LS_KEY, JSON.stringify(unlocked));
 
   showAchievementPopup(achievement);
-
-  // Meta: Completionist – fires when letzter Modus abgeschlossen wird
-  const MODES = ['first_classic', 'first_kmk', 'first_tot', 'first_top10', 'first_anidle'];
-  if (MODES.includes(id) && MODES.every(m => unlocked.includes(m))) {
-    setTimeout(() => unlockAchievement('completionist'), 5500);
-  }
 
   // Meta: Achievement Hunter – fires wenn 10 Achievements gesammelt
   if (id !== 'ach_hunter' && unlocked.length >= 10) {
