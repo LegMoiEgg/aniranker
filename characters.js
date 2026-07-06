@@ -1978,16 +1978,6 @@
         "image":  "assets/images/takanetakamine.png",
         "haircolor":  "Purple",
         "animegenre":  "Romance / Comedy / Ecchi"
-    }, 
-    {
-        "name":  "Takane Takamine",
-        "anime":  "Please Put Them On, Takamine-san",
-        "age":  16,
-        "gender":  "Female",
-        "height":  170,
-        "image":  "assets/images/takanetakamine.png",
-        "haircolor":  "Purple",
-        "animegenre":  "Romance / Comedy / Ecchi"
     },
     {
         "name":  "Alice Nakiri",
