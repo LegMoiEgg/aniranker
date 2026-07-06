@@ -147,7 +147,8 @@
         "height":  45,
         "image":  "assets/images/biggiecheese.png",
         "haircolor":  "Grey",
-        "animegenre":  "Comedy"
+        "animegenre":  "Comedy",
+        "human":  false
     },
     {
         "name":  "Blake Belladonna",
@@ -277,7 +278,8 @@
         "height":  170,
         "image":  "assets/images/delta.png",
         "haircolor":  "Black",
-        "animegenre":  "Action / Fantasy / Isekai"
+        "animegenre":  "Action / Fantasy / Isekai",
+        "human":  false
     },
     {
         "name":  "Elfaria Albis Serfort",
@@ -347,7 +349,8 @@
         "height":  164,
         "image":  "assets/images/felix.png",
         "haircolor":  "Blonde",
-        "animegenre":  "Action / Fantasy / Isekai / Drama"
+        "animegenre":  "Action / Fantasy / Isekai / Drama",
+        "human":  false
     },
     {
         "name":  "Fern",
@@ -397,7 +400,8 @@
         "height":  160,
         "image":  "assets/images/guardevoir.png",
         "haircolor":  "Green",
-        "animegenre":  "Adventure / Fantasy / Comedy"
+        "animegenre":  "Adventure / Fantasy / Comedy",
+        "human":  false
     },
     {
         "name":  "Haku",
@@ -497,7 +501,8 @@
         "height":  165,
         "image":  "assets/images/holo.png",
         "haircolor":  "Brown",
-        "animegenre":  "Adventure / Fantasy / Romance"
+        "animegenre":  "Adventure / Fantasy / Romance",
+        "human":  false
     },
     {
         "name":  "Horikita Suzune",
@@ -777,7 +782,8 @@
         "height":  180,
         "image":  "assets/images/lucoa.png",
         "haircolor":  "Green",
-        "animegenre":  "Comedy / Slice of Life / Fantasy"
+        "animegenre":  "Comedy / Slice of Life / Fantasy",
+        "human":  false
     },
     {
         "name":  "Lucy",
@@ -847,7 +853,8 @@
         "height":  164,
         "image":  "assets/images/maruzensky.png",
         "haircolor":  "Brown",
-        "animegenre":  "Sports / Comedy / School"
+        "animegenre":  "Sports / Comedy / School",
+        "human":  false
     },
     {
         "name":  "Masha Kujo",
@@ -977,7 +984,8 @@
         "height":  159,
         "image":  "assets/images/mirko.png",
         "haircolor":  "White",
-        "animegenre":  "Action / School / Supernatural"
+        "animegenre":  "Action / School / Supernatural",
+        "human":  false
     },
     {
         "name":  "Misa Amane",
@@ -1157,7 +1165,8 @@
         "height":  160,
         "image":  "assets/images/noreason.png",
         "haircolor":  "Brown",
-        "animegenre":  "Sports / Comedy / School"
+        "animegenre":  "Sports / Comedy / School",
+        "human":  false
     },
     {
         "name":  "Nowa Sugaya",
@@ -1697,7 +1706,8 @@
         "height":  159,
         "image":  "assets/images/mejiromcqueen.png",
         "haircolor":  "Silver",
-        "animegenre":  "Sports / Comedy / School"
+        "animegenre":  "Sports / Comedy / School",
+        "human":  false
     },
     {
         "name":  "Oguri Cap",
@@ -1707,7 +1717,8 @@
         "height":  167,
         "image":  "assets/images/oguricap.png",
         "haircolor":  "Silver",
-        "animegenre":  "Sports / Comedy / School"
+        "animegenre":  "Sports / Comedy / School",
+        "human":  false
     },
     {
         "name":  "Matikanetannhauser",
@@ -1717,7 +1728,8 @@
         "height":  155,
         "image":  "assets/images/matikanetannhauser.png",
         "haircolor":  "Silver",
-        "animegenre":  "Sports / Comedy / School"
+        "animegenre":  "Sports / Comedy / School",
+        "human":  false
     },
     {
         "name":  "Akeno Himejima",
@@ -1737,7 +1749,8 @@
         "height":  165,
         "image":  "assets/images/fenrys.png",
         "haircolor":  "White",
-        "animegenre":  "Isekai / Romance / Fantasy"
+        "animegenre":  "Isekai / Romance / Fantasy",
+        "human":  false
     },
     {
         "name":  "Schlapohr",
@@ -1747,7 +1760,8 @@
         "height":  160,
         "image":  "assets/images/schlappohr.png",
         "haircolor":  "Brown",
-        "animegenre":  "Adventure / Fantasy / Comedy"
+        "animegenre":  "Adventure / Fantasy / Comedy",
+        "human":  false
     },
     {
         "name":  "Midnight",
@@ -1787,7 +1801,8 @@
         "height":  170,
         "image":  "assets/images/janedoe.png",
         "haircolor":  "Black",
-        "animegenre":  "Action / Sci-Fi"
+        "animegenre":  "Action / Sci-Fi",
+        "human":  false
     },
     {
         "name":  "Ellen Joe",
@@ -1797,7 +1812,8 @@
         "height":  161,
         "image":  "assets/images/ellenjoe.png",
         "haircolor":  "Black",
-        "animegenre":  "Action / Sci-Fi"
+        "animegenre":  "Action / Sci-Fi",
+        "human":  false
     },
     {
         "name":  "Vanilla",
@@ -1807,7 +1823,8 @@
         "height":  149,
         "image":  "assets/images/vanilla.jpg",
         "haircolor":  "White",
-        "animegenre":  "Slice of Life / Comedy"
+        "animegenre":  "Slice of Life / Comedy",
+        "human":  false
     },
     {
         "name":  "Chocola",
@@ -1817,7 +1834,8 @@
         "height":  152,
         "image":  "assets/images/chocola.jpg",
         "haircolor":  "Brown",
-        "animegenre":  "Slice of Life / Comedy"
+        "animegenre":  "Slice of Life / Comedy",
+        "human":  false
     },
     {
         "name":  "Coconut",
@@ -1827,7 +1845,8 @@
         "height":  168,
         "image":  "assets/images/coconut.jpg",
         "haircolor":  "Blonde",
-        "animegenre":  "Slice of Life / Comedy"
+        "animegenre":  "Slice of Life / Comedy",
+        "human":  false
     },
     {
         "name":  "Tet",
@@ -1947,7 +1966,8 @@
         "height":  30,
         "image":  "assets/images/lobster.png",
         "haircolor":  "Blue",
-        "animegenre":  "Lobster"
+        "animegenre":  "Lobster",
+        "human":  false
     }, 
     {
         "name":  "Takane Takamine",

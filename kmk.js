@@ -106,6 +106,13 @@ function endKMK() {
     gameRunning = false;
     startBtn.disabled = false;
     saveKMKState();
+    unlockAchievement('first_kmk');
+
+    if (cardChars.length === 3 && cardChars.every(c => c.anime === cardChars[0].anime))
+        unlockAchievement('kmk_same_anime');
+
+    if (cardChars.some((c, i) => c.name === 'Lobster' && cardChoices[i] === 'kill'))
+        unlockAchievement('kmk_lobster_kill');
 }
 
 // RESET

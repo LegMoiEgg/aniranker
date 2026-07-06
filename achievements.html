@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Achievements – Ani Ranker</title>
+    <link rel="icon" type="image/png" href="assets/icon.png">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        html { zoom: 1.10; }
+
+        .ach-header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+
+        .ach-counter {
+            color: #888;
+            font-size: 13px;
+            margin-top: -6px;
+            margin-bottom: 18px;
+        }
+
+        .ach-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 14px;
+            justify-content: center;
+            padding: 10px 20px 100px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .ach-card {
+            background: #1a1a1a;
+            border: 2px solid #ff00ff;
+            border-radius: 12px;
+            width: 180px;
+            padding: 20px 14px 18px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+            text-align: center;
+            box-shadow: 0 0 12px #ff00ff44;
+            transition: transform 0.15s, box-shadow 0.2s;
+        }
+
+        .ach-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 0 22px #ff00ff88;
+        }
+
+        .ach-card.locked {
+            border-color: #333;
+            box-shadow: none;
+            opacity: 0.45;
+            filter: grayscale(1);
+        }
+
+        .ach-card.locked:hover {
+            transform: none;
+            box-shadow: none;
+        }
+
+        .ach-icon {
+            font-size: 38px;
+            line-height: 1;
+        }
+
+        .ach-title {
+            font-size: 14px;
+            font-weight: bold;
+            color: #ff00ff;
+        }
+
+        .ach-desc {
+            font-size: 11px;
+            color: #aaa;
+            line-height: 1.45;
+        }
+
+        .ach-card.locked .ach-desc {
+            color: #555;
+        }
+
+        .ach-lock-icon {
+            font-size: 13px;
+            color: #555;
+            margin-top: 2px;
+        }
+
+        .ach-date {
+            font-size: 10px;
+            color: #555;
+            margin-top: 2px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="ach-header">
+    <h1>Achievements</h1>
+    <p class="ach-counter" id="ach-counter"></p>
+</div>
+
+<div class="ach-grid" id="ach-grid"></div>
+
+<a href="index.html"><button class="back-btn">Back</button></a>
+
+<script src="achievements.js"></script>
+<script>
+    const grid = document.getElementById('ach-grid');
+    const counter = document.getElementById('ach-counter');
+    const unlocked = achGetUnlocked();
+
+    counter.textContent = `${unlocked.length} / ${ACHIEVEMENTS.length} unlocked`;
+
+    // Freigeschaltete zuerst
+    const sorted = [...ACHIEVEMENTS].sort((a, b) => {
+        const aU = unlocked.includes(a.id);
+        const bU = unlocked.includes(b.id);
+        if (aU && !bU) return -1;
+        if (!aU && bU) return 1;
+        return 0;
+    });
+
+    for (const ach of sorted) {
+        const isUnlocked = unlocked.includes(ach.id);
+        const card = document.createElement('div');
+        card.className = 'ach-card' + (isUnlocked ? '' : ' locked');
+        card.innerHTML = `
+            <div class="ach-icon">${isUnlocked ? ach.icon : '🔒'}</div>
+            <div class="ach-title">${isUnlocked ? ach.title : '???'}</div>
+            <div class="ach-desc">${isUnlocked ? ach.desc : 'Noch nicht freigeschaltet'}</div>
+        `;
+        grid.appendChild(card);
+    }
+</script>
+</body>
+</html>

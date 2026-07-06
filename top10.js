@@ -129,6 +129,7 @@ function pick(side) {
 
         if (remaining.length === 0) {
             saveState();
+            unlockAchievement('first_top10');
             showResult();
             return;
         }
@@ -136,6 +137,7 @@ function pick(side) {
             // Last char gets final place automatically
             ranked.push(remaining[0]);
             saveState();
+            unlockAchievement('first_top10');
             showResult();
             return;
         }

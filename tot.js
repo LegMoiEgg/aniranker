@@ -6,6 +6,8 @@ let leftChar = null;
 let rightChar = null;
 let champion = null;  // the character who won all 10 rounds
 let round = 0;        // how many picks made so far
+let champWins = 0;    // consecutive wins of the current leader
+let champWinName = null;
 
 function shuffle(arr) {
     const a = [...arr];
@@ -25,6 +27,8 @@ function saveState() {
             rightName:    rightChar ? rightChar.name : null,
             championName: champion ? champion.name : null,
             round,
+            champWins,
+            champWinName,
             done:         champion !== null,
         };
         localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
@@ -91,6 +95,8 @@ function init() {
         document.getElementById('tot-result').style.display = 'block';
         showResult();
     } else {
+        champWins    = saved.champWins    || 0;
+        champWinName = saved.champWinName || null;
         leftChar  = charByName(saved.leftName);
         rightChar = charByName(saved.rightName);
         document.getElementById('tot-start-btn').style.display = 'none';
@@ -116,11 +122,21 @@ function updateDisplay() {
 
 function pick(side) {
     const winner = side === 'left' ? leftChar : rightChar;
+
+    if (winner.name === champWinName) {
+        champWins++;
+    } else {
+        champWinName = winner.name;
+        champWins = 1;
+    }
+
     round++;
 
     if (round >= ROUNDS) {
         champion = winner;
         saveState();
+        unlockAchievement('first_tot');
+        if (champWins >= ROUNDS) unlockAchievement('tot_flawless');
         showResult();
         return;
     }

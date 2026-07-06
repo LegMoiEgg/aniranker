@@ -125,6 +125,14 @@ document.addEventListener('keydown', e => {
 });
 
 function openModal(char) {
+    try {
+        const viewed = JSON.parse(localStorage.getItem('lexikon_viewed') || '[]');
+        if (!viewed.includes(char.name)) {
+            viewed.push(char.name);
+            localStorage.setItem('lexikon_viewed', JSON.stringify(viewed));
+            if (viewed.length >= CHARACTERS_DATA.length) unlockAchievement('loremaster');
+        }
+    } catch (e) {}
     document.getElementById('modal-img').src = char.image;
     document.getElementById('modal-img').alt = char.name;
     document.getElementById('modal-name').textContent = char.name;

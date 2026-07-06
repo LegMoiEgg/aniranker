@@ -33,6 +33,31 @@ function getStorageKey() {
     return MODE === 'daily' ? 'anidle_daily_' + getTodayKey() : 'anidle_infinity';
 }
 
+const STREAK_KEY = 'anidle_daily_streak';
+
+function getStreakData() {
+    try { return JSON.parse(localStorage.getItem(STREAK_KEY)) || { count: 0, lastDate: null }; }
+    catch { return { count: 0, lastDate: null }; }
+}
+
+function updateStreakDisplay() {
+    const el = document.getElementById('daily-streak-display');
+    if (!el || MODE !== 'daily') return;
+    const data      = getStreakData();
+    const today     = getTodayKey();
+    const yesterday = new Date(Date.now() - 86400000).toISOString().split('T')[0];
+    const active    = data.lastDate === today || data.lastDate === yesterday;
+    const streak    = active ? data.count : 0;
+    el.style.display = '';
+    if (streak === 0) {
+        el.textContent = 'Start your streak today!';
+        el.style.color  = '#888';
+    } else {
+        el.innerHTML   = `🔥 ${streak} day${streak === 1 ? '' : 's'} in a row`;
+        el.style.color  = '#ff88ff';
+    }
+}
+
 function saveState() {
     try {
         const state = {
@@ -65,6 +90,7 @@ function init() {
     characters = CHARACTERS_DATA;
 
     document.querySelector('h1').textContent = MODE === 'daily' ? 'Anidle Daily' : 'Anidle Infinity';
+    updateStreakDisplay();
 
     const saved = loadState();
     if (saved) {
@@ -258,6 +284,21 @@ function makeGuess(name) {
     if (char.name === targetCharacter.name) {
         won = true;
         document.getElementById('guess-input').disabled = true;
+        unlockAchievement('first_anidle');
+        if (guessCount === 1) unlockAchievement('anidle_first_try');
+        if (guessCount < 5)   unlockAchievement('anidle_no_hints');
+        if (guessCount >= 16) unlockAchievement('anidle_all_hints');
+        if (MODE === 'daily') {
+            const today      = getTodayKey();
+            const yesterday  = new Date(Date.now() - 86400000).toISOString().split('T')[0];
+            const streakData = getStreakData();
+            if (streakData.lastDate !== today) {
+                const newCount = streakData.lastDate === yesterday ? streakData.count + 1 : 1;
+                localStorage.setItem(STREAK_KEY, JSON.stringify({ count: newCount, lastDate: today }));
+                updateStreakDisplay();
+                if (newCount >= 3) unlockAchievement('anidle_streak');
+            }
+        }
         openWinModal();
     }
 

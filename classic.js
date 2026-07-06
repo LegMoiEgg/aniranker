@@ -125,6 +125,45 @@ function endGame() {
     slots.forEach((s, i) => {
         if (slotChars[i]) s.nameLabel.textContent = slotChars[i].name;
     });
+    unlockAchievement('first_classic');
+
+    const nonHumanCount = slotChars.filter(c => c && c.human === false).length;
+    if (nonHumanCount === 5) unlockAchievement('not_human');
+
+    const alyaChars = CHARACTERS_DATA.filter(c => c.anime === 'Alya Sometimes Hides Her Feelings in Russian');
+    if (alyaChars.every(c => slotChars.some(s => s && s.name === c.name))) unlockAchievement('all_alya');
+
+    const csmChars = CHARACTERS_DATA.filter(c => c.anime === 'Chainsaw Man');
+    if (csmChars.every(c => slotChars.some(s => s && s.name === c.name))) unlockAchievement('all_csm');
+
+    if (slotChars.every((c, i) => i === 0 || slotChars[i-1].name.localeCompare(c.name) <= 0))
+        unlockAchievement('classic_alphabetical');
+
+    if (slotChars.every(c => c && c.anime === slotChars[0].anime))
+        unlockAchievement('classic_same_anime');
+
+    if (slotChars[0] && slotChars[0].name === 'Lobster')
+        unlockAchievement('lobster_1');
+
+    if (slotChars[0] && slotChars[0].name === 'Biggie Cheese')
+        unlockAchievement('cheese_1');
+
+    if (slotChars.filter(c => c && c.anime === 'The Quintessential Quintuplets').length === 5)
+        unlockAchievement('quintessential');
+
+    const umaChars = CHARACTERS_DATA.filter(c => c.anime === 'Uma Musume');
+    if (umaChars.every(c => slotChars.some(s => s && s.name === c.name)))
+        unlockAchievement('all_umamusume');
+
+    if (slotChars.every(c => c && c.gender === 'Male'))
+        unlockAchievement('not_a_girl');
+
+    const hasHair = color => slotChars.every(c => c && c.haircolor.toLowerCase().includes(color));
+    if (hasHair('blonde')) unlockAchievement('hair_blonde');
+    if (hasHair('blue'))   unlockAchievement('hair_blue');
+    if (hasHair('pink'))   unlockAchievement('hair_pink');
+    if (hasHair('black'))  unlockAchievement('hair_black');
+    if (hasHair('brown'))  unlockAchievement('hair_brown');
 }
 
 function classicCopyResult() {
