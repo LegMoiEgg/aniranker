@@ -2008,5 +2008,75 @@
         "image":  "assets/images/ikumimito.jpg",
         "haircolor":  "Blonde",
         "animegenre":  "Gourmet / Ecchi"
+    },
+    {
+        "name":  "Himari Yoshino",
+        "anime":  "Hima-Ten",
+        "age":  16,
+        "gender":  "Female",
+        "height":  161,
+        "image":  "assets/images/himariyoshino.png",
+        "haircolor":  "Orange",
+        "animegenre":  "Romance / Comedy / School"
+    },
+    {
+        "name":  "Kanai Honoka",
+        "anime":  "Hima-Ten",
+        "age":  16,
+        "gender":  "Female",
+        "height":  161,
+        "image":  "assets/images/kanaihonoka.png",
+        "haircolor":  "Black",
+        "animegenre":  "Romance / Comedy / School"
+    },
+    {
+        "name":  "Kanna Aizawa",
+        "anime":  "Hima-Ten",
+        "age":  15,
+        "gender":  "Female",
+        "height":  154,
+        "image":  "assets/images/kannaaizawa.png",
+        "haircolor":  "Blonde",
+        "animegenre":  "Romance / Comedy / School"
+    },
+    {
+        "name":  "Beta",
+        "anime":  "The Eminence in Shadow",
+        "age":  15,
+        "gender":  "Female",
+        "height":  175,
+        "image":  "assets/images/beta.png",
+        "haircolor":  "Silver",
+        "animegenre":  "Action / Fantasy / Isekai"
+    },
+    {
+        "name":  "Gamma",
+        "anime":  "The Eminence in Shadow",
+        "age":  17,
+        "gender":  "Female",
+        "height":  175,
+        "image":  "assets/images/gamma.png",
+        "haircolor":  "Blue",
+        "animegenre":  "Action / Fantasy / Isekai"
+    },
+    {
+        "name":  "Zeta",
+        "anime":  "The Eminence in Shadow",
+        "age":  17,
+        "gender":  "Female",
+        "height":  171,
+        "image":  "assets/images/zeta.png",
+        "haircolor":  "Blonde",
+        "animegenre":  "Action / Fantasy / Isekai"
+    },
+    {
+        "name":  "Eta",
+        "anime":  "The Eminence in Shadow",
+        "age":  17,
+        "gender":  "Female",
+        "height":  161,
+        "image":  "assets/images/eta.png",
+        "haircolor":  "Brown",
+        "animegenre":  "Action / Fantasy / Isekai"
     }
 ];
