@@ -151,6 +151,9 @@ function endGame() {
     if (slotChars.filter(c => c && c.anime === 'The Quintessential Quintuplets').length === 5)
         unlockAchievement('quintessential');
 
+    if (slotChars.filter(c => c && c.anime === 'The Eminence in Shadow').length === 5)
+        unlockAchievement('shadow_garden');
+
     const umaChars = CHARACTERS_DATA.filter(c => c.anime === 'Uma Musume');
     if (umaChars.every(c => slotChars.some(s => s && s.name === c.name)))
         unlockAchievement('all_umamusume');

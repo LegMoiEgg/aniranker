@@ -184,6 +184,12 @@ const ACHIEVEMENTS = [
     title: 'Loremaster',
     desc: "Open every character's profile in the Lexikon"
   },
+  {
+    id: 'shadow_garden',
+    icon: '🌑',
+    title: 'Shadow Garden',
+    desc: "Rank 5 characters from Eminence in Shadow in a single Classic"
+  }
 ];
 
 // ============================================================
