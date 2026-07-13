@@ -454,7 +454,7 @@
         "animegenre":  "Comedy / Romance"
     },
     {
-        "name":  "Himari",
+        "name":  "Himari Inuzuka",
         "anime":  "Can a Boy-Girl-Friendship survive?",
         "age":  16,
         "gender":  "Female",
