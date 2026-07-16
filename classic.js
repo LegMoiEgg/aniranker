@@ -136,12 +136,6 @@ function endGame() {
     const csmChars = CHARACTERS_DATA.filter(c => c.anime === 'Chainsaw Man');
     if (csmChars.every(c => slotChars.some(s => s && s.name === c.name))) unlockAchievement('all_csm');
 
-    const quintChars = CHARACTERS_DATA.filter(c => c.anime === 'The Quintessential Quintuplets');
-    if (quintChars.every(c => slotChars.some(s => s && s.anime === c.anime))) unlockAchievement('quintessential');
-
-    const shadowChars = CHARACTERS_DATA.filter(c => c.anime === 'The Eminence in Shadow');
-    if (shadowChars.every(c => slotChars.some(s => s && s.anime === c.anime))) unlockAchievement('shadow_garden');
-
     if (slotChars.every((c, i) => i === 0 || slotChars[i-1].name.localeCompare(c.name) <= 0))
         unlockAchievement('classic_alphabetical');
 
