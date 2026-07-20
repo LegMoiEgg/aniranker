@@ -838,7 +838,7 @@
         "image":  "assets/images/leone.png",
         "haircolor":  "Blonde",
         "animegenre":  "Action / Fantasy / Drama",
-        "eyecolor": "Green"
+        "eyecolor": "Yellow"
     },
     {
         "name":  "Lucky Cyan",
