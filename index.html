@@ -16,7 +16,7 @@
 
         .mode-grid {
             display: grid;
-            grid-template-columns: repeat(2, 200px);
+            grid-template-columns: repeat(4, 200px);
             gap: 16px;
             margin-top: 32px;
         }
@@ -100,6 +100,11 @@
         <span class="mode-title">Top 10</span>
         <span class="mode-desc">Build your personal top 10 ranking through head-to-head matchups</span>
     </a>
+    <a href="connection.html" class="mode-card">
+        <span class="mode-icon">🔗</span>
+        <span class="mode-title">Connection</span>
+        <span class="mode-desc">Find 4 groups of 4 characters that share a common trait</span>
+    </a>
     <a href="anidle.html?mode=daily" class="mode-card">
         <span class="mode-icon">📅</span>
         <span class="mode-title">Anidle Daily</span>
@@ -135,7 +140,7 @@
 </div>
 
 <script>
-const LATEST_PATCH = 'v8.1';
+const LATEST_PATCH = 'v9.0';
 if (localStorage.getItem('lastSeenPatch') !== LATEST_PATCH) {
     document.getElementById('patch-link').classList.add('patch-new');
 }

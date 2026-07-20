@@ -7,7 +7,8 @@
         "height":  151,
         "image":  "assets/images/aihoshino.png",
         "haircolor":  "Purple",
-        "animegenre":  "Drama / Mystery"
+        "animegenre":  "Drama / Mystery",
+        "eyecolor": "Purple"
     },
     {
         "name":  "Akane Ousaki",
@@ -17,7 +18,8 @@
         "height":  158,
         "image":  "assets/images/akaneousaki.png",
         "haircolor":  "Black / Pink",
-        "animegenre":  "Comedy / Shonen / Drama"
+        "animegenre":  "Comedy / Shonen / Drama",
+        "eyecolor": "Pink"
     },
     {
         "name":  "Aki Adagaki",
@@ -27,7 +29,8 @@
         "height":  161,
         "image":  "assets/images/akiadagaki.png",
         "haircolor":  "Blue",
-        "animegenre":  "Romance / Comedy / School"
+        "animegenre":  "Romance / Comedy / School",
+        "eyecolor": "Blue"
     },
     {
         "name":  "Albedo",
@@ -37,7 +40,8 @@
         "height":  165,
         "image":  "assets/images/albedo.png",
         "haircolor":  "Black",
-        "animegenre":  "Action / Fantasy / Isekai"
+        "animegenre":  "Action / Fantasy / Isekai",
+        "eyecolor": "Yellow"
     },
     {
         "name":  "Alpha",
@@ -47,7 +51,8 @@
         "height":  165,
         "image":  "assets/images/alpha.png",
         "haircolor":  "Blonde",
-        "animegenre":  "Action / Fantasy / Isekai"
+        "animegenre":  "Action / Fantasy / Isekai",
+        "eyecolor": "Blue"
     },
     {
         "name":  "Alya Kujou",
@@ -57,7 +62,8 @@
         "height":  163,
         "image":  "assets/images/alyakujou.png",
         "haircolor":  "Silver",
-        "animegenre":  "Romance / Comedy / School"
+        "animegenre":  "Romance / Comedy / School",
+        "eyecolor": "Blue"
     },
     {
         "name":  "Astolfo",
@@ -67,7 +73,8 @@
         "height":  164,
         "image":  "assets/images/astolfo.png",
         "haircolor":  "Pink",
-        "animegenre":  "Action / Fantasy"
+        "animegenre":  "Action / Fantasy",
+        "eyecolor": "Pink"
     },
     {
         "name":  "Asuka Shikinami Langley",
@@ -77,7 +84,8 @@
         "height":  157,
         "image":  "assets/images/Asuka_Langley_Soryu.PNG",
         "haircolor":  "Red",
-        "animegenre":  "Action / Mecha / Sci-Fi / Psychological"
+        "animegenre":  "Action / Mecha / Sci-Fi / Psychological",
+        "eyecolor": "Blue"
     },
     {
         "name":  "Asuna Yuuki",
@@ -87,7 +95,8 @@
         "height":  168,
         "image":  "assets/images/asunayuuki.png",
         "haircolor":  "Brown",
-        "animegenre":  "Action / Fantasy / Isekai / Romance"
+        "animegenre":  "Action / Fantasy / Isekai / Romance",
+        "eyecolor": "Brown"
     },
     {
         "name":  "Ayame Moriya",
@@ -97,7 +106,8 @@
         "height":  160,
         "image":  "assets/images/Ayame.png",
         "haircolor":  "Purple",
-        "animegenre":  "Romance / Sports / School"
+        "animegenre":  "Romance / Sports / School",
+        "eyecolor": "Blue"
     },
     {
         "name":  "Ayano Kimishima",
@@ -107,7 +117,8 @@
         "height":  155,
         "image":  "assets/images/ayano.png",
         "haircolor":  "Black",
-        "animegenre":  "Romance / Comedy / School"
+        "animegenre":  "Romance / Comedy / School",
+        "eyecolor": "Brown"
     },
     {
         "name":  "Beatrice",
@@ -117,7 +128,8 @@
         "height":  140,
         "image":  "assets/images/beatrice.png",
         "haircolor":  "Blonde",
-        "animegenre":  "Action / Fantasy / Isekai / Drama"
+        "animegenre":  "Action / Fantasy / Isekai / Drama",
+        "eyecolor": "Blue"
     },
     {
         "name":  "Beatrix Amerhauser",
@@ -127,7 +139,8 @@
         "height":  172,
         "image":  "assets/images/beatrix.jpg",
         "haircolor":  "Blonde",
-        "animegenre":  "Action / Comedy / Horror"
+        "animegenre":  "Action / Comedy / Horror",
+        "eyecolor": "Blue"
     },
     {
         "name":  "Big Mom",
@@ -137,7 +150,8 @@
         "height":  880,
         "image":  "assets/images/bigmom.png",
         "haircolor":  "Pink",
-        "animegenre":  "Action / Adventure / Comedy"
+        "animegenre":  "Action / Adventure / Comedy",
+        "eyecolor": "Orange"
     },
     {
         "name":  "Biggie Cheese",
@@ -148,7 +162,8 @@
         "image":  "assets/images/biggiecheese.png",
         "haircolor":  "Grey",
         "animegenre":  "Comedy",
-        "human":  false
+        "human":  false,
+        "eyecolor": "Black"
     },
     {
         "name":  "Blake Belladonna",
@@ -158,7 +173,8 @@
         "height":  169,
         "image":  "assets/images/blakeBelladonna.jpg",
         "haircolor":  "Black",
-        "animegenre":  "Action / Adventure / Fantasy"
+        "animegenre":  "Action / Adventure / Fantasy",
+        "eyecolor": "Orange"
     },
     {
         "name":  "Bridget",
@@ -168,7 +184,8 @@
         "height":  157,
         "image":  "assets/images/bridget.png",
         "haircolor":  "Blonde",
-        "animegenre":  "Action"
+        "animegenre":  "Action",
+        "eyecolor": "Green"
     },
     {
         "name":  "Burnice",
@@ -178,7 +195,8 @@
         "height":  163,
         "image":  "assets/images/burnice.png",
         "haircolor":  "Blonde",
-        "animegenre":  "Action / Sci-Fi"
+        "animegenre":  "Action / Sci-Fi",
+        "eyecolor": "Red"
     },
     {
         "name":  "C.C.",
@@ -188,7 +206,8 @@
         "height":  167,
         "image":  "assets/images/cc.png",
         "haircolor":  "Green",
-        "animegenre":  "Action / Mecha / Sci-Fi / Drama"
+        "animegenre":  "Action / Mecha / Sci-Fi / Drama",
+        "eyecolor": "Yellow"
     },
     {
         "name":  "Canari",
@@ -198,7 +217,8 @@
         "height":  168,
         "image":  "assets/images/canari.png",
         "haircolor":  "Yellow / Blue",
-        "animegenre":  "Adventure / Fantasy / Comedy"
+        "animegenre":  "Adventure / Fantasy / Comedy",
+        "eyecolor": "Blue"
     },
     {
         "name":  "Caesar King",
@@ -208,7 +228,8 @@
         "height":  176,
         "image":  "assets/images/ceasarzzz.png",
         "haircolor":  "Silver",
-        "animegenre":  "Action / Sci-Fi"
+        "animegenre":  "Action / Sci-Fi",
+        "eyecolor": "Yellow"
     },
     {
         "name":  "Chelsea",
@@ -218,7 +239,8 @@
         "height":  165,
         "image":  "assets/images/chelsea.png",
         "haircolor":  "Red",
-        "animegenre":  "Action / Fantasy / Drama"
+        "animegenre":  "Action / Fantasy / Drama",
+        "eyecolor": "Red"
     },
     {
         "name":  "Chika Fujiwara",
@@ -228,7 +250,8 @@
         "height":  154,
         "image":  "assets/images/chika.png",
         "haircolor":  "Pink",
-        "animegenre":  "Romance / Comedy / School"
+        "animegenre":  "Romance / Comedy / School",
+        "eyecolor": "Blue"
     },
     {
         "name":  "Chinatsu Kano",
@@ -238,7 +261,8 @@
         "height":  162,
         "image":  "assets/images/chinatsu.png",
         "haircolor":  "Blonde",
-        "animegenre":  "Romance / Sports / School"
+        "animegenre":  "Romance / Sports / School",
+        "eyecolor": "Brown"
     },
     {
         "name":  "Chitose Amane",
@@ -248,7 +272,8 @@
         "height":  172,
         "image":  "assets/images/chitoseamane.png",
         "haircolor":  "Black",
-        "animegenre":  "Romance / Comedy / School / Slice of Life"
+        "animegenre":  "Romance / Comedy / School / Slice of Life",
+        "eyecolor": "Green"
     },
     {
         "name":  "Cynthia",
@@ -258,7 +283,8 @@
         "height":  168,
         "image":  "assets/images/cynthia.png",
         "haircolor":  "Blonde",
-        "animegenre":  "Adventure / Fantasy / Comedy"
+        "animegenre":  "Adventure / Fantasy / Comedy",
+        "eyecolor": "Gray"
     },
     {
         "name":  "Darkness",
@@ -268,7 +294,8 @@
         "height":  165,
         "image":  "assets/images/darkness.png",
         "haircolor":  "Blonde",
-        "animegenre":  "Comedy / Fantasy / Isekai"
+        "animegenre":  "Comedy / Fantasy / Isekai",
+        "eyecolor": "Blue"
     },
     {
         "name":  "Delta",
@@ -279,7 +306,8 @@
         "image":  "assets/images/delta.png",
         "haircolor":  "Black",
         "animegenre":  "Action / Fantasy / Isekai",
-        "human":  false
+        "human":  false,
+        "eyecolor": "Purple"
     },
     {
         "name":  "Elfaria Albis Serfort",
@@ -289,7 +317,8 @@
         "height":  163,
         "image":  "assets/images/elfariaalbisserfort.png",
         "haircolor":  "Blue",
-        "animegenre":  " Action / Fantasy"
+        "animegenre":  " Action / Fantasy",
+        "eyecolor": "Blue"
     },
     {
         "name":  "Emilia",
@@ -299,7 +328,8 @@
         "height":  164,
         "image":  "assets/images/emilia.png",
         "haircolor":  "Silver",
-        "animegenre":  "Action / Fantasy / Isekai / Drama"
+        "animegenre":  "Action / Fantasy / Isekai / Drama",
+        "eyecolor": "Purple"
     },
     {
         "name":  "Enigmara",
@@ -309,7 +339,8 @@
         "height":  150,
         "image":  "assets/images/enigmara.png",
         "haircolor":  "Pink / Silver",
-        "animegenre":  "Adventure / Fantasy / Comedy"
+        "animegenre":  "Adventure / Fantasy / Comedy",
+        "eyecolor": "Pink"
     },
     {
         "name":  "Epsilon",
@@ -319,7 +350,8 @@
         "height":  163,
         "image":  "assets/images/epsilon.png",
         "haircolor":  "Blue",
-        "animegenre":  "Action / Fantasy / Isekai"
+        "animegenre":  "Action / Fantasy / Isekai",
+        "eyecolor": "Purple"
     },
     {
         "name":  "Erina Nakiri",
@@ -329,7 +361,8 @@
         "height":  162,
         "image":  "assets/images/erinanakiri.png",
         "haircolor":  "Orange",
-        "animegenre":  "Gourmet / Ecchi"
+        "animegenre":  "Gourmet / Ecchi",
+        "eyecolor": "Pink"
     },
     {
         "name":  "Erza Scarlet",
@@ -339,7 +372,8 @@
         "height":  171,
         "image":  "assets/images/erzascarlet.png",
         "haircolor":  "Red",
-        "animegenre":  "Action / Adventure / Fantasy"
+        "animegenre":  "Action / Adventure / Fantasy",
+        "eyecolor": "Brown"
     },
     {
         "name":  "Felix Argyle",
@@ -350,7 +384,8 @@
         "image":  "assets/images/felix.png",
         "haircolor":  "Blonde",
         "animegenre":  "Action / Fantasy / Isekai / Drama",
-        "human":  false
+        "human":  false,
+        "eyecolor": "Orange"
     },
     {
         "name":  "Fern",
@@ -360,7 +395,8 @@
         "height":  159,
         "image":  "assets/images/fern.png",
         "haircolor":  "Purple",
-        "animegenre":  "Adventure / Fantasy / Drama"
+        "animegenre":  "Adventure / Fantasy / Drama",
+        "eyecolor": "Purple"
     },
     {
         "name":  "Flamme",
@@ -370,7 +406,8 @@
         "height":  170,
         "image":  "assets/images/flamme.png",
         "haircolor":  "Orange",
-        "animegenre":  "Adventure / Fantasy / Drama"
+        "animegenre":  "Adventure / Fantasy / Drama",
+        "eyecolor": "Blue"
     },
     {
         "name":  "Frieren",
@@ -380,7 +417,8 @@
         "height":  158,
         "image":  "assets/images/frieren.png",
         "haircolor":  "Silver",
-        "animegenre":  "Adventure / Fantasy / Drama"
+        "animegenre":  "Adventure / Fantasy / Drama",
+        "eyecolor": "Green"
     },
     {
         "name":  "Fubuki",
@@ -390,7 +428,8 @@
         "height":  167,
         "image":  "assets/images/fubuki.png",
         "haircolor":  "Black / Green",
-        "animegenre":  "Action / Comedy / Supernatural"
+        "animegenre":  "Action / Comedy / Supernatural",
+        "eyecolor": "Green"
     },
     {
         "name":  "Gardevoir",
@@ -401,7 +440,8 @@
         "image":  "assets/images/guardevoir.png",
         "haircolor":  "Green",
         "animegenre":  "Adventure / Fantasy / Comedy",
-        "human":  false
+        "human":  false,
+        "eyecolor": "Pink"
     },
     {
         "name":  "Haku",
@@ -411,7 +451,8 @@
         "height":  165,
         "image":  "assets/images/haku.png",
         "haircolor":  "Black",
-        "animegenre":  "Action / Adventure / Fantasy"
+        "animegenre":  "Action / Adventure / Fantasy",
+        "eyecolor": "Brown"
     },
     {
         "name":  "Haru Aomi",
@@ -421,7 +462,8 @@
         "height":  142,
         "image":  "assets/images/haru.png",
         "haircolor":  "Blonde",
-        "animegenre":  "Romance / Drama / School"
+        "animegenre":  "Romance / Drama / School",
+        "eyecolor": "Brown"
     },
     {
         "name":  "Hatsune Miku",
@@ -431,7 +473,8 @@
         "height":  158,
         "image":  "assets/images/hatsunemiku.png",
         "haircolor":  "Blue",
-        "animegenre":  "Music"
+        "animegenre":  "Music",
+        "eyecolor": "Blue"
     },
     {
         "name":  "Hideyoshi Kinoshita",
@@ -441,7 +484,8 @@
         "height":  171,
         "image":  "assets/images/hideyoshi.png",
         "haircolor":  "Brown",
-        "animegenre":  "Comedy / School"
+        "animegenre":  "Comedy / School",
+        "eyecolor": "Green"
     },
     {
         "name":  "Hikari Hoshimiya",
@@ -451,7 +495,8 @@
         "height":  157,
         "image":  "assets/images/hikarihoshimiya.png",
         "haircolor":  "Blonde",
-        "animegenre":  "Comedy / Romance"
+        "animegenre":  "Comedy / Romance",
+        "eyecolor": "Purple"
     },
     {
         "name":  "Himari Inuzuka",
@@ -461,7 +506,8 @@
         "height":  160,
         "image":  "assets/images/himari.png",
         "haircolor":  "Blue",
-        "animegenre":  "Romance / Comedy / School"
+        "animegenre":  "Romance / Comedy / School",
+        "eyecolor": "Blue"
     },
     {
         "name":  "Hina Chono",
@@ -471,7 +517,8 @@
         "height":  162,
         "image":  "assets/images/hinachono.png",
         "haircolor":  "Pink",
-        "animegenre":  "Romance / Sports / School"
+        "animegenre":  "Romance / Sports / School",
+        "eyecolor": "Pink"
     },
     {
         "name":  "Hinata Hyuga",
@@ -481,7 +528,8 @@
         "height":  163,
         "image":  "assets/images/hinatahyuga.png",
         "haircolor":  "Black",
-        "animegenre":  "Action / Adventure / Fantasy"
+        "animegenre":  "Action / Adventure / Fantasy",
+        "eyecolor": "White"
     },
     {
         "name":  "Historia Reiss",
@@ -491,7 +539,8 @@
         "height":  154,
         "image":  "assets/images/historia.png",
         "haircolor":  "Blonde",
-        "animegenre":  "Action / Drama / Thriller / Fantasy"
+        "animegenre":  "Action / Drama / Thriller / Fantasy",
+        "eyecolor": "Blue"
     },
     {
         "name":  "Holo",
@@ -502,7 +551,8 @@
         "image":  "assets/images/holo.png",
         "haircolor":  "Brown",
         "animegenre":  "Adventure / Fantasy / Romance",
-        "human":  false
+        "human":  false,
+        "eyecolor": "Red"
     },
     {
         "name":  "Horikita Suzune",
@@ -512,7 +562,8 @@
         "height":  163,
         "image":  "assets/images/horikitasuzune.png",
         "haircolor":  "Black",
-        "animegenre":  "Drama / School / Mystery"
+        "animegenre":  "Drama / School / Mystery",
+        "eyecolor": "Orange"
     },
     {
         "name":  "Ichika Nakano",
@@ -522,7 +573,8 @@
         "height":  164,
         "image":  "assets/images/ichika.jpg",
         "haircolor":  "Pink",
-        "animegenre":  "Romance / Comedy / School"
+        "animegenre":  "Romance / Comedy / School",
+        "eyecolor": "Blue"
     },
     {
         "name":  "Ino Yamanaka",
@@ -532,7 +584,8 @@
         "height":  163,
         "image":  "assets/images/ino.png",
         "haircolor":  "Blonde",
-        "animegenre":  "Action / Adventure / Fantasy"
+        "animegenre":  "Action / Adventure / Fantasy",
+        "eyecolor": "Blue"
     },
     {
         "name":  "Iris",
@@ -542,7 +595,8 @@
         "height":  158,
         "image":  "assets/images/iris.jpg",
         "haircolor":  "Blonde",
-        "animegenre":  "Action / Fantasy / Supernatural"
+        "animegenre":  "Action / Fantasy / Supernatural",
+        "eyecolor": "Blue"
     },
     {
         "name":  "Iroha Isshiki",
@@ -552,7 +606,8 @@
         "height":  158,
         "image":  "assets/images/irohaisshiki.png",
         "haircolor":  "Blonde",
-        "animegenre":  "Romance / Comedy / Drama / School"
+        "animegenre":  "Romance / Comedy / Drama / School",
+        "eyecolor": "Brown"
     },
     {
         "name":  "Iroha Sakayori",
@@ -562,7 +617,8 @@
         "height":  156,
         "image":  "assets/images/cpkIroha.png",
         "haircolor":  "Purple",
-        "animegenre":  "Action / Sci-Fi / Supernatural"
+        "animegenre":  "Action / Sci-Fi / Supernatural",
+        "eyecolor": "Blue"
     },
     {
         "name":  "Itsuki Nakano",
@@ -572,7 +628,8 @@
         "height":  164,
         "image":  "assets/images/itsuki.jpg",
         "haircolor":  "Pink",
-        "animegenre":  "Romance / Comedy / School"
+        "animegenre":  "Romance / Comedy / School",
+        "eyecolor": "Blue"
     },
     {
         "name":  "Kaguya Shinomiya",
@@ -582,7 +639,8 @@
         "height":  158,
         "image":  "assets/images/Kaguya.png",
         "haircolor":  "Black",
-        "animegenre":  "Romance / Comedy / School"
+        "animegenre":  "Romance / Comedy / School",
+        "eyecolor": "Red"
     },
     {
         "name":  "Kaguya-Hime",
@@ -592,7 +650,8 @@
         "height":  156,
         "image":  "assets/images/cpkKaguya.png",
         "haircolor":  "Blonde",
-        "animegenre":  "Action / Sci-Fi / Supernatural"
+        "animegenre":  "Action / Sci-Fi / Supernatural",
+        "eyecolor": "Red"
     },
     {
         "name":  "Kana Arima",
@@ -602,7 +661,8 @@
         "height":  151,
         "image":  "assets/images/Kana.png",
         "haircolor":  "Red",
-        "animegenre":  "Drama / Mystery"
+        "animegenre":  "Drama / Mystery",
+        "eyecolor": "Red"
     },
     {
         "name":  "Kanne Lawine",
@@ -612,7 +672,8 @@
         "height":  165,
         "image":  "assets/images/les.png",
         "haircolor":  "Orange / Silver",
-        "animegenre":  "Adventure / Fantasy / Drama"
+        "animegenre":  "Adventure / Fantasy / Drama",
+        "eyecolor": "Blue / Orange"
     },
     {
         "name":  "Kaoruko Waguri",
@@ -622,7 +683,8 @@
         "height":  144,
         "image":  "assets/images/waguri.png",
         "haircolor":  "Black",
-        "animegenre":  "Romance / School / Slice of Life"
+        "animegenre":  "Romance / School / Slice of Life",
+        "eyecolor": "Blue"
     },
     {
         "name":  "Karane Inda",
@@ -632,7 +694,8 @@
         "height":  160,
         "image":  "assets/images/karaneinda.png",
         "haircolor":  "Orange",
-        "animegenre":  "Romance / Comedy / School"
+        "animegenre":  "Romance / Comedy / School",
+        "eyecolor": "Yellow"
     },
     {
         "name":  "Kasane Teto",
@@ -642,7 +705,8 @@
         "height":  155,
         "image":  "assets/images/kasaneTeto.png",
         "haircolor":  "Red",
-        "animegenre":  "Music"
+        "animegenre":  "Music",
+        "eyecolor": "Red"
     },
     {
         "name":  "Kasumi Miwa",
@@ -652,7 +716,8 @@
         "height":  160,
         "image":  "assets/images/kasumi.png",
         "haircolor":  "Blue",
-        "animegenre":  "Action / Supernatural / School"
+        "animegenre":  "Action / Supernatural / School",
+        "eyecolor": "Blue"
     },
     {
         "name":  "Kei Karuizawa",
@@ -662,7 +727,8 @@
         "height":  156,
         "image":  "assets/images/keikaruizawa.png",
         "haircolor":  "Blonde",
-        "animegenre":  "Drama / School / Mystery"
+        "animegenre":  "Drama / School / Mystery",
+        "eyecolor": "Blue"
     },
     {
         "name":  "Kirara Hoshi",
@@ -672,7 +738,8 @@
         "height":  158,
         "image":  "assets/images/kirara.png",
         "haircolor":  "Black",
-        "animegenre":  "Action / Supernatural / School"
+        "animegenre":  "Action / Supernatural / School",
+        "eyecolor": "Pink"
     },
     {
         "name":  "Kobeni Higashiyama",
@@ -682,7 +749,8 @@
         "height":  166,
         "image":  "assets/images/kobeni.png",
         "haircolor":  "Brown",
-        "animegenre":  "Action / Horror / Supernatural"
+        "animegenre":  "Action / Horror / Supernatural",
+        "eyecolor": "Brown"
     },
     {
         "name":  "Kohaku",
@@ -692,7 +760,8 @@
         "height":  167,
         "image":  "assets/images/kohakuStone.png",
         "haircolor":  "Blonde",
-        "animegenre":  "Action / Adventure / Sci-Fi"
+        "animegenre":  "Action / Adventure / Sci-Fi",
+        "eyecolor": "Blue"
     },
     {
         "name":  "Kojuro Shuri",
@@ -702,7 +771,8 @@
         "height":  168,
         "image":  "assets/images/shuri.png",
         "haircolor":  "Blonde",
-        "animegenre":  "Romance / Comedy / School"
+        "animegenre":  "Romance / Comedy / School",
+        "eyecolor": "Pink"
     },
     {
         "name":  "Koyuki Hikawa",
@@ -712,7 +782,8 @@
         "height":  152,
         "image":  "assets/images/koyukihikawa.png",
         "haircolor":  "Blonde",
-        "animegenre":  "Drama / Romance"
+        "animegenre":  "Drama / Romance",
+        "eyecolor": "Brown"
     },
     {
         "name":  "Kuina Sazanami",
@@ -722,7 +793,8 @@
         "height":  160,
         "image":  "assets/images/kuina.png",
         "haircolor":  "Blonde",
-        "animegenre":  "Action / Supernatural"
+        "animegenre":  "Action / Supernatural",
+        "eyecolor": "Brown"
     },
     {
         "name":  "Kurisu Makise",
@@ -732,7 +804,8 @@
         "height":  160,
         "image":  "assets/images/kurisu.png",
         "haircolor":  "Red",
-        "animegenre":  "Sci-Fi / Mystery / Thriller / Drama"
+        "animegenre":  "Sci-Fi / Mystery / Thriller / Drama",
+        "eyecolor": "Blue"
     },
     {
         "name":  "Kyoko Hori",
@@ -742,7 +815,8 @@
         "height":  158,
         "image":  "assets/images/hori.png",
         "haircolor":  "Brown",
-        "animegenre":  "Romance / Comedy / School / Slice of Life"
+        "animegenre":  "Romance / Comedy / School / Slice of Life",
+        "eyecolor": "Brown"
     },
     {
         "name":  "Leafa",
@@ -752,7 +826,8 @@
         "height":  167,
         "image":  "assets/images/leafa.png",
         "haircolor":  "Blonde",
-        "animegenre":  "Action / Fantasy / Isekai / Romance"
+        "animegenre":  "Action / Fantasy / Isekai / Romance",
+        "eyecolor": "Blue"
     },
     {
         "name":  "Leone",
@@ -762,7 +837,8 @@
         "height":  170,
         "image":  "assets/images/leone.png",
         "haircolor":  "Blonde",
-        "animegenre":  "Action / Fantasy / Drama"
+        "animegenre":  "Action / Fantasy / Drama",
+        "eyecolor": "Green"
     },
     {
         "name":  "Lucky Cyan",
@@ -772,7 +848,8 @@
         "height":  160,
         "image":  "assets/images/luckycyan.png",
         "haircolor":  "Cyan",
-        "animegenre":  "Action / Sci-Fi / Comedy"
+        "animegenre":  "Action / Sci-Fi / Comedy",
+        "eyecolor": "Cyan"
     },
     {
         "name":  "Lucoa",
@@ -783,7 +860,8 @@
         "image":  "assets/images/lucoa.png",
         "haircolor":  "Green",
         "animegenre":  "Comedy / Slice of Life / Fantasy",
-        "human":  false
+        "human":  false,
+        "eyecolor": "Green"
     },
     {
         "name":  "Lucy",
@@ -793,7 +871,8 @@
         "height":  173,
         "image":  "assets/images/lucy.png",
         "haircolor":  "White / Pink / Blue",
-        "animegenre":  "Action / Sci-Fi / Drama"
+        "animegenre":  "Action / Sci-Fi / Drama",
+        "eyecolor": "Blue"
     },
     {
         "name":  "Lucy Heartfilia",
@@ -803,7 +882,8 @@
         "height":  165,
         "image":  "assets/images/lucyft.png",
         "haircolor":  "Blonde",
-        "animegenre":  "Action / Adventure / Fantasy"
+        "animegenre":  "Action / Adventure / Fantasy",
+        "eyecolor": "Brown"
     },
     {
         "name":  "Mai Sakurajima",
@@ -813,7 +893,8 @@
         "height":  164,
         "image":  "assets/images/maisakurajima.png",
         "haircolor":  "Black",
-        "animegenre":  "Romance / Drama / Supernatural / School"
+        "animegenre":  "Romance / Drama / Supernatural / School",
+        "eyecolor": "Blue"
     },
     {
         "name":  "Makima",
@@ -823,7 +904,8 @@
         "height":  173,
         "image":  "assets/images/makima.png",
         "haircolor":  "Red",
-        "animegenre":  "Action / Horror / Supernatural"
+        "animegenre":  "Action / Horror / Supernatural",
+        "eyecolor": "Orange"
     },
     {
         "name":  "Maomao",
@@ -833,7 +915,8 @@
         "height":  152,
         "image":  "assets/images/maomao.png",
         "haircolor":  "Green",
-        "animegenre":  "Mystery / Drama / Historical"
+        "animegenre":  "Mystery / Drama / Historical",
+        "eyecolor": "Blue"
     },
     {
         "name":  "Marin Kitagawa",
@@ -843,7 +926,8 @@
         "height":  165,
         "image":  "assets/images/marinkitagawa.png",
         "haircolor":  "Blonde",
-        "animegenre":  "Romance / Comedy / School / Slice of Life"
+        "animegenre":  "Romance / Comedy / School / Slice of Life",
+        "eyecolor": "Red"
     },
     {
         "name":  "Maruzensky",
@@ -854,7 +938,8 @@
         "image":  "assets/images/maruzensky.png",
         "haircolor":  "Brown",
         "animegenre":  "Sports / Comedy / School",
-        "human":  false
+        "human":  false,
+        "eyecolor": "Blue"
     },
     {
         "name":  "Masha Kujo",
@@ -864,7 +949,8 @@
         "height":  160,
         "image":  "assets/images/masha.png",
         "haircolor":  "Brown",
-        "animegenre":  "Romance / Comedy / School"
+        "animegenre":  "Romance / Comedy / School",
+        "eyecolor": "Brown"
     },
     {
         "name":  "Matiere",
@@ -874,7 +960,8 @@
         "height":  173,
         "image":  "assets/images/matiere.jpg",
         "haircolor":  "Black",
-        "animegenre":  "Adventure / Fantasy / Comedy"
+        "animegenre":  "Adventure / Fantasy / Comedy",
+        "eyecolor": "Brown"
     },
     {
         "name":  "Mavuika",
@@ -884,7 +971,8 @@
         "height":  173,
         "image":  "assets/images/mavuika.png",
         "haircolor":  "Red",
-        "animegenre":  "Action / Adventure / Fantasy"
+        "animegenre":  "Action / Adventure / Fantasy",
+        "eyecolor": "Orange"
     },
     {
         "name":  "Megumin",
@@ -894,7 +982,8 @@
         "height":  152,
         "image":  "assets/images/megumin.png",
         "haircolor":  "Brown",
-        "animegenre":  "Comedy / Fantasy / Isekai"
+        "animegenre":  "Comedy / Fantasy / Isekai",
+        "eyecolor": "Brown"
     },
     {
         "name":  "Merlin",
@@ -904,7 +993,8 @@
         "height":  177,
         "image":  "assets/images/merlin.png",
         "haircolor":  "Black",
-        "animegenre":  "Action / Adventure / Fantasy / Romance"
+        "animegenre":  "Action / Adventure / Fantasy / Romance",
+        "eyecolor": "Brown"
     },
     {
         "name":  "Mikasa Ackerman",
@@ -914,7 +1004,8 @@
         "height":  170,
         "image":  "assets/images/mikasa.png",
         "haircolor":  "Black",
-        "animegenre":  "Action / Drama / Thriller / Fantasy"
+        "animegenre":  "Action / Drama / Thriller / Fantasy",
+        "eyecolor": "Grey"
     },
     {
         "name":  "Miki Azumi",
@@ -924,7 +1015,8 @@
         "height":  152,
         "image":  "assets/images/mikiazumi.png",
         "haircolor":  "Blonde",
-        "animegenre":  "Drama / Romance"
+        "animegenre":  "Drama / Romance",
+        "eyecolor": "Blue"
     },
     {
         "name":  "Miko Iino",
@@ -934,7 +1026,8 @@
         "height":  160,
         "image":  "assets/images/mikoiino.png",
         "haircolor":  "Brown",
-        "animegenre":  "Romance / Comedy / School"
+        "animegenre":  "Romance / Comedy / School",
+        "eyecolor": "Brown"
     },
     {
         "name":  "Miko Yotsuya",
@@ -944,7 +1037,8 @@
         "height":  160,
         "image":  "assets/images/miko.png",
         "haircolor":  "Black",
-        "animegenre":  "Horror / Supernatural / School"
+        "animegenre":  "Horror / Supernatural / School",
+        "eyecolor": "Yellow"
     },
     {
         "name":  "Miku Nakano",
@@ -954,7 +1048,8 @@
         "height":  164,
         "image":  "assets/images/mikunakano.png",
         "haircolor":  "Pink",
-        "animegenre":  "Romance / Comedy / School"
+        "animegenre":  "Romance / Comedy / School",
+        "eyecolor": "Blue"
     },
     {
         "name":  "Miku Sakura",
@@ -964,7 +1059,8 @@
         "height":  154,
         "image":  "assets/images/mikusakura.png",
         "haircolor":  "Black",
-        "animegenre":  "Romance / Comedy / School"
+        "animegenre":  "Romance / Comedy / School",
+        "eyecolor": "Blue"
     },
     {
         "name":  "Miori Motomiya",
@@ -974,7 +1070,8 @@
         "height":  156,
         "image":  "assets/images/miorimotomiya.png",
         "haircolor":  "Black",
-        "animegenre":  "Comedy / Romance"
+        "animegenre":  "Comedy / Romance",
+        "eyecolor": "Blue"
     },
     {
         "name":  "Mirko",
@@ -985,7 +1082,8 @@
         "image":  "assets/images/mirko.png",
         "haircolor":  "White",
         "animegenre":  "Action / School / Supernatural",
-        "human":  false
+        "human":  false,
+        "eyecolor": "Red"
     },
     {
         "name":  "Misa Amane",
@@ -995,7 +1093,8 @@
         "height":  152,
         "image":  "assets/images/misa.jpg",
         "haircolor":  "Blonde",
-        "animegenre":  "Mystery / Thriller / Psychological / Supernatural"
+        "animegenre":  "Mystery / Thriller / Psychological / Supernatural",
+        "eyecolor": "Brown"
     },
     {
         "name":  "Misato Katsuragi",
@@ -1005,7 +1104,8 @@
         "height":  163,
         "image":  "assets/images/mistao.png",
         "haircolor":  "Black",
-        "animegenre":  "Action / Mecha / Sci-Fi / Psychological"
+        "animegenre":  "Action / Mecha / Sci-Fi / Psychological",
+        "eyecolor": "Brown"
     },
     {
         "name":  "Mitsuri Kanroji",
@@ -1015,7 +1115,8 @@
         "height":  167,
         "image":  "assets/images/mitsuri.png",
         "haircolor":  "Pink / Green",
-        "animegenre":  "Action / Fantasy / Supernatural"
+        "animegenre":  "Action / Fantasy / Supernatural",
+        "eyecolor": "Green"
     },
     {
         "name":  "Miyu Suzuki",
@@ -1025,7 +1126,8 @@
         "height":  160,
         "image":  "assets/images/suzuki.png",
         "haircolor":  "Pink",
-        "animegenre":  "Romance / Comedy / School"
+        "animegenre":  "Romance / Comedy / School",
+        "eyecolor": "Yellow"
     },
     {
         "name":  "Momo Ayase",
@@ -1035,7 +1137,8 @@
         "height":  162,
         "image":  "assets/images/momo.png",
         "haircolor":  "Brown",
-        "animegenre":  "Action / Comedy / Romance / Supernatural"
+        "animegenre":  "Action / Comedy / Romance / Supernatural",
+        "eyecolor": "Brown"
     },
     {
         "name":  "Mona",
@@ -1045,7 +1148,8 @@
         "height":  160,
         "image":  "assets/images/mona.png",
         "haircolor":  "Black",
-        "animegenre":  "Action / Adventure / Fantasy"
+        "animegenre":  "Action / Adventure / Fantasy",
+        "eyecolor": "Grey"
     },
     {
         "name":  "Mt. Lady",
@@ -1055,7 +1159,8 @@
         "height":  162,
         "image":  "assets/images/mtlady.png",
         "haircolor":  "Blonde",
-        "animegenre":  "Action / School / Supernatural"
+        "animegenre":  "Action / School / Supernatural",
+        "eyecolor": "Pink"
     },
     {
         "name":  "Nagisa Shiota",
@@ -1065,7 +1170,8 @@
         "height":  169,
         "image":  "assets/images/nagisa.png",
         "haircolor":  "Blue",
-        "animegenre":  "Action / Comedy"
+        "animegenre":  "Action / Comedy",
+        "eyecolor": "Blue"
     },
     {
         "name":  "Najimi Osana",
@@ -1075,7 +1181,8 @@
         "height":  168,
         "image":  "assets/images/najimi.jpg",
         "haircolor":  "Pink",
-        "animegenre":  "Romance / Comedy / School"
+        "animegenre":  "Romance / Comedy / School",
+        "eyecolor": "Brown"
     },
     {
         "name":  "Nami",
@@ -1085,7 +1192,8 @@
         "height":  170,
         "image":  "assets/images/nami.png",
         "haircolor":  "Orange",
-        "animegenre":  "Action / Adventure / Comedy"
+        "animegenre":  "Action / Adventure / Comedy",
+        "eyecolor": "Brown"
     },
     {
         "name":  "Nanase",
@@ -1095,7 +1203,8 @@
         "height":  158,
         "image":  "assets/images/nanase.png",
         "haircolor":  "Black",
-        "animegenre":  "Romance / Drama / School"
+        "animegenre":  "Romance / Drama / School",
+        "eyecolor": "Blue"
     },
     {
         "name":  "Nazuna Nanakusa",
@@ -1105,7 +1214,8 @@
         "height":  158,
         "image":  "assets/images/nazuna.png",
         "haircolor":  "Silver / Pink",
-        "animegenre":  "Romance / Supernatural"
+        "animegenre":  "Romance / Supernatural",
+        "eyecolor": "Blue"
     },
     {
         "name":  "Nefertari Vivi",
@@ -1115,7 +1225,8 @@
         "height":  169,
         "image":  "assets/images/vivi.jpg",
         "haircolor":  "Blue",
-        "animegenre":  "Action / Adventure / Comedy"
+        "animegenre":  "Action / Adventure / Comedy",
+        "eyecolor": "Brown"
     },
     {
         "name":  "Nico Robin",
@@ -1125,7 +1236,8 @@
         "height":  188,
         "image":  "assets/images/nicorobin.png",
         "haircolor":  "Black",
-        "animegenre":  "Action / Adventure / Comedy"
+        "animegenre":  "Action / Adventure / Comedy",
+        "eyecolor": "Brown"
     },
     {
         "name":  "Nino Nakano",
@@ -1135,7 +1247,8 @@
         "height":  164,
         "image":  "assets/images/ninonakano.png",
         "haircolor":  "Pink",
-        "animegenre":  "Romance / Comedy / School"
+        "animegenre":  "Romance / Comedy / School",
+        "eyecolor": "Blue"
     },
     {
         "name":  "Nobara Kugisaki",
@@ -1145,7 +1258,8 @@
         "height":  160,
         "image":  "assets/images/nobara.png",
         "haircolor":  "Brown",
-        "animegenre":  "Action / Supernatural / School"
+        "animegenre":  "Action / Supernatural / School",
+        "eyecolor": "Orange"
     },
     {
         "name":  "Noi Komazawa",
@@ -1155,7 +1269,8 @@
         "height":  171,
         "image":  "assets/images/cpkNoi.png",
         "haircolor":  "Black",
-        "animegenre":  "Action / Sci-Fi / Supernatural"
+        "animegenre":  "Action / Sci-Fi / Supernatural",
+        "eyecolor": "Pink"
     },
     {
         "name":  "Noreason",
@@ -1166,7 +1281,8 @@
         "image":  "assets/images/noreason.png",
         "haircolor":  "Brown",
         "animegenre":  "Sports / Comedy / School",
-        "human":  false
+        "human":  false,
+        "eyecolor": "Yellow"
     },
     {
         "name":  "Nowa Sugaya",
@@ -1176,7 +1292,8 @@
         "height":  158,
         "image":  "assets/images/nowa.png",
         "haircolor":  "Black / Red",
-        "animegenre":  "Romance / Comedy / School / Slice of Life"
+        "animegenre":  "Romance / Comedy / School / Slice of Life",
+        "eyecolor": "Black"
     },
     {
         "name":  "Osaragi",
@@ -1186,7 +1303,8 @@
         "height":  175,
         "image":  "assets/images/osaragi.png",
         "haircolor":  "Black",
-        "animegenre":  "Action / Comedy"
+        "animegenre":  "Action / Comedy",
+        "eyecolor": "Black"
     },
     {
         "name":  "Ouka Shiunji",
@@ -1196,7 +1314,8 @@
         "height":  162,
         "image":  "assets/images/ouka.png",
         "haircolor":  "Pink",
-        "animegenre":  "Romance / Comedy / School"
+        "animegenre":  "Romance / Comedy / School",
+        "eyecolor": "Blue"
     },
     {
         "name":  "Pencilgon",
@@ -1206,7 +1325,8 @@
         "height":  165,
         "image":  "assets/images/pencilgon.png",
         "haircolor":  "Purple",
-        "animegenre":  "Action / Fantasy / Isekai"
+        "animegenre":  "Action / Fantasy / Isekai",
+        "eyecolor": "Blue"
     },
     {
         "name":  "Poemu Kohinata",
@@ -1216,7 +1336,8 @@
         "height":  163,
         "image":  "assets/images/poemukohinata.png",
         "haircolor":  "Blonde",
-        "animegenre":  "Comedy / Romance"
+        "animegenre":  "Comedy / Romance",
+        "eyecolor": "Brown"
     },
     {
         "name":  "Power",
@@ -1226,7 +1347,8 @@
         "height":  169,
         "image":  "assets/images/Power.png",
         "haircolor":  "Blonde / Pink",
-        "animegenre":  "Action / Horror / Supernatural"
+        "animegenre":  "Action / Horror / Supernatural",
+        "eyecolor": "Orange"
     },
     {
         "name":  "Queen",
@@ -1236,7 +1358,8 @@
         "height":  180,
         "image":  "assets/images/queen.png",
         "haircolor":  "White",
-        "animegenre":  "Action / Sci-Fi / Comedy"
+        "animegenre":  "Action / Sci-Fi / Comedy",
+        "eyecolor": "Yellow"
     },
     {
         "name":  "Raiha Uesugi",
@@ -1246,7 +1369,8 @@
         "height":  147,
         "image":  "assets/images/raihauesugi.png",
         "haircolor":  "Black",
-        "animegenre":  "Romance / Comedy / School"
+        "animegenre":  "Romance / Comedy / School",
+        "eyecolor": "Blue"
     },
     {
         "name":  "Rebecca",
@@ -1256,7 +1380,8 @@
         "height":  164,
         "image":  "assets/images/rebecca.png",
         "haircolor":  "Cyan",
-        "animegenre":  "Action / Sci-Fi / Drama"
+        "animegenre":  "Action / Sci-Fi / Drama",
+        "eyecolor": "Red / Green"
     },
     {
         "name":  "Rem",
@@ -1266,7 +1391,8 @@
         "height":  154,
         "image":  "assets/images/rem.png",
         "haircolor":  "Blue",
-        "animegenre":  "Action / Fantasy / Isekai / Drama"
+        "animegenre":  "Action / Fantasy / Isekai / Drama",
+        "eyecolor": "Blue"
     },
     {
         "name":  "Revy",
@@ -1276,7 +1402,8 @@
         "height":  165,
         "image":  "assets/images/revy.jpg",
         "haircolor":  "Brown",
-        "animegenre":  "Action / Thriller"
+        "animegenre":  "Action / Thriller",
+        "eyecolor": "Brown"
     },
     {
         "name":  "Reze",
@@ -1286,7 +1413,8 @@
         "height":  164,
         "image":  "assets/images/Reze.png",
         "haircolor":  "Purple",
-        "animegenre":  "Action / Horror / Supernatural"
+        "animegenre":  "Action / Horror / Supernatural",
+        "eyecolor": "Green"
     },
     {
         "name":  "Rias Gremory",
@@ -1296,7 +1424,8 @@
         "height":  172,
         "image":  "assets/images/rias.png",
         "haircolor":  "Red",
-        "animegenre":  "Action / Romance / School / Supernatural"
+        "animegenre":  "Action / Romance / School / Supernatural",
+        "eyecolor": "Blue"
     },
     {
         "name":  "Rin Tohsaka",
@@ -1306,7 +1435,8 @@
         "height":  159,
         "image":  "assets/images/rintohsaka.png",
         "haircolor":  "Black",
-        "animegenre":  "Action / Fantasy / Romance"
+        "animegenre":  "Action / Fantasy / Romance",
+        "eyecolor": "Blue"
     },
     {
         "name":  "Ritsuko Akagi",
@@ -1316,7 +1446,8 @@
         "height":  167,
         "image":  "assets/images/ritsuko.png",
         "haircolor":  "Blonde",
-        "animegenre":  "Action / Mecha / Sci-Fi / Psychological"
+        "animegenre":  "Action / Mecha / Sci-Fi / Psychological",
+        "eyecolor": "Green"
     },
     {
         "name":  "Riyo Reaper",
@@ -1326,7 +1457,8 @@
         "height":  155,
         "image":  "assets/images/riyoreaper.png",
         "haircolor":  "Red",
-        "animegenre":  "Action / Adventure / Fantasy"
+        "animegenre":  "Action / Adventure / Fantasy",
+        "eyecolor": "Green"
     },
     {
         "name":  "Rory Mercury",
@@ -1336,7 +1468,8 @@
         "height":  152,
         "image":  "assets/images/rory.png",
         "haircolor":  "Black",
-        "animegenre":  "Action / Fantasy / Isekai"
+        "animegenre":  "Action / Fantasy / Isekai",
+        "eyecolor": "Red"
     },
     {
         "name":  "Ruby Hoshino",
@@ -1346,7 +1479,8 @@
         "height":  158,
         "image":  "assets/images/rubyhoshino.png",
         "haircolor":  "Blonde",
-        "animegenre":  "Drama / Mystery"
+        "animegenre":  "Drama / Mystery",
+        "eyecolor": "Pink"
     },
     {
         "name":  "Ruby Rose",
@@ -1356,7 +1490,8 @@
         "height":  158,
         "image":  "assets/images/rubyRose.jpg",
         "haircolor":  "Black / Red",
-        "animegenre":  "Action / Adventure / Fantasy"
+        "animegenre":  "Action / Adventure / Fantasy",
+        "eyecolor": "White"
     },
     {
         "name":  "Rukia Kuchiki",
@@ -1366,7 +1501,8 @@
         "height":  144,
         "image":  "assets/images/rukia.png",
         "haircolor":  "Black",
-        "animegenre":  "Action / Adventure / Supernatural"
+        "animegenre":  "Action / Adventure / Supernatural",
+        "eyecolor": "Purple"
     },
     {
         "name":  "Ryuji Ayukawa",
@@ -1376,7 +1512,8 @@
         "height":  175,
         "image":  "assets/images/ayukawa.png",
         "haircolor":  "Blonde",
-        "animegenre":  "Drama / School / Slice of Life"
+        "animegenre":  "Drama / School / Slice of Life",
+        "eyecolor": "Purple"
     },
     {
         "name":  "Saber",
@@ -1386,7 +1523,8 @@
         "height":  154,
         "image":  "assets/images/saber.png",
         "haircolor":  "Blonde",
-        "animegenre":  "Action / Fantasy / Romance"
+        "animegenre":  "Action / Fantasy / Romance",
+        "eyecolor": "Blue"
     },
     {
         "name":  "Serie",
@@ -1396,7 +1534,8 @@
         "height":  156,
         "image":  "assets/images/serie.png",
         "haircolor":  "Blonde",
-        "animegenre":  "Adventure / Fantasy / Drama"
+        "animegenre":  "Adventure / Fantasy / Drama",
+        "eyecolor": "Yellow"
     },
     {
         "name":  "Shion",
@@ -1406,7 +1545,8 @@
         "height":  180,
         "image":  "assets/images/shion.png",
         "haircolor":  "Purple",
-        "animegenre":  "Action / Fantasy / Isekai / Comedy"
+        "animegenre":  "Action / Fantasy / Isekai / Comedy",
+        "eyecolor": "Purple"
     },
     {
         "name":  "Shuna",
@@ -1416,7 +1556,8 @@
         "height":  160,
         "image":  "assets/images/shuna.png",
         "haircolor":  "Pink",
-        "animegenre":  "Action / Fantasy / Isekai / Comedy"
+        "animegenre":  "Action / Fantasy / Isekai / Comedy",
+        "eyecolor": "Red"
     },
     {
         "name":  "Super Sonico",
@@ -1426,7 +1567,8 @@
         "height":  158,
         "image":  "assets/images/sonico.png",
         "haircolor":  "Pink",
-        "animegenre":  "Slice of Life / Comedy"
+        "animegenre":  "Slice of Life / Comedy",
+        "eyecolor": "Red"
     },
     {
         "name":  "Sylpha Langlis",
@@ -1436,7 +1578,8 @@
         "height":  177,
         "image":  "assets/images/sylpha.png",
         "haircolor":  "Silver",
-        "animegenre":  "Action / Fantasy / Isekai"
+        "animegenre":  "Action / Fantasy / Isekai",
+        "eyecolor": "Blue"
     },
     {
         "name":  "Tatsumaki",
@@ -1446,7 +1589,8 @@
         "height":  130,
         "image":  "assets/images/tatsumaki.png",
         "haircolor":  "Green",
-        "animegenre":  "Action / Comedy / Supernatural"
+        "animegenre":  "Action / Comedy / Supernatural",
+        "eyecolor": "Green"
     },
     {
         "name":  "Tayuya",
@@ -1456,7 +1600,8 @@
         "height":  154,
         "image":  "assets/images/tayuya.jpg",
         "haircolor":  "Red",
-        "animegenre":  "Action / Adventure / Fantasy"
+        "animegenre":  "Action / Adventure / Fantasy",
+        "eyecolor": "Brown"
     },
     {
         "name":  "Temari",
@@ -1466,7 +1611,8 @@
         "height":  159,
         "image":  "assets/images/temari.png",
         "haircolor":  "Blonde",
-        "animegenre":  "Action / Adventure / Fantasy"
+        "animegenre":  "Action / Adventure / Fantasy",
+        "eyecolor": "Green"
     },
     {
         "name":  "Totsuka Saika",
@@ -1476,7 +1622,8 @@
         "height":  163,
         "image":  "assets/images/totsuka.png",
         "haircolor":  "Silver",
-        "animegenre":  "Romance / Comedy / Drama / School"
+        "animegenre":  "Romance / Comedy / Drama / School",
+        "eyecolor": "Blue"
     },
     {
         "name":  "Tuka Luna Marceau",
@@ -1486,7 +1633,8 @@
         "height":  165,
         "image":  "assets/images/TukaLuna.png",
         "haircolor":  "Blonde",
-        "animegenre":  "Action / Fantasy / Isekai"
+        "animegenre":  "Action / Fantasy / Isekai",
+        "eyecolor": "Blue"
     },
     {
         "name":  "Ubel",
@@ -1496,7 +1644,8 @@
         "height":  166,
         "image":  "assets/images/ubel.png",
         "haircolor":  "Green",
-        "animegenre":  "Adventure / Fantasy / Drama"
+        "animegenre":  "Adventure / Fantasy / Drama",
+        "eyecolor": "Green"
     },
     {
         "name":  "Umi Asanagi",
@@ -1506,7 +1655,8 @@
         "height":  160,
         "image":  "assets/images/umiasanagi.jpg",
         "haircolor":  "Black / Blue",
-        "animegenre":  "Romance / Comedy / School"
+        "animegenre":  "Romance / Comedy / School",
+        "eyecolor": "Red"
     },
     {
         "name":  "Uzaki Hana",
@@ -1516,7 +1666,8 @@
         "height":  150,
         "image":  "assets/images/uzaki.png",
         "haircolor":  "Brown",
-        "animegenre":  "Romance / Comedy / Slice of Life"
+        "animegenre":  "Romance / Comedy / Slice of Life",
+        "eyecolor": "Blue"
     },
     {
         "name":  "Vladilena Milize",
@@ -1526,7 +1677,8 @@
         "height":  160,
         "image":  "assets/images/vladilena.png",
         "haircolor":  "Silver",
-        "animegenre":  "Action / Sci-Fi / Drama / Mecha"
+        "animegenre":  "Action / Sci-Fi / Drama / Mecha",
+        "eyecolor": "White"
     },
     {
         "name":  "Weiss Schnee",
@@ -1536,7 +1688,8 @@
         "height":  158,
         "image":  "assets/images/weissSchnee.png",
         "haircolor":  "White",
-        "animegenre":  "Action / Adventure / Fantasy"
+        "animegenre":  "Action / Adventure / Fantasy",
+        "eyecolor": "Blue"
     },
     {
         "name":  "Yachiyo Runami",
@@ -1546,7 +1699,8 @@
         "height":  155,
         "image":  "assets/images/cpkYachiyo.png",
         "haircolor":  "White",
-        "animegenre":  "Action / Sci-Fi / Supernatural"
+        "animegenre":  "Action / Sci-Fi / Supernatural",
+        "eyecolor": "Blue"
     },
     {
         "name":  "Yamato",
@@ -1556,7 +1710,8 @@
         "height":  263,
         "image":  "assets/images/yamato.jpg",
         "haircolor":  "White / Cyan",
-        "animegenre":  "Action / Adventure / Comedy"
+        "animegenre":  "Action / Adventure / Comedy",
+        "eyecolor": "Orange"
     },
     {
         "name":  "Yamato Nadeshiko",
@@ -1566,7 +1721,8 @@
         "height":  166,
         "image":  "assets/images/yamatonadeshiko.png",
         "haircolor":  "Brown",
-        "animegenre":  "Comedy / Romance"
+        "animegenre":  "Comedy / Romance",
+        "eyecolor": "Purple"
     },
     {
         "name":  "Yang Xiao Long",
@@ -1576,7 +1732,8 @@
         "height":  173,
         "image":  "assets/images/yang.png",
         "haircolor":  "Blonde",
-        "animegenre":  "Action / Adventure / Fantasy"
+        "animegenre":  "Action / Adventure / Fantasy",
+        "eyecolor": "Purple"
     },
     {
         "name":  "Yor Forger",
@@ -1586,7 +1743,8 @@
         "height":  170,
         "image":  "assets/images/YorForger.png",
         "haircolor":  "Black",
-        "animegenre":  "Action / Comedy / Slice of Life"
+        "animegenre":  "Action / Comedy / Slice of Life",
+        "eyecolor": "Red"
     },
     {
         "name":  "Yoruichi Shihōin",
@@ -1596,7 +1754,8 @@
         "height":  156,
         "image":  "assets/images/yuroichishihouin.png",
         "haircolor":  "Purple",
-        "animegenre":  "Action / Adventure / Supernatural"
+        "animegenre":  "Action / Adventure / Supernatural",
+        "eyecolor": "Blue"
     },
     {
         "name":  "Yotsuba Nakano",
@@ -1606,7 +1765,8 @@
         "height":  164,
         "image":  "assets/images/yotsuba.png",
         "haircolor":  "Pink",
-        "animegenre":  "Romance / Comedy / School"
+        "animegenre":  "Romance / Comedy / School",
+        "eyecolor": "Blue"
     },
     {
         "name":  "Yui Yuigahama",
@@ -1616,7 +1776,8 @@
         "height":  160,
         "image":  "assets/images/yuiyuigahama.png",
         "haircolor":  "Orange / Pink",
-        "animegenre":  "Romance / Comedy / Drama / School"
+        "animegenre":  "Romance / Comedy / Drama / School",
+        "eyecolor": "Red"
     },
     {
         "name":  "Yuki Suou",
@@ -1626,7 +1787,8 @@
         "height":  158,
         "image":  "assets/images/yuki.png",
         "haircolor":  "Brown",
-        "animegenre":  "Romance / Comedy / School"
+        "animegenre":  "Romance / Comedy / School",
+        "eyecolor": "Brown"
     },
     {
         "name":  "Yuki Yoshikawa",
@@ -1636,7 +1798,8 @@
         "height":  158,
         "image":  "assets/images/yukihori.png",
         "haircolor":  "Blonde",
-        "animegenre":  "Romance / Comedy / School / Slice of Life"
+        "animegenre":  "Romance / Comedy / School / Slice of Life",
+        "eyecolor": "Yellow"
     },
     {
         "name":  "Yuki Yukinoshita",
@@ -1646,7 +1809,8 @@
         "height":  165,
         "image":  "assets/images/yukiyukinoshita.png",
         "haircolor":  "Black",
-        "animegenre":  "Romance / Comedy / Drama / School"
+        "animegenre":  "Romance / Comedy / Drama / School",
+        "eyecolor": "Blue"
     },
     {
         "name":  "Yuu Amami",
@@ -1656,7 +1820,8 @@
         "height":  160,
         "image":  "assets/images/yuuamami.png",
         "haircolor":  "Blonde",
-        "animegenre":  "Romance / Comedy / School"
+        "animegenre":  "Romance / Comedy / School",
+        "eyecolor": "Blue"
     },
     {
         "name":  "Yuuko Hiiragei",
@@ -1666,7 +1831,8 @@
         "height":  157,
         "image":  "assets/images/yuuko.png",
         "haircolor":  "Blonde",
-        "animegenre":  "Romance / Drama / School"
+        "animegenre":  "Romance / Drama / School",
+        "eyecolor": "Blue"
     },
     {
         "name":  "Yuzuriha",
@@ -1676,7 +1842,8 @@
         "height":  160,
         "image":  "assets/images/yuzuriha.png",
         "haircolor":  "Purple",
-        "animegenre":  "Action / Adventure / Supernatural"
+        "animegenre":  "Action / Adventure / Supernatural",
+        "eyecolor": "Purple"
     },
     {
         "name":  "Zero Two",
@@ -1686,7 +1853,8 @@
         "height":  170,
         "image":  "assets/images/zerotwo.png",
         "haircolor":  "Pink",
-        "animegenre":  "Action / Romance / Mecha / Sci-Fi / Drama"
+        "animegenre":  "Action / Romance / Mecha / Sci-Fi / Drama",
+        "eyecolor": "Green"
     },
     {
         "name":  "Zoro",
@@ -1696,7 +1864,8 @@
         "height":  181,
         "image":  "assets/images/zorro.png",
         "haircolor":  "Green",
-        "animegenre":  "Action / Adventure / Comedy"
+        "animegenre":  "Action / Adventure / Comedy",
+        "eyecolor": "Brown"
     },
     {
         "name":  "Mejiro McQueen",
@@ -1707,7 +1876,8 @@
         "image":  "assets/images/mejiromcqueen.png",
         "haircolor":  "Silver",
         "animegenre":  "Sports / Comedy / School",
-        "human":  false
+        "human":  false,
+        "eyecolor": "Purple"
     },
     {
         "name":  "Oguri Cap",
@@ -1718,7 +1888,8 @@
         "image":  "assets/images/oguricap.png",
         "haircolor":  "Silver",
         "animegenre":  "Sports / Comedy / School",
-        "human":  false
+        "human":  false,
+        "eyecolor": "Blue"
     },
     {
         "name":  "Matikanetannhauser",
@@ -1729,7 +1900,8 @@
         "image":  "assets/images/matikanetannhauser.png",
         "haircolor":  "Silver",
         "animegenre":  "Sports / Comedy / School",
-        "human":  false
+        "human":  false,
+        "eyecolor": "Yellow"
     },
     {
         "name":  "Akeno Himejima",
@@ -1739,7 +1911,8 @@
         "height":  168,
         "image":  "assets/images/akenohimejima.png",
         "haircolor":  "Black",
-        "animegenre":  "Action / Romance / School / Supernatural"
+        "animegenre":  "Action / Romance / School / Supernatural",
+        "eyecolor": "Purple"
     },
     {
         "name":  "Fenrys",
@@ -1750,7 +1923,8 @@
         "image":  "assets/images/fenrys.png",
         "haircolor":  "White",
         "animegenre":  "Isekai / Romance / Fantasy",
-        "human":  false
+        "human":  false,
+        "eyecolor": "Black"
     },
     {
         "name":  "Schlapohr",
@@ -1761,7 +1935,8 @@
         "image":  "assets/images/schlappohr.png",
         "haircolor":  "Brown",
         "animegenre":  "Adventure / Fantasy / Comedy",
-        "human":  false
+        "human":  false,
+        "eyecolor": "Red"
     },
     {
         "name":  "Midnight",
@@ -1771,7 +1946,8 @@
         "height":  175,
         "image":  "assets/images/midnight.png",
         "haircolor":  "Black",
-        "animegenre":  "Action / School / Supernatural"
+        "animegenre":  "Action / School / Supernatural",
+        "eyecolor": "Blue"
     },
     {
         "name":  "Momo Yaoyorozu",
@@ -1781,7 +1957,8 @@
         "height":  173,
         "image":  "assets/images/momoyaoyorozu.png",
         "haircolor":  "Black",
-        "animegenre":  "Action / School / Supernatural"
+        "animegenre":  "Action / School / Supernatural",
+        "eyecolor": "Black"
     },
     {
         "name":  "Aqua",
@@ -1791,7 +1968,8 @@
         "height":  162,
         "image":  "assets/images/aqua.png",
         "haircolor":  "Blue",
-        "animegenre":  "Comedy / Fantasy / Isekai"
+        "animegenre":  "Comedy / Fantasy / Isekai",
+        "eyecolor": "Blue"
     },
     {
         "name":  "Jane Doe",
@@ -1802,7 +1980,8 @@
         "image":  "assets/images/janedoe.png",
         "haircolor":  "Black",
         "animegenre":  "Action / Sci-Fi",
-        "human":  false
+        "human":  false,
+        "eyecolor": "Green"
     },
     {
         "name":  "Ellen Joe",
@@ -1813,7 +1992,8 @@
         "image":  "assets/images/ellenjoe.png",
         "haircolor":  "Black",
         "animegenre":  "Action / Sci-Fi",
-        "human":  false
+        "human":  false,
+        "eyecolor": "Red"
     },
     {
         "name":  "Vanilla",
@@ -1824,7 +2004,8 @@
         "image":  "assets/images/vanilla.jpg",
         "haircolor":  "White",
         "animegenre":  "Slice of Life / Comedy",
-        "human":  false
+        "human":  false,
+        "eyecolor": "Blue"
     },
     {
         "name":  "Chocola",
@@ -1835,7 +2016,8 @@
         "image":  "assets/images/chocola.jpg",
         "haircolor":  "Brown",
         "animegenre":  "Slice of Life / Comedy",
-        "human":  false
+        "human":  false,
+        "eyecolor": "Yellow"
     },
     {
         "name":  "Coconut",
@@ -1846,7 +2028,8 @@
         "image":  "assets/images/coconut.jpg",
         "haircolor":  "Blonde",
         "animegenre":  "Slice of Life / Comedy",
-        "human":  false
+        "human":  false,
+        "eyecolor": "Blue / Yellow"
     },
     {
         "name":  "Tet",
@@ -1856,17 +2039,19 @@
         "height":  170,
         "image":  "assets/images/tet.jpg",
         "haircolor":  "Blonde",
-        "animegenre":  "Comedy / Fantasy / Isekai / Ecchi"
+        "animegenre":  "Comedy / Fantasy / Isekai / Ecchi",
+        "eyecolor": "Blue / Yellow"
     },
     {
-        "name":  "Kurumi Harage",
+        "name":  "Kurumi Haraga",
         "anime":  "100 Girlfriends Who Really, Really, Really, Really, Really Love You",
         "age":  15,
         "gender":  "Female",
         "height":  160,
         "image":  "assets/images/kurumiharage.png",
         "haircolor":  "Purple",
-        "animegenre":  "Romance / Comedy / School"
+        "animegenre":  "Romance / Comedy / School",
+        "eyecolor": "Green"
     },
     {
         "name":  "Chisa Kotegawa",
@@ -1876,7 +2061,8 @@
         "height":  152,
         "image":  "assets/images/chisakotegawa.jpg",
         "haircolor":  "Brown",
-        "animegenre":  "Comedy"
+        "animegenre":  "Comedy",
+        "eyecolor": "Brown"
     },
     {
         "name":  "Nanaka Kotegawa",
@@ -1886,7 +2072,8 @@
         "height":  160,
         "image":  "assets/images/nanakakotegawa.png",
         "haircolor":  "Brown",
-        "animegenre":  "Comedy"
+        "animegenre":  "Comedy",
+        "eyecolor": "Brown"
     },
     {
         "name":  "Yoshiwara Aina",
@@ -1896,7 +2083,8 @@
         "height":  158,
         "image":  "assets/images/yoshiwaraaina.png",
         "haircolor":  "Blue",
-        "animegenre":  "Comedy"
+        "animegenre":  "Comedy",
+        "eyecolor": "Purple"
     },
     {
         "name":  "Hamaoka Azusa",
@@ -1906,7 +2094,8 @@
         "height":  165,
         "image":  "assets/images/hamaokaazusa.jpg",
         "haircolor":  "Purple",
-        "animegenre":  "Comedy"
+        "animegenre":  "Comedy",
+        "eyecolor": "Purple"
     },
     {
         "name":  "Wiz",
@@ -1916,7 +2105,8 @@
         "height":  180,
         "image":  "assets/images/wiz.jpg",
         "haircolor":  "Brown",
-        "animegenre":  "Comedy / Fantasy / Isekai"
+        "animegenre":  "Comedy / Fantasy / Isekai",
+        "eyecolor": "Brown"
     },
     {
         "name":  "Jibril",
@@ -1926,7 +2116,8 @@
         "height":  167,
         "image":  "assets/images/jibril.png",
         "haircolor":  "Pink",
-        "animegenre":  "Comedy / Fantasy / Isekai / Ecchi"
+        "animegenre":  "Comedy / Fantasy / Isekai / Ecchi",
+        "eyecolor": "Yellow"
     },
     {
         "name":  "Lady Nagant",
@@ -1936,7 +2127,8 @@
         "height":  171,
         "image":  "assets/images/ladynagant.png",
         "haircolor":  "Purple",
-        "animegenre":  "Action / School / Supernatural"
+        "animegenre":  "Action / School / Supernatural",
+        "eyecolor": "Purple"
     },
     {
         "name":  "Sena Kashiwazaki",
@@ -1946,7 +2138,8 @@
         "height":  164,
         "image":  "assets/images/senakashiwazaki.png",
         "haircolor":  "Blonde",
-        "animegenre":  "Romance / Comedy / School"
+        "animegenre":  "Romance / Comedy / School",
+        "eyecolor": "Blue"
     },
     {
         "name":  "Naomi Otoya",
@@ -1956,7 +2149,8 @@
         "height":  171,
         "image":  "assets/images/naomiotoya.jpg",
         "haircolor":  "Blonde",
-        "animegenre":  "Comedy"
+        "animegenre":  "Comedy",
+        "eyecolor": "Brown"
     }, 
     {
         "name":  "Lobster",
@@ -1967,7 +2161,8 @@
         "image":  "assets/images/lobster.png",
         "haircolor":  "Blue",
         "animegenre":  "Lobster",
-        "human":  false
+        "human":  false,
+        "eyecolor": "Black"
     }, 
     {
         "name":  "Takane Takamine",
@@ -1977,7 +2172,8 @@
         "height":  170,
         "image":  "assets/images/takanetakamine.png",
         "haircolor":  "Purple",
-        "animegenre":  "Romance / Comedy / Ecchi"
+        "animegenre":  "Romance / Comedy / Ecchi",
+        "eyecolor": "Red"
     },
     {
         "name":  "Alice Nakiri",
@@ -1987,7 +2183,8 @@
         "height":  165,
         "image":  "assets/images/alicenakiri.png",
         "haircolor":  "White",
-        "animegenre":  "Gourmet / Ecchi"
+        "animegenre":  "Gourmet / Ecchi",
+        "eyecolor": "Red"
     },
     {
         "name":  "Rindo Kobayashi",
@@ -1997,7 +2194,8 @@
         "height":  171,
         "image":  "assets/images/rindokobayashi.jpg",
         "haircolor":  "Red",
-        "animegenre":  "Gourmet / Ecchi"
+        "animegenre":  "Gourmet / Ecchi",
+        "eyecolor": "Yellow"
     },
     {
         "name":  "Ikumi Mito",
@@ -2007,7 +2205,8 @@
         "height":  163,
         "image":  "assets/images/ikumimito.jpg",
         "haircolor":  "Blonde",
-        "animegenre":  "Gourmet / Ecchi"
+        "animegenre":  "Gourmet / Ecchi",
+        "eyecolor": "Blue"
     },
     {
         "name":  "Himari Yoshino",
@@ -2017,7 +2216,8 @@
         "height":  161,
         "image":  "assets/images/himariyoshino.png",
         "haircolor":  "Orange",
-        "animegenre":  "Romance / Comedy / School"
+        "animegenre":  "Romance / Comedy / School",
+        "eyecolor": "Yellow"
     },
     {
         "name":  "Kanai Honoka",
@@ -2027,7 +2227,8 @@
         "height":  161,
         "image":  "assets/images/kanaihonoka.png",
         "haircolor":  "Black",
-        "animegenre":  "Romance / Comedy / School"
+        "animegenre":  "Romance / Comedy / School",
+        "eyecolor": "Purple"
     },
     {
         "name":  "Kanna Aizawa",
@@ -2037,7 +2238,8 @@
         "height":  154,
         "image":  "assets/images/kannaaizawa.png",
         "haircolor":  "Blonde",
-        "animegenre":  "Romance / Comedy / School"
+        "animegenre":  "Romance / Comedy / School",
+        "eyecolor": "Yellow"
     },
     {
         "name":  "Beta",
@@ -2047,7 +2249,8 @@
         "height":  175,
         "image":  "assets/images/beta.png",
         "haircolor":  "Silver",
-        "animegenre":  "Action / Fantasy / Isekai"
+        "animegenre":  "Action / Fantasy / Isekai",
+        "eyecolor": "Blue"
     },
     {
         "name":  "Gamma",
@@ -2057,7 +2260,8 @@
         "height":  175,
         "image":  "assets/images/gamma.png",
         "haircolor":  "Blue",
-        "animegenre":  "Action / Fantasy / Isekai"
+        "animegenre":  "Action / Fantasy / Isekai",
+        "eyecolor": "Purple"
     },
     {
         "name":  "Zeta",
@@ -2067,7 +2271,8 @@
         "height":  171,
         "image":  "assets/images/zeta.png",
         "haircolor":  "Blonde",
-        "animegenre":  "Action / Fantasy / Isekai"
+        "animegenre":  "Action / Fantasy / Isekai",
+        "eyecolor": "Purple"
     },
     {
         "name":  "Eta",
@@ -2077,6 +2282,7 @@
         "height":  161,
         "image":  "assets/images/eta.png",
         "haircolor":  "Brown",
-        "animegenre":  "Action / Fantasy / Isekai"
+        "animegenre":  "Action / Fantasy / Isekai",
+        "eyecolor": "Purple"
     }
 ];
