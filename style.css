@@ -1148,7 +1148,7 @@ body.colorblind-mode .colorblind-toggle {
     color: #111;
 }
 
-#conn-restart-btn {
+#conn-restart-btn, #conn-home-btn {
     background: #1e1e1e;
     color: #ff00ff;
     border: 2px solid #ff00ff;
@@ -1156,9 +1156,10 @@ body.colorblind-mode .colorblind-toggle {
     font-size: 15px;
     border-radius: 8px;
     cursor: pointer;
+    margin: 0 6px;
 }
 
-#conn-restart-btn:hover {
+#conn-restart-btn:hover, #conn-home-btn:hover {
     background: #ff00ff;
     color: #000;
 }
