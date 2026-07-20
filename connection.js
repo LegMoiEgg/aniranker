@@ -19,6 +19,40 @@ let connWrongGuesses = [];     // vorherige falsche Kombinationen (als sortierte
 let connGameOver = false;
 
 // ============================================================
+//  STREAK
+// ============================================================
+const CONN_STREAK_KEY = 'connection_streak';
+
+function getConnStreak() {
+    try { return JSON.parse(localStorage.getItem(CONN_STREAK_KEY)) || { count: 0 }; }
+    catch { return { count: 0 }; }
+}
+
+function updateConnStreak(won) {
+    const data = getConnStreak();
+    if (won) {
+        data.count++;
+    } else {
+        data.count = 0;
+    }
+    localStorage.setItem(CONN_STREAK_KEY, JSON.stringify(data));
+    renderStreak();
+}
+
+function renderStreak() {
+    const el = document.getElementById('conn-streak');
+    if (!el) return;
+    const data = getConnStreak();
+    if (data.count === 0) {
+        el.textContent = 'Streak: 0';
+        el.style.color = '#888';
+    } else {
+        el.innerHTML = `🔥 Streak: ${data.count}`;
+        el.style.color = '#ff88ff';
+    }
+}
+
+// ============================================================
 //  PUZZLE GENERATION
 // ============================================================
 
@@ -318,6 +352,7 @@ function submitGuess() {
         if (connSolved.length === CONN_NUM_GROUPS) {
             connGameOver = true;
             saveConnState();
+            updateConnStreak(true);
             setTimeout(() => showResult(true), 600);
         }
     } else {
@@ -338,6 +373,7 @@ function submitGuess() {
         if (connLives <= 0) {
             connGameOver = true;
             saveConnState();
+            updateConnStreak(false);
             setTimeout(() => showResult(false), 800);
         }
     }
@@ -438,4 +474,5 @@ function restoreConnection() {
 document.getElementById('conn-submit').addEventListener('click', submitGuess);
 
 // Start
+renderStreak();
 restoreConnection();
