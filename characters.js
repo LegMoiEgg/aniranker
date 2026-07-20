@@ -1237,7 +1237,7 @@
         "image":  "assets/images/nicorobin.png",
         "haircolor":  "Black",
         "animegenre":  "Action / Adventure / Comedy",
-        "eyecolor": "Brown"
+        "eyecolor": "Blue"
     },
     {
         "name":  "Nino Nakano",
