@@ -1874,7 +1874,7 @@
         "gender":  "Female",
         "height":  159,
         "image":  "assets/images/mejiromcqueen.png",
-        "haircolor":  "Silver",
+        "haircolor":  "Purple / Silver",
         "animegenre":  "Sports / Comedy / School",
         "human":  false,
         "eyecolor": "Purple"
