@@ -34,10 +34,31 @@ function getStorageKey() {
 }
 
 const STREAK_KEY = 'anidle_daily_streak';
+const HIGHSCORE_KEY = 'anidle_streak_highscore';
 
 function getStreakData() {
     try { return JSON.parse(localStorage.getItem(STREAK_KEY)) || { count: 0, lastDate: null }; }
     catch { return { count: 0, lastDate: null }; }
+}
+
+function getHighscore() {
+    try { return parseInt(localStorage.getItem(HIGHSCORE_KEY)) || 0; }
+    catch { return 0; }
+}
+
+function updateHighscore(currentStreak) {
+    const best = getHighscore();
+    if (currentStreak > best) {
+        localStorage.setItem(HIGHSCORE_KEY, String(currentStreak));
+    }
+}
+
+function updateHighscoreDisplay() {
+    const el = document.getElementById('daily-highscore-display');
+    if (!el || MODE !== 'daily') return;
+    const best = getHighscore();
+    el.style.display = '';
+    el.innerHTML = `🏆 Best Streak: ${best}`;
 }
 
 function updateStreakDisplay() {
@@ -56,6 +77,7 @@ function updateStreakDisplay() {
         el.innerHTML   = `🔥 ${streak} day${streak === 1 ? '' : 's'} in a row`;
         el.style.color  = '#ff88ff';
     }
+    updateHighscoreDisplay();
 }
 
 function saveState() {
@@ -296,6 +318,7 @@ function makeGuess(name) {
             if (streakData.lastDate !== today) {
                 const newCount = streakData.lastDate === yesterday ? streakData.count + 1 : 1;
                 localStorage.setItem(STREAK_KEY, JSON.stringify({ count: newCount, lastDate: today }));
+                updateHighscore(newCount);
                 updateStreakDisplay();
                 if (newCount >= 3) unlockAchievement('anidle_streak');
             }

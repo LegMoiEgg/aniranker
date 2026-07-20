@@ -22,10 +22,30 @@ let connGameOver = false;
 //  STREAK
 // ============================================================
 const CONN_STREAK_KEY = 'connection_streak';
+const CONN_HIGHSCORE_KEY = 'connection_streak_highscore';
 
 function getConnStreak() {
     try { return JSON.parse(localStorage.getItem(CONN_STREAK_KEY)) || { count: 0 }; }
     catch { return { count: 0 }; }
+}
+
+function getConnHighscore() {
+    try { return parseInt(localStorage.getItem(CONN_HIGHSCORE_KEY)) || 0; }
+    catch { return 0; }
+}
+
+function updateConnHighscore(currentStreak) {
+    const best = getConnHighscore();
+    if (currentStreak > best) {
+        localStorage.setItem(CONN_HIGHSCORE_KEY, String(currentStreak));
+    }
+}
+
+function renderHighscore() {
+    const el = document.getElementById('conn-highscore');
+    if (!el) return;
+    const best = getConnHighscore();
+    el.innerHTML = `🏆 Best Streak: ${best}`;
 }
 
 function updateConnStreak(won) {
@@ -36,7 +56,9 @@ function updateConnStreak(won) {
         data.count = 0;
     }
     localStorage.setItem(CONN_STREAK_KEY, JSON.stringify(data));
+    updateConnHighscore(data.count);
     renderStreak();
+    renderHighscore();
 }
 
 function renderStreak() {
@@ -489,4 +511,5 @@ document.getElementById('conn-submit').addEventListener('click', submitGuess);
 
 // Start
 renderStreak();
+renderHighscore();
 restoreConnection();
