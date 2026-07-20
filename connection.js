@@ -119,6 +119,18 @@ function getGroupableAttributes() {
         }
     }
 
+    // 5) Männliche Charaktere
+    const maleChars = CHARACTERS_DATA.filter(c => c.gender === 'Male');
+    if (maleChars.length >= 4) {
+        groups.push({ type: 'gender', value: 'Male', chars: maleChars });
+    }
+
+    // 6) Nicht-menschliche Charaktere (human === false)
+    const nonHumanChars = CHARACTERS_DATA.filter(c => c.human === false);
+    if (nonHumanChars.length >= 4) {
+        groups.push({ type: 'species', value: 'Non-Human', chars: nonHumanChars });
+    }
+
     return groups;
 }
 
@@ -190,6 +202,8 @@ function formatGroupLabel(type, value) {
         case 'haircolor': return `Haarfarbe: ${value}`;
         case 'eyecolor': return `Augenfarbe: ${value}`;
         case 'genre': return `Genre: ${value}`;
+        case 'gender': return `Männliche Charaktere`;
+        case 'species': return `Nicht-menschlich`;
         default: return value;
     }
 }
