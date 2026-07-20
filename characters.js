@@ -1924,7 +1924,7 @@
         "haircolor":  "White",
         "animegenre":  "Isekai / Romance / Fantasy",
         "human":  false,
-        "eyecolor": "Black"
+        "eyecolor": "Blue"
     },
     {
         "name":  "Schlapohr",
