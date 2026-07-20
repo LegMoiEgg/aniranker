@@ -144,6 +144,7 @@ function openModal(char) {
         ['Age',        char.age],
         ['Height',     char.height + ' cm'],
         ['Haircolor',  char.haircolor],
+        ['Eyecolor',   char.eyecolor],
     ];
 
     document.getElementById('modal-table').innerHTML = rows
