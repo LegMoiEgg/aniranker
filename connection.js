@@ -156,12 +156,17 @@ function getGroupableAttributes() {
     return groups;
 }
 
-function generatePuzzle() {
+function generatePuzzle(attempt = 0) {
+    if (attempt > 200) {
+        // Fallback: gib auf und nutze das letzte Ergebnis ohne Fairness-Check
+        return generatePuzzleFallback();
+    }
+
     const allPossible = getGroupableAttributes();
     const selected = [];
     const usedCharNames = new Set();
 
-    // Shuffle alle möglichen Gruppen
+    // Shuffle alle möglichen Gruppen komplett zufällig
     const shuffled = [...allPossible].sort(() => Math.random() - 0.5);
 
     for (const group of shuffled) {
@@ -184,13 +189,18 @@ function generatePuzzle() {
         // Prüfe ob die 4 gepickten Chars nicht zufällig eine ANDERE gültige Gruppe bilden
         // (z.B. 4 Action-Chars die alle aus Naruto sind → wäre mehrdeutig)
         let ambiguous = false;
-        for (const otherGroup of allPossible) {
-            if (otherGroup.type === group.type && otherGroup.value === group.value) continue;
-            const otherNames = new Set(otherGroup.chars.map(c => c.name));
-            const matchCount = picked.filter(c => otherNames.has(c.name)).length;
-            if (matchCount === CONN_GROUP_SIZE) {
-                ambiguous = true;
-                break;
+        // Bei Anime-Gruppen: Ambiguity-Check überspringen, weil es okay ist
+        // wenn 4 Chars aus demselben Anime auch die gleiche Haarfarbe haben.
+        // Der Spieler wird den Anime als Verbindung erkennen.
+        if (group.type !== 'anime') {
+            for (const otherGroup of allPossible) {
+                if (otherGroup.type === group.type && otherGroup.value === group.value) continue;
+                const otherNames = new Set(otherGroup.chars.map(c => c.name));
+                const matchCount = picked.filter(c => otherNames.has(c.name)).length;
+                if (matchCount === CONN_GROUP_SIZE) {
+                    ambiguous = true;
+                    break;
+                }
             }
         }
         if (ambiguous) continue;
@@ -208,7 +218,71 @@ function generatePuzzle() {
 
     if (selected.length < CONN_NUM_GROUPS) {
         // Fallback: nochmal versuchen (sollte selten vorkommen)
-        return generatePuzzle();
+        return generatePuzzle(attempt + 1);
+    }
+
+    // ============================================================
+    // FAIRNESS CHECK: Im gesamten 16er-Grid darf kein Attribut von
+    // mehr als 4 Chars geteilt werden, es sei denn diese 4+ sind
+    // EXAKT eine der gewählten Gruppen. Sonst wird es unfair/mehrdeutig.
+    // Nur Gruppen mit max 20 Chars im Pool prüfen (große Genres wie
+    // "Action" mit 60+ Chars sind ohnehin nicht verwechselbar).
+    // ============================================================
+    const allPickedChars = selected.flatMap(g => g.picked);
+    const allPickedNames = new Set(allPickedChars.map(c => c.name));
+
+    for (const possibleGroup of allPossible) {
+        // Überspringe sehr große Pools – die sind zu generisch um verwechselt zu werden
+        if (possibleGroup.chars.length > 20) continue;
+
+        // Überspringe Anime-Gruppen im Check – wenn ein Anime als offizielle Gruppe
+        // gewählt wurde, sind exakt 4 davon im Grid (keine Verwechslung möglich)
+        if (possibleGroup.type === 'anime') continue;
+
+        // Wie viele Chars im Grid teilen dieses Attribut?
+        const groupCharNames = new Set(possibleGroup.chars.map(ch => ch.name));
+        const matchingInGrid = allPickedChars.filter(c => groupCharNames.has(c.name));
+
+        if (matchingInGrid.length > CONN_GROUP_SIZE) {
+            // Mehr als 4 Chars im Grid teilen dieses Attribut
+            // Prüfe ob es NICHT eine unserer offiziellen Gruppen ist
+            const isOfficialGroup = selected.some(g =>
+                g.type === possibleGroup.type && g.value === possibleGroup.value
+            );
+            if (!isOfficialGroup) {
+                // Unfair! Nochmal generieren.
+                return generatePuzzle(attempt + 1);
+            }
+        }
+    }
+
+    return selected.map((g, i) => ({
+        label: formatGroupLabel(g.type, g.value),
+        chars: g.picked.map(c => c.name),
+        color: GROUP_COLORS[i]
+    }));
+}
+
+function generatePuzzleFallback() {
+    // Einfache Generierung ohne Fairness-Check als letzter Ausweg
+    const allPossible = getGroupableAttributes();
+    const selected = [];
+    const usedCharNames = new Set();
+    const shuffled = [...allPossible].sort(() => Math.random() - 0.5);
+
+    for (const group of shuffled) {
+        if (selected.length >= CONN_NUM_GROUPS) break;
+        const available = group.chars.filter(c => !usedCharNames.has(c.name));
+        if (available.length < CONN_GROUP_SIZE) continue;
+        const picked = [...available].sort(() => Math.random() - 0.5).slice(0, CONN_GROUP_SIZE);
+        let overlaps = false;
+        for (const existing of selected) {
+            if (picked.some(c => existing.pickedNames.has(c.name))) { overlaps = true; break; }
+        }
+        if (overlaps) continue;
+        const pickedNames = new Set(picked.map(c => c.name));
+        selected.push({ type: group.type, value: group.value, picked, pickedNames });
+        picked.forEach(c => usedCharNames.add(c.name));
     }
 
     return selected.map((g, i) => ({
@@ -338,7 +412,7 @@ function updateSubmitBtn() {
 // ============================================================
 
 function toggleSelect(name) {
-    if (connGameOver) return;
+    if (connGameOver || connLives <= 0) return;
 
     const idx = connSelected.indexOf(name);
     if (idx >= 0) {
@@ -353,7 +427,7 @@ function toggleSelect(name) {
 }
 
 function submitGuess() {
-    if (connSelected.length !== CONN_GROUP_SIZE || connGameOver) return;
+    if (connSelected.length !== CONN_GROUP_SIZE || connGameOver || connLives <= 0) return;
 
     const sortedGuess = [...connSelected].sort().join('|');
 
@@ -408,6 +482,7 @@ function submitGuess() {
 
         if (connLives <= 0) {
             connGameOver = true;
+            updateSubmitBtn();
             saveConnState();
             updateConnStreak(false);
             setTimeout(() => showResult(false), 800);
