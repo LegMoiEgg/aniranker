@@ -1645,7 +1645,7 @@
         "image":  "assets/images/ubel.png",
         "haircolor":  "Green",
         "animegenre":  "Adventure / Fantasy / Drama",
-        "eyecolor": "Green"
+        "eyecolor": "Purple"
     },
     {
         "name":  "Umi Asanagi",
