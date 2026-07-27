@@ -12,66 +12,132 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            background: radial-gradient(ellipse at top, #1a1025 0%, var(--bg-dark) 60%);
         }
+
+        /* ===== FLIP CARD GRID ===== */
 
         .mode-grid {
             display: grid;
-            grid-template-columns: repeat(4, 200px);
+            grid-template-columns: repeat(3, 220px);
             gap: 16px;
-            margin-top: 32px;
+            margin-top: 28px;
+            perspective: 900px;
+        }
+
+        .mode-card-wrapper {
+            width: 220px;
+            height: 140px;
+            perspective: 900px;
         }
 
         .mode-card {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            transform-style: preserve-3d;
+            transition: transform 0.5s ease;
+            cursor: pointer;
+            text-decoration: none;
+            display: block;
+        }
+
+        .mode-card-wrapper:hover .mode-card {
+            transform: rotateY(180deg);
+        }
+
+        .mode-front, .mode-back {
+            position: absolute;
+            inset: 0;
+            border-radius: var(--radius);
+            border: 1.5px solid var(--border);
+            background: var(--bg-card);
+            backface-visibility: hidden;
             display: flex;
             flex-direction: column;
             align-items: center;
-            gap: 8px;
+            justify-content: center;
+            gap: 10px;
             padding: 20px 16px;
-            background: #1a1a1a;
-            border: 2px solid #333;
-            border-radius: 12px;
-            text-decoration: none;
-            color: #ccc;
-            transition: border-color 0.2s, box-shadow 0.2s, transform 0.15s;
-            cursor: pointer;
+            transition: border-color 0.3s, box-shadow 0.3s;
         }
 
-        .mode-card:hover {
-            border-color: #ff00ff;
-            box-shadow: 0 0 16px #ff00ff44;
-            transform: translateY(-2px);
-            color: #fff;
+        .mode-card-wrapper:hover .mode-front,
+        .mode-card-wrapper:hover .mode-back {
+            border-color: var(--accent);
+            box-shadow: 0 8px 32px rgba(217,70,239,0.18);
         }
 
-        .mode-card .mode-icon {
-            font-size: 28px;
+        .mode-back {
+            transform: rotateY(180deg);
+            background: var(--bg-elevated);
+        }
+
+        .mode-front .mode-icon {
+            font-size: 36px;
             line-height: 1;
         }
 
-        .mode-card .mode-title {
+        .mode-front .mode-title {
             font-size: 15px;
-            font-weight: bold;
-            color: #ff00ff;
+            font-weight: 600;
+            background: var(--gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
             text-align: center;
         }
 
-        .mode-card .mode-desc {
+        .mode-back .mode-desc {
+            font-size: 12px;
+            color: var(--text-muted);
+            text-align: center;
+            line-height: 1.55;
+            padding: 0 8px;
+        }
+
+        .mode-back .mode-title-small {
             font-size: 11px;
-            color: #888;
-            text-align: center;
-            line-height: 1.4;
+            font-weight: 600;
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
         }
 
-        .mode-card-lexikon {
+        /* ===== FULL-WIDTH CARDS (Lexikon, Achievements) ===== */
+
+        .mode-wide {
             grid-column: 1 / -1;
+        }
+
+        .mode-wide .mode-card-wrapper {
+            width: 100%;
+            height: 64px;
+        }
+
+        .mode-wide .mode-front {
+            flex-direction: row;
+            gap: 14px;
+            padding: 12px 28px;
+        }
+
+        .mode-wide .mode-front .mode-icon {
+            font-size: 26px;
+        }
+
+        .mode-wide .mode-front .mode-title {
+            font-size: 14px;
+        }
+
+        .mode-wide .mode-back {
             flex-direction: row;
             gap: 12px;
-            padding: 14px 20px;
-            justify-content: center;
+            padding: 12px 28px;
         }
 
-        .mode-card-lexikon .mode-desc {
+        .mode-wide .mode-back .mode-desc {
             text-align: left;
+            font-size: 12px;
         }
     </style>
 </head>
@@ -80,55 +146,113 @@
 <h1>Ani Ranker</h1>
 
 <div class="mode-grid">
-    <a href="classic.html" class="mode-card">
-        <span class="mode-icon">🏆</span>
-        <span class="mode-title">Classic</span>
-        <span class="mode-desc">Rank 5 characters from your favourite to least favourite</span>
-    </a>
-    <a href="kmk.html" class="mode-card">
-        <span class="mode-icon">💋</span>
-        <span class="mode-title">Kiss · Marry · Kill</span>
-        <span class="mode-desc">Assign each character one of three fates</span>
-    </a>
-    <a href="tot.html" class="mode-card">
-        <span class="mode-icon">⚡</span>
-        <span class="mode-title">This or That</span>
-        <span class="mode-desc">Pick your favourite in 10 quick duels — crown a champion</span>
-    </a>
-    <a href="top10.html" class="mode-card">
-        <span class="mode-icon">📋</span>
-        <span class="mode-title">Top 10</span>
-        <span class="mode-desc">Build your personal top 10 ranking through head-to-head matchups</span>
-    </a>
-    <a href="connection.html" class="mode-card">
-        <span class="mode-icon">🔗</span>
-        <span class="mode-title">Connection</span>
-        <span class="mode-desc">Find 4 groups of 4 characters that share a common trait</span>
-    </a>
-    <a href="anidle.html?mode=daily" class="mode-card">
-        <span class="mode-icon">📅</span>
-        <span class="mode-title">Anidle Daily</span>
-        <span class="mode-desc">One character per day — guess it from attributes</span>
-    </a>
-    <a href="anidle.html?mode=infinity" class="mode-card">
-        <span class="mode-icon">♾️</span>
-        <span class="mode-title">Anidle Infinity</span>
-        <span class="mode-desc">Endless guessing — new random character each round</span>
-    </a>
-    <a href="lexikon.html" class="mode-card mode-card-lexikon">
-        <span class="mode-icon">📖</span>
-        <div>
-            <div class="mode-title">Lexikon</div>
-            <div class="mode-desc">Browse all characters — sort, search, and view full profiles</div>
+    <div class="mode-card-wrapper">
+        <a href="classic.html" class="mode-card">
+            <div class="mode-front">
+                <span class="mode-icon">🏆</span>
+                <span class="mode-title">Classic</span>
+            </div>
+            <div class="mode-back">
+                <span class="mode-title-small">Classic</span>
+                <span class="mode-desc">Rank 5 characters from your favourite to least favourite</span>
+            </div>
+        </a>
+    </div>
+
+    <div class="mode-card-wrapper">
+        <a href="kmk.html" class="mode-card">
+            <div class="mode-front">
+                <span class="mode-icon">💋</span>
+                <span class="mode-title">Kiss · Marry · Kill</span>
+            </div>
+            <div class="mode-back">
+                <span class="mode-title-small">KMK</span>
+                <span class="mode-desc">Assign each character one of three fates</span>
+            </div>
+        </a>
+    </div>
+
+    <div class="mode-card-wrapper">
+        <a href="top10.html" class="mode-card">
+            <div class="mode-front">
+                <span class="mode-icon">📋</span>
+                <span class="mode-title">Top 10</span>
+            </div>
+            <div class="mode-back">
+                <span class="mode-title-small">Top 10</span>
+                <span class="mode-desc">Build your personal top 10 ranking through head-to-head matchups</span>
+            </div>
+        </a>
+    </div>
+
+    <div class="mode-card-wrapper">
+        <a href="connection.html" class="mode-card">
+            <div class="mode-front">
+                <span class="mode-icon">🔗</span>
+                <span class="mode-title">Connection</span>
+            </div>
+            <div class="mode-back">
+                <span class="mode-title-small">Connection</span>
+                <span class="mode-desc">Find 4 groups of 4 characters that share a common trait</span>
+            </div>
+        </a>
+    </div>
+
+    <div class="mode-card-wrapper">
+        <a href="anidle.html?mode=daily" class="mode-card">
+            <div class="mode-front">
+                <span class="mode-icon">📅</span>
+                <span class="mode-title">Anidle Daily</span>
+            </div>
+            <div class="mode-back">
+                <span class="mode-title-small">Daily</span>
+                <span class="mode-desc">One character per day — guess it from attributes</span>
+            </div>
+        </a>
+    </div>
+
+    <div class="mode-card-wrapper">
+        <a href="anidle.html?mode=infinity" class="mode-card">
+            <div class="mode-front">
+                <span class="mode-icon">♾️</span>
+                <span class="mode-title">Anidle Infinity</span>
+            </div>
+            <div class="mode-back">
+                <span class="mode-title-small">Infinity</span>
+                <span class="mode-desc">Endless guessing — new random character each round</span>
+            </div>
+        </a>
+    </div>
+
+    <div class="mode-wide">
+        <div class="mode-card-wrapper">
+            <a href="lexikon.html" class="mode-card">
+                <div class="mode-front">
+                    <span class="mode-icon">📖</span>
+                    <span class="mode-title">Lexikon</span>
+                </div>
+                <div class="mode-back">
+                    <span class="mode-title-small">Lexikon</span>
+                    <span class="mode-desc">Browse all characters — sort, search, and view full profiles</span>
+                </div>
+            </a>
         </div>
-    </a>
-    <a href="achievements.html" class="mode-card mode-card-lexikon">
-        <span class="mode-icon">🏅</span>
-        <div>
-            <div class="mode-title">Achievements</div>
-            <div class="mode-desc">Unlock secrets and discover hidden challenges</div>
+    </div>
+
+    <div class="mode-wide">
+        <div class="mode-card-wrapper">
+            <a href="achievements.html" class="mode-card">
+                <div class="mode-front">
+                    <span class="mode-icon">🏅</span>
+                    <span class="mode-title">Achievements</span>
+                </div>
+                <div class="mode-back">
+                    <span class="mode-title-small">Achievements</span>
+                    <span class="mode-desc">Unlock secrets and discover hidden challenges</span>
+                </div>
+            </a>
         </div>
-    </a>
+    </div>
 </div>
 
 <div class="footer-links">
@@ -140,7 +264,7 @@
 </div>
 
 <script>
-const LATEST_PATCH = 'v9.0';
+const LATEST_PATCH = 'v9.1';
 if (localStorage.getItem('lastSeenPatch') !== LATEST_PATCH) {
     document.getElementById('patch-link').classList.add('patch-new');
 }

@@ -16,7 +16,7 @@
         }
 
         .ach-counter {
-            color: #888;
+            color: var(--text-muted);
             font-size: 13px;
             margin-top: -6px;
             margin-bottom: 18px;
@@ -33,9 +33,9 @@
         }
 
         .ach-card {
-            background: #1a1a1a;
-            border: 2px solid #ff00ff;
-            border-radius: 12px;
+            background: var(--bg-card);
+            border: 1.5px solid var(--border);
+            border-radius: var(--radius);
             width: 180px;
             padding: 20px 14px 18px;
             display: flex;
@@ -43,25 +43,27 @@
             align-items: center;
             gap: 8px;
             text-align: center;
-            box-shadow: 0 0 12px #ff00ff44;
-            transition: transform 0.15s, box-shadow 0.2s;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.3);
+            transition: all 0.2s ease;
         }
 
         .ach-card:hover {
             transform: translateY(-3px);
-            box-shadow: 0 0 22px #ff00ff88;
+            border-color: var(--accent);
+            box-shadow: 0 8px 24px rgba(217,70,239,0.15);
         }
 
         .ach-card.locked {
-            border-color: #333;
+            border-color: var(--border);
             box-shadow: none;
-            opacity: 0.45;
+            opacity: 0.4;
             filter: grayscale(1);
         }
 
         .ach-card.locked:hover {
             transform: none;
             box-shadow: none;
+            border-color: var(--border);
         }
 
         .ach-icon {
@@ -72,7 +74,7 @@
         .ach-title {
             font-size: 14px;
             font-weight: bold;
-            color: #ff00ff;
+            color: var(--accent);
         }
 
         .ach-desc {

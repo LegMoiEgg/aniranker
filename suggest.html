@@ -5,15 +5,39 @@
     <title>Suggest a Character</title>
     <link rel="icon" type="image/png" href="assets/icon.png">
     <link rel="stylesheet" href="style.css">
+    <style>
+        .suggest-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 16px;
+            padding-bottom: 80px;
+        }
+
+        .suggest-container iframe {
+            width: 640px;
+            height: 900px;
+            border: 1.5px solid var(--border);
+            border-radius: var(--radius);
+            background: var(--bg-card);
+            box-shadow: 0 4px 24px rgba(0,0,0,0.4);
+        }
+
+        .suggest-hint {
+            color: var(--text-dim);
+            font-size: 13px;
+            margin-top: -4px;
+            margin-bottom: 8px;
+        }
+    </style>
 </head>
 <body>
 
 <h1>Suggest a Character</h1>
+<p class="suggest-hint">Know someone who's missing? Let us know!</p>
 
-<div style="zoom: 0.6;">
+<div class="suggest-container">
     <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSetzyT1H_rswzDWq-atc9JYaFME_QzAH-OJETepWmBSzXKDnQ/viewform?embedded=true"
-            style="width:500px; height:780px; border:none; border-radius:10px;"
-            scrolling="no" marginheight="0" marginwidth="0">
+            marginheight="0" marginwidth="0">
         Loading…
     </iframe>
 </div>
