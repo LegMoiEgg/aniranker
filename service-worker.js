@@ -1,6 +1,6 @@
 importScripts('./characters.js');
 
-const CACHE_NAME = 'aniranker-v9';
+const CACHE_NAME = 'aniranker-v11';
 const APP_SHELL = [
     './',
     './index.html',
@@ -34,7 +34,9 @@ const APP_SHELL = [
     './patchNotes.txt',
     './assets/icon.png',
     './assets/icon-192.png',
-    './assets/icon-512.png'
+    './assets/icon-512.png',
+    './assets/icon-192-maskable.png',
+    './assets/icon-512-maskable.png'
 ];
 
 self.addEventListener('install', event => {
