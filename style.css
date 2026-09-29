@@ -413,8 +413,8 @@ button:disabled {
     display: flex;
     flex-wrap: wrap;
     gap: 12px;
-    justify-content: center;
     padding: 10px 20px 80px;
+    justify-content: center;
     max-width: 1400px;
     margin: 0 auto;
 }
@@ -438,8 +438,9 @@ button:disabled {
 }
 
 .lexikon-card img {
-    width: 88px;
-    height: 88px;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1;
     object-fit: cover;
     border-radius: 8px;
     display: block;
@@ -454,6 +455,36 @@ button:disabled {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+
+@media (max-width: 700px) {
+    #lexikon-grid {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 8px;
+        padding-inline: 8px;
+    }
+
+    .lexikon-grid-grouped {
+        padding-inline: 8px !important;
+    }
+
+    .lexikon-group-cards {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 8px;
+    }
+
+    .lexikon-card {
+        width: 100%;
+        padding: 6px 4px;
+        border-radius: var(--radius-sm);
+    }
+
+    .lexikon-name {
+        margin-top: 5px;
+        font-size: 10px;
+    }
 }
 
 /* ===== MODAL ===== */
