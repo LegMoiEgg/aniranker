@@ -1595,6 +1595,7 @@ body.colorblind-mode .colorblind-toggle {
 .daily-result-trigger::after {
     content: ' ›';
     display: inline-block;
+    margin-left: 6px;
     color: var(--accent);
     transition: transform 0.2s ease;
 }

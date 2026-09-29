@@ -104,6 +104,35 @@
             color: #555;
             margin-top: 2px;
         }
+
+        @media (max-width: 700px) {
+            .ach-grid {
+                display: grid;
+                grid-template-columns: repeat(3, minmax(0, 1fr));
+                gap: 8px;
+                width: 100%;
+                padding: 10px 0 100px;
+            }
+
+            .ach-card {
+                width: 100%;
+                padding: 12px 5px 10px;
+                gap: 6px;
+            }
+
+            .ach-icon {
+                font-size: 28px;
+            }
+
+            .ach-title {
+                font-size: 11px;
+            }
+
+            .ach-desc {
+                font-size: 9px;
+                line-height: 1.35;
+            }
+        }
     </style>
 </head>
 <body>
