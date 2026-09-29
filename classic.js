@@ -3,6 +3,13 @@ let currentIndex = 0;
 let currentChar = null;   // full character object currently shown
 let gameRunning = false;
 let slotChars = [null, null, null, null, null];  // character objects placed in slots
+const CLASSIC_DAILY = DailyChallenge.isDailyMode();
+const CLASSIC_STORAGE_KEY = DailyChallenge.stateKey('classic_state');
+
+if (CLASSIC_DAILY) {
+    document.body.classList.add('daily-run');
+    document.querySelector('h1').textContent = 'Classic Daily';
+}
 
 const slotsDiv = document.getElementById("slots");
 const imageContainer = document.getElementById("image-container");
@@ -38,7 +45,7 @@ for (let i = 0; i < 5; i++) {
 // State management
 function saveClassicState() {
     try {
-        localStorage.setItem('classic_state', JSON.stringify({
+        localStorage.setItem(CLASSIC_STORAGE_KEY, JSON.stringify({
             pool: pool.map(c => c.name),
             currentIndex: currentIndex,
             slotChars: slotChars.map(c => c ? c.name : null),
@@ -49,7 +56,7 @@ function saveClassicState() {
 }
 
 function clearClassicState() {
-    try { localStorage.removeItem('classic_state'); } catch (e) {}
+    try { localStorage.removeItem(CLASSIC_STORAGE_KEY); } catch (e) {}
 }
 
 // Start Button
@@ -62,7 +69,10 @@ startBtn.addEventListener("click", () => {
 });
 
 function startGame() {
-    pool = [...CHARACTERS_DATA].sort(() => Math.random() - 0.5);
+    document.body.classList.remove('classic-complete');
+    pool = CLASSIC_DAILY
+        ? DailyChallenge.shuffle(CHARACTERS_DATA, 'classic')
+        : [...CHARACTERS_DATA].sort(() => Math.random() - 0.5);
     currentIndex = 0;
     slotChars = [null, null, null, null, null];
     gameRunning = true;
@@ -117,6 +127,7 @@ function placeImage(index) {
 
 function endGame() {
     imageContainer.innerHTML = '';
+    document.body.classList.add('classic-complete');
     gameRunning = false;
     startBtn.disabled = false;
     document.getElementById('classic-copy-btn').style.display = 'flex';
@@ -125,6 +136,12 @@ function endGame() {
     slots.forEach((s, i) => {
         if (slotChars[i]) s.nameLabel.textContent = slotChars[i].name;
     });
+    if (CLASSIC_DAILY) {
+        DailyChallenge.complete('classic', { ranking: slotChars.map(char => char.name) });
+        startBtn.style.display = 'none';
+        document.getElementById('classic-copy-btn').style.display = 'none';
+        if (!document.getElementById('daily-next-btn')) DailyChallenge.showNextButton('classic');
+    }
     unlockAchievement('first_classic');
 
     const nonHumanCount = slotChars.filter(c => c && c.human === false).length;
@@ -182,6 +199,7 @@ function classicCopyResult() {
 }
 
 function resetGame() {
+    document.body.classList.remove('classic-complete');
     imageContainer.innerHTML = "";
 
     slots.forEach(s => {
@@ -201,8 +219,11 @@ function resetGame() {
 // Restore state on page load
 (function () {
     try {
-        const raw = localStorage.getItem('classic_state');
-        if (!raw) return;
+        const raw = localStorage.getItem(CLASSIC_STORAGE_KEY);
+        if (!raw) {
+            if (CLASSIC_DAILY) startGame();
+            return;
+        }
         const state = JSON.parse(raw);
         if (!state.pool || !state.pool.length) return;
 
@@ -223,11 +244,18 @@ function resetGame() {
 
         if (!gameRunning) {
             // game ended — show names and copy button
+            document.body.classList.add('classic-complete');
             slots.forEach((s, i) => {
                 if (slotChars[i]) s.nameLabel.textContent = slotChars[i].name;
             });
             document.getElementById('classic-copy-btn').style.display = 'flex';
             startBtn.classList.add('with-copy');
+            if (CLASSIC_DAILY) {
+                DailyChallenge.complete('classic', { ranking: slotChars.map(char => char.name) });
+                startBtn.style.display = 'none';
+                document.getElementById('classic-copy-btn').style.display = 'none';
+                DailyChallenge.showNextButton('classic');
+            }
         }
 
         if (gameRunning && currentIndex > 0) {

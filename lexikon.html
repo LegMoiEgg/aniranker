@@ -2,6 +2,12 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#0d0d14">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="apple-touch-icon" href="assets/icon-192.png">
+    <script src="pwa.js" defer></script>
     <title>Lexikon – Ani Ranker</title>
     <link rel="icon" type="image/png" href="assets/icon.png">
     <link rel="stylesheet" href="style.css">
@@ -39,7 +45,7 @@
     </div>
 </div>
 
-<a id="back-link" href="index.html"><button class="back-btn">Back</button></a>
+<a id="back-link" href="index.html"><button class="back-btn" aria-label="Zurück" title="Zurück"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg></button></a>
 <script>
     const fromPage = new URLSearchParams(window.location.search).get('from');
     if (fromPage) document.getElementById('back-link').href = decodeURIComponent(fromPage);

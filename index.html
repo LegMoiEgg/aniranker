@@ -2,6 +2,12 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#0d0d14">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="apple-touch-icon" href="assets/icon-192.png">
+    <script src="pwa.js" defer></script>
     <title>Ani Ranker</title>
     <link rel="icon" type="image/png" href="assets/icon.png">
     <link rel="stylesheet" href="style.css">
@@ -104,8 +110,9 @@
             letter-spacing: 0.05em;
         }
 
-        /* ===== BOTTOM ROW (Lexikon, Achievements – nebeneinander) ===== */
+        /* ===== FULL-WIDTH TWO-CARD ROWS ===== */
 
+        .mode-secondary-row,
         .mode-bottom-row {
             grid-column: 1 / -1;
             display: grid;
@@ -113,8 +120,16 @@
             gap: 18px;
         }
 
+        .mode-secondary-row .mode-card-wrapper,
         .mode-bottom-row .mode-card-wrapper {
             width: 100%;
+        }
+
+        .mode-secondary-row .mode-card-wrapper {
+            height: 150px;
+        }
+
+        .mode-bottom-row .mode-card-wrapper {
             height: 80px;
         }
 
@@ -142,6 +157,77 @@
             text-align: left;
             font-size: 12px;
         }
+
+        .daily-mode-row {
+            grid-column: 1 / -1;
+            display: flex;
+            justify-content: center;
+        }
+
+        .daily-mode-row .mode-card-wrapper {
+            width: 498px;
+        }
+
+        @media (max-width: 700px) {
+            html { overflow-y: auto; }
+            body { padding-inline: 12px; }
+
+            .mode-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+                gap: 10px;
+                width: 100%;
+                margin-top: 20px;
+            }
+
+            .mode-card-wrapper,
+            .mode-secondary-row .mode-card-wrapper,
+            .mode-bottom-row .mode-card-wrapper {
+                width: 100%;
+                height: 112px;
+            }
+
+            .mode-card-wrapper:hover .mode-card { transform: none; }
+            .mode-back { display: none; }
+
+            .mode-front,
+            .mode-bottom-row .mode-front {
+                flex-direction: column;
+                gap: 8px;
+                padding: 12px 8px;
+            }
+
+            .mode-front .mode-icon,
+            .mode-bottom-row .mode-front .mode-icon { font-size: 28px; }
+
+            .mode-front .mode-title,
+            .mode-bottom-row .mode-front .mode-title { font-size: 13px; }
+
+            .mode-secondary-row,
+            .mode-bottom-row {
+                grid-column: 1 / -1;
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+                gap: 10px;
+            }
+
+            .top10-menu-card {
+                grid-column: 1 / -1;
+                width: 100%;
+            }
+
+            .daily-mode-row {
+                grid-column: 1 / -1;
+            }
+
+            .daily-mode-row .mode-card-wrapper {
+                width: 100%;
+            }
+
+            .footer-links {
+                position: static;
+                margin: 22px 0 10px;
+                font-size: 11px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -149,6 +235,21 @@
 <h1>Ani Ranker</h1>
 
 <div class="mode-grid">
+    <div class="daily-mode-row">
+        <div class="mode-card-wrapper">
+            <a href="daily.html" class="mode-card">
+                <div class="mode-front">
+                    <span class="mode-icon">☀️</span>
+                    <span class="mode-title">Daily Challenge</span>
+                </div>
+                <div class="mode-back">
+                    <span class="mode-title-small">Daily</span>
+                    <span class="mode-desc">Classic, KMK, Top 10 und Anidle · einmal pro Tag</span>
+                </div>
+            </a>
+        </div>
+    </div>
+
     <div class="mode-card-wrapper">
         <a href="classic.html" class="mode-card">
             <div class="mode-front">
@@ -175,7 +276,7 @@
         </a>
     </div>
 
-    <div class="mode-card-wrapper">
+    <div class="mode-card-wrapper top10-menu-card">
         <a href="top10.html" class="mode-card">
             <div class="mode-front">
                 <span class="mode-icon">📋</span>
@@ -188,43 +289,32 @@
         </a>
     </div>
 
-    <div class="mode-card-wrapper">
-        <a href="connection.html" class="mode-card">
-            <div class="mode-front">
-                <span class="mode-icon">🔗</span>
-                <span class="mode-title">Connection</span>
-            </div>
-            <div class="mode-back">
-                <span class="mode-title-small">Connection</span>
-                <span class="mode-desc">Find 4 groups of 4 characters that share a common trait</span>
-            </div>
-        </a>
-    </div>
+    <div class="mode-secondary-row">
+        <div class="mode-card-wrapper">
+            <a href="connection.html" class="mode-card">
+                <div class="mode-front">
+                    <span class="mode-icon">🔗</span>
+                    <span class="mode-title">Connection</span>
+                </div>
+                <div class="mode-back">
+                    <span class="mode-title-small">Connection</span>
+                    <span class="mode-desc">Find 4 groups of 4 characters that share a common trait</span>
+                </div>
+            </a>
+        </div>
 
-    <div class="mode-card-wrapper">
-        <a href="anidle.html?mode=daily" class="mode-card">
-            <div class="mode-front">
-                <span class="mode-icon">📅</span>
-                <span class="mode-title">Anidle Daily</span>
-            </div>
-            <div class="mode-back">
-                <span class="mode-title-small">Daily</span>
-                <span class="mode-desc">One character per day — guess it from attributes</span>
-            </div>
-        </a>
-    </div>
-
-    <div class="mode-card-wrapper">
-        <a href="anidle.html?mode=infinity" class="mode-card">
-            <div class="mode-front">
-                <span class="mode-icon">♾️</span>
-                <span class="mode-title">Anidle Infinity</span>
-            </div>
-            <div class="mode-back">
-                <span class="mode-title-small">Infinity</span>
-                <span class="mode-desc">Endless guessing — new random character each round</span>
-            </div>
-        </a>
+        <div class="mode-card-wrapper">
+            <a href="anidle.html?mode=infinity" class="mode-card">
+                <div class="mode-front">
+                    <span class="mode-icon">♾️</span>
+                    <span class="mode-title">Anidle Infinity</span>
+                </div>
+                <div class="mode-back">
+                    <span class="mode-title-small">Infinity</span>
+                    <span class="mode-desc">Endless guessing — new random character each round</span>
+                </div>
+            </a>
+        </div>
     </div>
 
     <div class="mode-bottom-row">
@@ -264,7 +354,7 @@
 </div>
 
 <script>
-const LATEST_PATCH = 'v9.1';
+const LATEST_PATCH = 'v10.0';
 if (localStorage.getItem('lastSeenPatch') !== LATEST_PATCH) {
     document.getElementById('patch-link').classList.add('patch-new');
 }

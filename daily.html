@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#0d0d14">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="apple-touch-icon" href="assets/icon-192.png">
+    <script src="pwa.js" defer></script>
+    <title>Daily · Ani Ranker</title>
+    <link rel="icon" type="image/png" href="assets/icon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="daily-page">
+
+<h1>Daily Challenge</h1>
+<p id="daily-date"></p>
+
+<div id="daily-progress" aria-label="Daily Fortschritt"></div>
+
+<a id="daily-start-link" href="classic.html?mode=daily">
+    <button id="daily-start-btn">Daily starten</button>
+</a>
+<button id="daily-copy-all" type="button" style="display:none;">Alle Ergebnisse kopieren</button>
+
+<a href="index.html"><button class="back-btn" aria-label="Zurück" title="Zurück"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg></button></a>
+
+<script src="daily.js"></script>
+<script src="daily-page.js"></script>
+</body>
+</html>

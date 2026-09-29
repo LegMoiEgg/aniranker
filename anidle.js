@@ -14,6 +14,9 @@ const HINTS = [
 
 const urlParams = new URLSearchParams(window.location.search);
 const MODE = urlParams.get('mode') === 'daily' ? 'daily' : 'infinity';
+const IN_DAILY_FLOW = MODE === 'daily' && urlParams.get('flow') === '1';
+
+if (IN_DAILY_FLOW) document.body.classList.add('daily-run');
 
 function getTodayKey() {
     const d = new Date();
@@ -182,6 +185,9 @@ function pickNewTarget() {
 }
 
 function openWinModal() {
+    if (IN_DAILY_FLOW) {
+        DailyChallenge.complete('anidle', { tries: guessCount });
+    }
     document.getElementById('win-modal-img').src = targetCharacter.image;
     document.getElementById('win-modal-img').alt = targetCharacter.name;
     document.getElementById('win-modal-message').textContent =
@@ -194,6 +200,9 @@ function openWinModal() {
         document.getElementById('win-modal-daily-note').style.display = 'none';
         document.getElementById('win-modal-copy').style.display = 'none';
         document.getElementById('win-modal-restart').style.display = '';
+    }
+    if (IN_DAILY_FLOW && !document.getElementById('daily-next-btn')) {
+        DailyChallenge.showNextButton('anidle', document.querySelector('.win-modal-buttons'));
     }
     document.getElementById('win-modal').style.display = 'flex';
 }

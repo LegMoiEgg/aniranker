@@ -1,5 +1,11 @@
 const POOL_SIZE = 10;
-const STORAGE_KEY = 'top10_state';
+const TOP10_DAILY = DailyChallenge.isDailyMode();
+const STORAGE_KEY = DailyChallenge.stateKey('top10_state');
+
+if (TOP10_DAILY) {
+    document.body.classList.add('daily-run');
+    document.querySelector('h1').textContent = 'Top 10 Daily';
+}
 
 let allChars = [];       // original 10 randomly picked chars
 let ranked = [];         // chars placed so far: ranked[0] = #1, ranked[1] = #2, ...
@@ -57,7 +63,10 @@ function startPhase(remaining) {
 
 function startGame() {
     clearState();
-    allChars = shuffle(CHARACTERS_DATA).slice(0, POOL_SIZE);
+    allChars = (TOP10_DAILY
+        ? DailyChallenge.shuffle(CHARACTERS_DATA, 'top10')
+        : shuffle(CHARACTERS_DATA)
+    ).slice(0, POOL_SIZE);
     ranked = [];
     startPhase(allChars);
 
@@ -74,6 +83,10 @@ function startGame() {
 function init() {
     const saved = loadState();
     if (!saved) {
+        if (TOP10_DAILY) {
+            startGame();
+            return;
+        }
         document.getElementById('top10-start-btn').style.display  = '';
         document.getElementById('top10-arena').style.display      = 'none';
         document.getElementById('top10-result').style.display     = 'none';
@@ -204,6 +217,13 @@ function showResult() {
     addRow(grid, ranked.slice(3, 6), 4);
     // Row 4: #7, #8, #9, #10
     addRow(grid, ranked.slice(6, 10), 7);
+
+    if (TOP10_DAILY && ranked.length === POOL_SIZE) {
+        DailyChallenge.complete('top10', { ranking: ranked.map(char => char.name) });
+        document.getElementById('top10-restart-btn').style.display = 'none';
+        document.getElementById('top10-copy-btn').style.display = 'none';
+        if (!document.getElementById('daily-next-btn')) DailyChallenge.showNextButton('top10');
+    }
 }
 
 function copyResult() {

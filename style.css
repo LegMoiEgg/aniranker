@@ -29,6 +29,15 @@
     box-sizing: border-box;
 }
 
+html {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+html::-webkit-scrollbar {
+    display: none;
+}
+
 body {
     background: var(--bg-dark);
     color: var(--text);
@@ -266,6 +275,12 @@ button:disabled {
     position: fixed;
     bottom: 20px;
     right: 20px;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* ===== SCREENS ===== */
@@ -849,6 +864,304 @@ body.colorblind-mode .colorblind-toggle {
     color: #86efac;
 }
 
+/* ===== MOBILE PORTRAIT ===== */
+
+@media (max-width: 700px) {
+    html {
+        zoom: 1 !important;
+    }
+
+    body {
+        padding: 0 12px 82px;
+        overflow-x: hidden;
+    }
+
+    h1 {
+        font-size: 28px;
+        margin-top: 18px;
+    }
+
+    button {
+        min-height: 44px;
+        padding: 9px 12px;
+    }
+
+    .back-btn {
+        right: 12px;
+        bottom: 12px;
+    }
+
+    .lexikon-shortcut-link {
+        left: 12px;
+        bottom: 12px;
+    }
+
+    #kmkStartBtn,
+    #startBtn {
+        bottom: 12px;
+    }
+
+    /* Classic: current character above five ranking buttons. */
+    body.classic-page {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .classic-page h1 { order: 1; }
+    .classic-page #image-container { order: 2; }
+    .classic-page #slots { order: 3; }
+
+    .classic-page #image-container img {
+        width: min(52vw, 210px);
+        height: min(68vw, 273px);
+        margin: 12px 0 16px;
+    }
+
+    .classic-page #slots {
+        display: grid;
+        grid-template-columns: repeat(5, minmax(48px, 1fr));
+        gap: 8px;
+        width: min(100%, 390px);
+        margin: 0;
+    }
+
+    .classic-page .slot-name,
+    .classic-page .slot .box {
+        display: none;
+    }
+
+    .classic-page .slot button {
+        width: 100%;
+        min-width: 0;
+        font-size: 16px;
+    }
+
+    .classic-page.classic-complete #image-container { display: none; }
+
+    .classic-page.classic-complete #slots {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        margin-top: 14px;
+    }
+
+    .classic-page.classic-complete .slot {
+        display: grid;
+        grid-template-columns: 44px 58px minmax(0, 1fr);
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+        padding: 7px;
+        border-bottom: 1px solid var(--border);
+    }
+
+    .classic-page.classic-complete .slot button {
+        display: block;
+        grid-column: 1;
+        grid-row: 1;
+        min-height: 40px;
+        padding: 0;
+        opacity: 1;
+        color: var(--accent);
+        background: var(--bg-elevated);
+    }
+
+    .classic-page.classic-complete .slot .box {
+        display: flex;
+        grid-column: 2;
+        grid-row: 1;
+        width: 58px;
+        height: 72px;
+        margin: 0;
+        border-radius: var(--radius-sm);
+    }
+
+    .classic-page.classic-complete .slot-name {
+        display: block;
+        grid-column: 3;
+        grid-row: 1;
+        max-width: none;
+        margin: 0;
+        text-align: left;
+        font-size: 14px;
+        color: var(--text);
+        white-space: normal;
+    }
+
+    /* Keep all three KMK choices visible without horizontal scrolling. */
+    #kmk-container {
+        gap: 4px;
+        width: 100%;
+        margin-top: 18px;
+    }
+
+    .kmk-card {
+        width: 33.333%;
+        min-width: 0;
+        padding: 3px;
+    }
+
+    .kmk-char-name {
+        width: 100%;
+        min-height: 34px;
+        font-size: 11px !important;
+    }
+
+    .kmk-box {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 10 / 13;
+        margin-bottom: 6px;
+    }
+
+    .kmk-buttons {
+        flex-direction: column;
+        width: 100%;
+        gap: 5px;
+        margin-top: 2px;
+    }
+
+    .kmk-buttons button {
+        width: 100%;
+        min-height: 38px;
+        padding: 6px 2px;
+        font-size: 11px;
+    }
+
+    /* Top 10 stays head-to-head, scaled for portrait screens. */
+    #top10-progress {
+        margin-bottom: 8px !important;
+    }
+
+    #top10-arena {
+        gap: 10px !important;
+        width: 100%;
+        margin-top: 8px !important;
+    }
+
+    .top10-card {
+        min-width: 0;
+        flex: 1;
+        gap: 8px !important;
+    }
+
+    .top10-img-wrap {
+        width: 100% !important;
+        height: auto !important;
+        aspect-ratio: 9 / 11;
+    }
+
+    .top10-card-name {
+        max-width: 100% !important;
+        min-height: 36px;
+        font-size: 12px !important;
+    }
+
+    #top10-vs {
+        flex: 0 0 auto;
+        font-size: 18px !important;
+    }
+
+    .top10-pyramid-row {
+        width: 100%;
+        gap: 6px !important;
+        align-items: flex-start !important;
+    }
+
+    .top10-result-card {
+        min-width: 0;
+        flex: 1;
+    }
+
+    .top10-result-img,
+    .top10-result-img.gold,
+    .top10-result-img.silver,
+    .top10-result-img.bronze {
+        width: min(100%, 92px) !important;
+        height: auto !important;
+        aspect-ratio: 9 / 11;
+    }
+
+    .top10-result-name {
+        max-width: 100% !important;
+        font-size: 10px !important;
+    }
+
+    /* Anidle results become labeled cells instead of a wide table. */
+    #hints-area {
+        gap: 6px;
+        margin: 10px 0;
+    }
+
+    .hint-box {
+        min-width: 0;
+        width: 100%;
+        padding: 8px 10px;
+        font-size: 12px;
+    }
+
+    #anidle-input-area {
+        width: 100%;
+        margin-top: 12px;
+    }
+
+    #autocomplete-wrapper {
+        min-width: 0;
+        flex: 1;
+    }
+
+    #guess-btn-wrap {
+        gap: 5px;
+    }
+
+    #guess-btn {
+        padding-inline: 12px;
+    }
+
+    #attribute-headers {
+        display: none;
+    }
+
+    #guess-list {
+        margin-top: 16px;
+    }
+
+    #guess-list .guess-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 6px;
+        padding: 10px 0;
+        margin: 0;
+        border-top: 1px solid var(--border);
+    }
+
+    #guess-list .guess-cell {
+        width: auto;
+        min-height: 68px;
+        flex-direction: column;
+        gap: 4px;
+        font-size: 12px;
+    }
+
+    #guess-list .guess-cell::before {
+        color: currentColor;
+        opacity: 0.7;
+        font-size: 9px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    #guess-list .guess-cell:nth-child(1)::before { content: "Image"; }
+    #guess-list .guess-cell:nth-child(2)::before { content: "Name"; }
+    #guess-list .guess-cell:nth-child(3)::before { content: "Anime"; }
+    #guess-list .guess-cell:nth-child(4)::before { content: "Genre"; }
+    #guess-list .guess-cell:nth-child(5)::before { content: "Gender"; }
+    #guess-list .guess-cell:nth-child(6)::before { content: "Age"; }
+    #guess-list .guess-cell:nth-child(7)::before { content: "Height"; }
+    #guess-list .guess-cell:nth-child(8)::before { content: "Haircolor"; }
+}
+
 .hint-lock-text { font-size: 13px; }
 
 .hint-btn {
@@ -1167,5 +1480,161 @@ body.colorblind-mode .colorblind-toggle {
     font-size: 14px;
     margin-bottom: 10px;
     color: var(--text-muted);
+}
+
+/* ===== DAILY CHALLENGE ===== */
+
+.daily-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 16px 82px;
+}
+
+#daily-date {
+    margin: 0 0 24px;
+    color: var(--text-muted);
+    text-transform: capitalize;
+}
+
+#daily-progress {
+    width: min(100%, 520px);
+    border-top: 1px solid var(--border);
+}
+
+.daily-progress-row {
+    display: grid;
+    grid-template-columns: 42px minmax(0, 1fr) auto;
+    align-items: center;
+    gap: 12px;
+    min-height: 64px;
+    padding: 8px 4px;
+    border-bottom: 1px solid var(--border);
+    text-align: left;
+}
+
+.daily-step-number {
+    width: 34px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1.5px solid var(--border);
+    border-radius: 50%;
+    color: var(--text-dim);
+    font-weight: 700;
+}
+
+.daily-progress-row.complete .daily-step-number {
+    border-color: #22c55e;
+    color: #86efac;
+    background: rgba(34, 197, 94, 0.12);
+}
+
+.daily-step-label {
+    color: var(--text);
+    font-weight: 600;
+}
+
+.daily-step-status {
+    color: var(--text-dim);
+    font-size: 12px;
+}
+
+.daily-progress-row.complete .daily-step-status {
+    color: #86efac;
+}
+
+#daily-start-link {
+    margin-top: 24px;
+    text-decoration: none;
+}
+
+#daily-start-btn,
+#daily-copy-all {
+    min-width: 190px;
+}
+
+#daily-copy-all {
+    margin-top: 24px;
+}
+
+#daily-copy-all.copied {
+    border-color: #22c55e;
+    color: #86efac;
+}
+
+.daily-next-link {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    z-index: 50;
+    transform: translateX(-50%);
+    text-decoration: none;
+}
+
+.daily-next-inline {
+    text-decoration: none;
+}
+
+body.daily-run #classic-copy-btn,
+body.daily-run #top10-copy-btn,
+body.daily-run #top10-restart-btn {
+    display: none !important;
+}
+
+@media (max-width: 700px) {
+    .daily-progress-row {
+        grid-template-columns: 38px minmax(0, 1fr) auto;
+        gap: 8px;
+    }
+
+    .daily-step-status {
+        font-size: 11px;
+    }
+
+    .daily-next-link {
+        bottom: 12px;
+    }
+
+    #conn-grid {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 5px;
+        width: 100%;
+    }
+
+    .conn-cell {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 11 / 13;
+        border-radius: var(--radius-sm);
+    }
+
+    #conn-controls,
+    .conn-solved-row {
+        width: 100%;
+    }
+
+    .conn-solved-row {
+        gap: 8px;
+        padding: 8px;
+    }
+
+    .conn-solved-label {
+        min-width: 96px;
+        font-size: 11px;
+    }
+
+    .conn-solved-chars {
+        min-width: 0;
+        flex: 1;
+        gap: 4px;
+    }
+
+    .conn-solved-chars img {
+        width: calc((100% - 12px) / 4);
+        height: auto;
+        aspect-ratio: 10 / 13;
+    }
 }
 

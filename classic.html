@@ -2,6 +2,12 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#0d0d14">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="apple-touch-icon" href="assets/icon-192.png">
+    <script src="pwa.js" defer></script>
     <title>Classic</title>
     <link rel="icon" type="image/png" href="assets/icon.png">
     <link rel="stylesheet" href="style.css">
@@ -27,7 +33,7 @@
     }
     </style>
 </head>
-<body>
+<body class="classic-page">
 
 <h1>Classic Ranking</h1>
 
@@ -38,13 +44,14 @@
 <button id="classic-copy-btn" onclick="classicCopyResult()" style="display:none; position:fixed; bottom:20px; left:calc(50% + 6px); width:44px; height:44px; padding:0; align-items:center; justify-content:center;" title="Copy Result">
     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
 </button>
-<a href="index.html"><button class="back-btn">Back</button></a>
+<a href="index.html"><button class="back-btn" aria-label="Zurück" title="Zurück"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg></button></a>
 <a href="lexikon.html?from=classic.html" class="lexikon-shortcut-link"><button class="lexikon-shortcut-btn" title="Lexikon">
     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
 </button></a>
 
 <script src="characters.js"></script>
 <script src="achievements.js"></script>
+<script src="daily.js"></script>
 <script src="classic.js"></script>
 </body>
 </html>

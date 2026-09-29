@@ -3,11 +3,18 @@ let used = [];
 let cardChars = [];  // full character objects
 let cardChoices = [null, null, null];
 let gameRunning = false;
+const KMK_DAILY = DailyChallenge.isDailyMode();
+const KMK_STORAGE_KEY = DailyChallenge.stateKey('kmk_state');
+
+if (KMK_DAILY) {
+    document.body.classList.add('daily-run');
+    document.querySelector('h1').textContent = 'KMK Daily';
+}
 
 // State management
 function saveKMKState() {
     try {
-        localStorage.setItem('kmk_state', JSON.stringify({
+        localStorage.setItem(KMK_STORAGE_KEY, JSON.stringify({
             cardChars: cardChars.map(c => c ? c.name : null),
             cardChoices: cardChoices,
             used: used,
@@ -17,7 +24,7 @@ function saveKMKState() {
 }
 
 function clearKMKState() {
-    try { localStorage.removeItem('kmk_state'); } catch (e) {}
+    try { localStorage.removeItem(KMK_STORAGE_KEY); } catch (e) {}
 }
 
 const container = document.getElementById("kmk-container");
@@ -93,7 +100,10 @@ function startKMK() {
     cardChoices = [null, null, null];
     gameRunning = true;
 
-    cardChars = [...CHARACTERS_DATA].sort(() => Math.random() - 0.5).slice(0, 3);
+    cardChars = (KMK_DAILY
+        ? DailyChallenge.shuffle(CHARACTERS_DATA, 'kmk')
+        : [...CHARACTERS_DATA].sort(() => Math.random() - 0.5)
+    ).slice(0, 3);
     setupCards(cardChars, cardChoices);
 
     startBtn.textContent = "Restart";
@@ -106,6 +116,13 @@ function endKMK() {
     gameRunning = false;
     startBtn.disabled = false;
     saveKMKState();
+    if (KMK_DAILY) {
+        const result = {};
+        cardChoices.forEach((choice, index) => { result[choice] = cardChars[index].name; });
+        DailyChallenge.complete('kmk', result);
+        startBtn.style.display = 'none';
+        if (!document.getElementById('daily-next-btn')) DailyChallenge.showNextButton('kmk');
+    }
     unlockAchievement('first_kmk');
 
     if (cardChars.length === 3 && cardChars.every(c => c.anime === cardChars[0].anime))
@@ -142,8 +159,11 @@ function resetKMK() {
 // Restore state on page load
 (function () {
     try {
-        const raw = localStorage.getItem('kmk_state');
-        if (!raw) return;
+        const raw = localStorage.getItem(KMK_STORAGE_KEY);
+        if (!raw) {
+            if (KMK_DAILY) startKMK();
+            return;
+        }
         const state = JSON.parse(raw);
         if (!state.cardChars || state.cardChars.length !== 3) return;
 
@@ -157,5 +177,12 @@ function resetKMK() {
 
         startBtn.textContent = 'Restart';
         startBtn.disabled = gameRunning;
+        if (KMK_DAILY && !gameRunning && cardChoices.every(Boolean)) {
+            const result = {};
+            cardChoices.forEach((choice, index) => { result[choice] = cardChars[index].name; });
+            DailyChallenge.complete('kmk', result);
+            startBtn.style.display = 'none';
+            DailyChallenge.showNextButton('kmk');
+        }
     } catch (e) {}
 })();

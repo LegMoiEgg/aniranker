@@ -2,6 +2,12 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#0d0d14">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="apple-touch-icon" href="assets/icon-192.png">
+    <script src="pwa.js" defer></script>
     <title>Patch Notes</title>
     <link rel="icon" type="image/png" href="assets/icon.png">
     <link rel="stylesheet" href="style.css">
@@ -11,6 +17,54 @@
 <h1>Patch Notes</h1>
 
 <div class="page-content">
+
+    <h2>v10.0 - 29.09.2026</h2>
+
+    <p>NEW FEATURE – DAILY CHALLENGE</p>
+    <div style="font-size: 12px">
+        <p>- New Daily Challenge combining Classic, Kiss · Marry · Kill, Top 10 and Anidle</p>
+        <p>- Daily modes are played in a fixed order: Classic → KMK → Top 10 → Anidle</p>
+        <p>- Each Daily mode can only be completed once per day</p>
+        <p>- Daily progress and finished results are saved and can be resumed at any time</p>
+        <p>- All four Daily results can be copied together in a compact, shareable format</p>
+        <p>- Daily challenges use the same character selection for all players</p>
+    </div>
+
+    <p>NEW MOBILE EXPERIENCE</p>
+    <div style="font-size: 12px">
+        <p>- Added a responsive portrait layout for phones and tablets</p>
+        <p>- Classic mobile layout now uses a character image with five ranking buttons and a vertical final ranking</p>
+        <p>- KMK, Top 10, Connection and Anidle were optimized for touch screens and portrait mode</p>
+        <p>- Added installable PWA support for the home screen</p>
+        <p>- Added offline support with local caching for all game files and character images</p>
+        <p>- Progress remains stored in Local Storage across web and mobile layouts</p>
+    </div>
+
+    <p>MAIN MENU &amp; UI</p>
+    <div style="font-size: 12px">
+        <p>- Main menu reorganized into clearer rows for desktop and mobile</p>
+        <p>- Daily Challenge now appears as the central full-width entry</p>
+        <p>- Classic, KMK and Top 10 use their regular mode names again</p>
+        <p>- Replaced all Back labels with accessible arrow buttons</p>
+        <p>- Page scrollbars are hidden while scrolling remains available</p>
+    </div>
+
+    <p>NEW CHARACTERS – TEASER</p>
+    <div style="font-size: 12px">
+        <p>- Hahari Hanazono (The 100 Girlfriends Who Really, Really, Really, Really, Really Love You)</p>
+        <p>- Nagi Arato (Ruri Rocks)</p>
+        <p>- Tohru (Miss Kobayashi's Dragon Maid)</p>
+        <p>- Eris Greyrat (Mushoku Tensei: Jobless Reincarnation)</p>
+        <p>- Roxy Migurdia Greyrat (Mushoku Tensei: Jobless Reincarnation)</p>
+        <p>- Natsumi Nishi (You and I are Polar Opposites)</p>
+    </div>
+
+    <p>CHARACTER FIXES &amp; IMPROVEMENTS</p>
+    <div style="font-size: 12px">
+        <p>- Corrected the gender value for Gardevoir and Schlapohr</p>
+        <p>- Fixed Nico Robin's image reference</p>
+        <p>- Added and aligned character data for new anime, genres and eye colors</p>
+    </div>
 
     <h2>v9.1 - 17.07.2026</h2>
 
@@ -382,9 +436,9 @@
 </div>
 
 <a href="index.html">
-    <button class="back-btn">Back</button>
+    <button class="back-btn" aria-label="Zurück" title="Zurück"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg></button>
 </a>
 
-<script>localStorage.setItem('lastSeenPatch', 'v7.1');</script>
+<script>localStorage.setItem('lastSeenPatch', 'v10.0');</script>
 </body>
 </html>
