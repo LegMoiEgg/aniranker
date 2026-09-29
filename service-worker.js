@@ -1,6 +1,6 @@
 importScripts('./characters.js');
 
-const CACHE_NAME = 'aniranker-v12';
+const CACHE_NAME = 'aniranker-v13';
 const APP_SHELL = [
     './',
     './index.html',

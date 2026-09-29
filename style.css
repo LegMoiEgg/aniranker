@@ -1572,6 +1572,45 @@ body.colorblind-mode .colorblind-toggle {
     font-size: 12px;
 }
 
+.daily-result-toggle {
+    min-height: 34px;
+    padding: 6px 10px;
+    font-size: 11px;
+}
+
+.daily-result-panel {
+    display: grid;
+    gap: 5px;
+    padding: 4px 8px 12px 50px;
+    border-bottom: 1px solid var(--border);
+}
+
+.daily-result-panel[hidden] {
+    display: none;
+}
+
+.daily-result-line {
+    display: grid;
+    grid-template-columns: 72px minmax(0, 1fr);
+    gap: 10px;
+    align-items: center;
+    padding: 7px 10px;
+    border-radius: var(--radius-sm);
+    background: var(--bg-card);
+    font-size: 12px;
+    text-align: left;
+}
+
+.daily-result-label {
+    color: var(--accent);
+    font-weight: 600;
+}
+
+.daily-result-value {
+    color: var(--text-muted);
+    overflow-wrap: anywhere;
+}
+
 .daily-progress-row.complete .daily-step-status {
     color: #86efac;
 }
@@ -1622,6 +1661,16 @@ body.daily-run #top10-restart-btn {
 
     .daily-step-status {
         font-size: 11px;
+    }
+
+    .daily-result-toggle {
+        min-height: 36px;
+        padding-inline: 8px;
+    }
+
+    .daily-result-panel {
+        padding-left: 42px;
+        padding-right: 0;
     }
 
     .daily-next-link {

@@ -11,6 +11,43 @@ document.getElementById('daily-date').textContent = new Intl.DateTimeFormat('de-
 }).format(date);
 
 const progress = document.getElementById('daily-progress');
+
+function addResultLine(panel, label, value) {
+    const line = document.createElement('div');
+    line.className = 'daily-result-line';
+
+    const labelElement = document.createElement('span');
+    labelElement.className = 'daily-result-label';
+    labelElement.textContent = label;
+
+    const valueElement = document.createElement('span');
+    valueElement.className = 'daily-result-value';
+    valueElement.textContent = value;
+
+    line.append(labelElement, valueElement);
+    panel.appendChild(line);
+}
+
+function buildResultPanel(step, result) {
+    const panel = document.createElement('div');
+    panel.className = 'daily-result-panel';
+    panel.hidden = true;
+
+    if (step === 'classic') {
+        result.ranking.forEach((name, index) => addResultLine(panel, `#${index + 1}`, name));
+    } else if (step === 'kmk') {
+        addResultLine(panel, 'Kiss', result.kiss);
+        addResultLine(panel, 'Marry', result.marry);
+        addResultLine(panel, 'Kill', result.kill);
+    } else if (step === 'top10') {
+        result.ranking.forEach((name, index) => addResultLine(panel, `#${index + 1}`, name));
+    } else if (step === 'anidle') {
+        addResultLine(panel, 'Versuche', `${result.tries} ${result.tries === 1 ? 'Try' : 'Tries'}`);
+    }
+
+    return panel;
+}
+
 DailyChallenge.STEPS.forEach((step, index) => {
     const row = document.createElement('div');
     row.className = `daily-progress-row${results[step] ? ' complete' : ''}`;
@@ -28,7 +65,25 @@ DailyChallenge.STEPS.forEach((step, index) => {
     status.textContent = results[step] ? 'Erledigt' : step === nextStep ? 'Als Nächstes' : 'Gesperrt';
 
     row.append(number, label, status);
-    progress.appendChild(row);
+
+    if (results[step]) {
+        const toggle = document.createElement('button');
+        toggle.className = 'daily-result-toggle';
+        toggle.type = 'button';
+        toggle.textContent = 'Ansehen';
+        toggle.setAttribute('aria-expanded', 'false');
+        const panel = buildResultPanel(step, results[step]);
+        toggle.addEventListener('click', () => {
+            const isOpen = !panel.hidden;
+            panel.hidden = isOpen;
+            toggle.textContent = isOpen ? 'Ansehen' : 'Schließen';
+            toggle.setAttribute('aria-expanded', String(!isOpen));
+        });
+        row.appendChild(toggle);
+        progress.append(row, panel);
+    } else {
+        progress.appendChild(row);
+    }
 });
 
 const startLink = document.getElementById('daily-start-link');
