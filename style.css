@@ -1572,10 +1572,35 @@ body.colorblind-mode .colorblind-toggle {
     font-size: 12px;
 }
 
-.daily-result-toggle {
+.daily-result-trigger {
+    width: fit-content;
     min-height: 34px;
-    padding: 6px 10px;
-    font-size: 11px;
+    padding: 5px 0;
+    border: 0;
+    background: transparent;
+    color: var(--text);
+    text-align: left;
+    cursor: pointer;
+    font: inherit;
+}
+
+.daily-result-trigger:hover,
+.daily-result-trigger:focus-visible {
+    color: var(--accent-light);
+    box-shadow: none;
+    transform: none;
+    text-decoration: underline;
+}
+
+.daily-result-trigger::after {
+    content: ' ›';
+    display: inline-block;
+    color: var(--accent);
+    transition: transform 0.2s ease;
+}
+
+.daily-result-trigger.expanded::after {
+    transform: rotate(90deg);
 }
 
 .daily-result-panel {
@@ -1661,11 +1686,6 @@ body.daily-run #top10-restart-btn {
 
     .daily-step-status {
         font-size: 11px;
-    }
-
-    .daily-result-toggle {
-        min-height: 36px;
-        padding-inline: 8px;
     }
 
     .daily-result-panel {

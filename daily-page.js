@@ -56,8 +56,8 @@ DailyChallenge.STEPS.forEach((step, index) => {
     number.className = 'daily-step-number';
     number.textContent = results[step] ? '✓' : String(index + 1);
 
-    const label = document.createElement('span');
-    label.className = 'daily-step-label';
+    const label = document.createElement(results[step] ? 'button' : 'span');
+    label.className = `daily-step-label${results[step] ? ' daily-result-trigger' : ''}`;
     label.textContent = DailyChallenge.LABELS[step];
 
     const status = document.createElement('span');
@@ -67,19 +67,15 @@ DailyChallenge.STEPS.forEach((step, index) => {
     row.append(number, label, status);
 
     if (results[step]) {
-        const toggle = document.createElement('button');
-        toggle.className = 'daily-result-toggle';
-        toggle.type = 'button';
-        toggle.textContent = 'Ansehen';
-        toggle.setAttribute('aria-expanded', 'false');
         const panel = buildResultPanel(step, results[step]);
-        toggle.addEventListener('click', () => {
+        label.type = 'button';
+        label.setAttribute('aria-expanded', 'false');
+        label.addEventListener('click', () => {
             const isOpen = !panel.hidden;
             panel.hidden = isOpen;
-            toggle.textContent = isOpen ? 'Ansehen' : 'Schließen';
-            toggle.setAttribute('aria-expanded', String(!isOpen));
+            label.classList.toggle('expanded', !isOpen);
+            label.setAttribute('aria-expanded', String(!isOpen));
         });
-        row.appendChild(toggle);
         progress.append(row, panel);
     } else {
         progress.appendChild(row);
